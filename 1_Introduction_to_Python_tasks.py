@@ -24,6 +24,6 @@ print("Hello", first_name,last_name)
 # марку и модель автомобиля, а после выводит на экран фразу "Автомобиль: <марка> <модель>".
 
 import sys
-marka = sys.argv[1]
+mark = sys.argv[1]
 model = sys.argv[2]
-print("Автомобиль:",marka,model)
+print("Автомобиль:",mark,model)
