@@ -189,5 +189,3 @@ text = text.strip().title() + "."
 
 # Выводим текст.
 print(text)
-
-
