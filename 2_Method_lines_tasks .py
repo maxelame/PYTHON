@@ -135,6 +135,25 @@ print(a.zfill(15))
 print(b.zfill(15))
 print(c.zfill(15))
 
+# Английский заголовок
+#
+# В английских заголовках принято каждое слово начинать с заглавной буквы. Напишите программу, которая получает через аргументы командной строки фразу, а после выводит её в стиле английского заголовка.
+# Пример использования:
+# > python title.py "Leading growth: why strategy matters"
+# > Leading Growth: Why Strategy Matters
+# Подсказка:
+#
+# Используйте метод title.
+
+
+import sys
+a = sys.argv[1]
+print(a.title())
+
+
+
+
+
 
 
 
