@@ -92,8 +92,3 @@ print(file.lower())
 
 
 
-
-
-
-
-
