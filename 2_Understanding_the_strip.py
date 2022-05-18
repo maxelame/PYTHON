@@ -58,4 +58,3 @@ name = sys.argv[1]
 
 # Чистим и выводим данные.
 print(name.lstrip("О ").strip("\'\" \\"))
-
