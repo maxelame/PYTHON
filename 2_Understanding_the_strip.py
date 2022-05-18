@@ -61,3 +61,4 @@ print(name.lstrip("О ").strip("\'\" \\"))
 
 
 
+
