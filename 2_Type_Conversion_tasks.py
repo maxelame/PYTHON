@@ -70,11 +70,3 @@ doll = int(sys.argv[2])
 print(str(doll)+" долларов в рублях = "+str(kurs*doll)+" руб.")
 
 
-
-
-
-
-
-
-
-
