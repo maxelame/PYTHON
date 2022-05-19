@@ -63,6 +63,15 @@ print(amount)
 > python program.py 64,66 12
 > 12 долларов в рублях = 775.92 руб.'''
 
+import sys
+kurs = sys.argv[1]
+kurs = float(kurs.replace(",","."))
+doll = int(sys.argv[2])
+print(str(doll)+" долларов в рублях = "+str(kurs*doll)+" руб.")
+
+
+
+
 
 
 
