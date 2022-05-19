@@ -77,3 +77,5 @@ print(str(doll)+" долларов в рублях = "+str(kurs*doll)+" руб."
 
 
 
+
+
