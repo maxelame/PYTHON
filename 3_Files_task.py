@@ -74,11 +74,3 @@ file_end_position = file.find("</h1>")
 title = file[file_start_position+4:file_end_position]
 title = title.strip().upper()
 print(file[:file_start_position +4] + title + file[file_end_position:] )
-
-
-
-
-
-
-
-
