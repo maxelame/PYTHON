@@ -130,12 +130,3 @@ kolichestvo = int(sys.argv[2])
 cena = float(sys.argv[3])
 summa = kolichestvo * cena
 print("| %-30s | %-6d | %-10.2f | %12.2f |" % (naimenovanie, kolichestvo, cena, summa ))
-
-
-
-
-
-
-
-
-
