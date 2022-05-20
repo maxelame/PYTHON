@@ -54,7 +54,26 @@ template = (template_file.read())
 template = template.replace("{{ name }}" , name)
 print(template)
 
+'''Изменяем заголовок
 
+Рядом с программой находится HTML-файл с именем index.html.
+В файле есть различные теги, среди которых <h1>, который отвечает за основной заголовок документа.
+Так случилось, что верстальщик добавил лишние пробелы в начале и конце основного заголовка.
+
+Напишите программу, которая читает HTML-файл, а затем очищает от лишних пробелов текст основного заголовка, а также приводит его к верхнему регистру. После всех преобразований, программа должна напечатать результат. Сами HTML-теги должны остаться без изменений.
+
+Если в файле будет содержаться <body><h1> заголовок</h1></body>, то программа должна отработать так:
+> python program.py
+> <body><h1>ЗАГОЛОВОК</h1></body>
+ '''
+
+html_file = open("index.html")
+file = html_file.read()
+file_start_position = file.find("<h1>")
+file_end_position = file.find("</h1>")
+title = file[file_start_position+4:file_end_position]
+title = title.strip().upper()
+print(file[:file_start_position +4] + title + file[file_end_position:] )
 
 
 
