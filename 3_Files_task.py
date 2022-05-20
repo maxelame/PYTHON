@@ -23,7 +23,18 @@ language_file = open("language.txt" , encoding = "cp1251")
 language = language_file.read()
 print(language)
 
+'''Годовая зарплата
 
+Рядом с программой находится файл month_salary.txt, в котором хранится месячная зарплата.
+Напишите программу, которая читает этот файл и выводит на его основе годовую зарплату.
+
+Если в файле будет содержаться 10000, то программа должна отработать так:
+> python program.py
+> 120000'''
+
+salary_file = open("month_salary.txt", encoding = "utf8")
+salary = int(salary_file.read())
+print(salary*12)
 
 
 
