@@ -44,5 +44,3 @@ products = new_products_file.read()
 products_file.write(products +"\n")
 
 
-
-
