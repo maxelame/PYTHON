@@ -25,3 +25,20 @@ import sys
 milk = str(sys.argv[1])
 products_file = open ("products.txt", "a", encoding = "utf8")
 products_file.write(milk + "\n")
+
+'''Разные кодировки
+
+Рядом с программой находятся два файла: products.txt и new_products.txt.
+Первый сохранен в кодировке cp1251, а второй в koi8-r.
+
+Напишите программу, которая копирует список продуктов из файла new_products.txt в products.txt.
+Все товары в  исходных файлах записаны с новой строки, при этом после последней записи также стоит перевод строки.
+Пример запуска программы:
+> python program.py
+
+После того как программа выполнится, система сама откроет файл products.txt и проверит его содержимое.'''
+
+products_file = open ("products.txt", "a", encoding = "cp1251")
+new_products_file = open ("new_products.txt", encoding = "koi8-r")
+products = new_products_file.read()
+products_file.write(products +"\n")
