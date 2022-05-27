@@ -43,3 +43,4 @@ new_products_file = open ("new_products.txt", encoding = "koi8-r")
 products = new_products_file.read()
 products_file.write(products +"\n")
 
+
