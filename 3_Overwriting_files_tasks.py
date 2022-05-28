@@ -8,3 +8,5 @@
 new_file = open ("index.html", "w")
 new_file.write("<html><head></head><body></body></html>")
 new_file.close()
+
+
