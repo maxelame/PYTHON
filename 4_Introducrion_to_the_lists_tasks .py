@@ -67,6 +67,20 @@ employee_id | name
 > python program.py 1002
 > Василий Смирнов'''
 
+import sys
+index = int(sys.argv[1])
+
+employees = [
+    "Иван Иванов",
+    "Василий Смирнов",
+    "Ярослав Сидоров",
+    "Алексей Федьков",
+    "Валерий Алтушев",
+    "Дмитрий Петров",
+    "Семен Альтов"
+]
+
+print(employees[index-1001])
 
 
 
