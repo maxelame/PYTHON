@@ -35,9 +35,20 @@ a, b = int(sys.argv[1]), sys.argv[2]
 languages[a] = b
 print(languages)
 
+'''Обмен значений
 
+Напишите программу, которая принимает из аргументов командной строки два числа, а затем меняет в списке languages значения, которые находятся на индексах, соответствующих переданным числам.
+Пример использования:
+> python program.py 0 1
+> ['C++', 'Python', 'JavaScript', 'Java']'''
 
-
+import sys
+index1, index2 = int(sys.argv[1]), int(sys.argv[2])
+languages = ['Python', 'C++', 'JavaScript', 'Java']
+temp_variable = languages[index1]
+languages[index1] = languages[index2]
+languages[index2] = temp_variable
+print(languages)
 
 
 
