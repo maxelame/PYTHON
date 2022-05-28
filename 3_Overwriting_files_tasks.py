@@ -29,7 +29,12 @@ new_template = open ("template.txt","w", encoding = "utf8")
 new_template.write(template)
 new_template.close()
 
+'''Очищаем файл
 
+Рядом с программой находится файл index.html.
+Напишите код, который очистит содержимое этого файла.
+
+После того как программа выполнится, система сама откроет файл index.html и проверит его содержимое.'''
 
 
 
