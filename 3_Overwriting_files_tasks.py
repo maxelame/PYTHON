@@ -74,6 +74,12 @@ file_year.close()
 
 После того как программа выполнится, система сама откроет файл products.txt и проверит его содержимое.'''
 
+file = open("products.txt", encoding = "cp1251")
+text = file.read()
+file.close()
 
+file = open("products.txt", "w", encoding = "utf8")
+file.write(text)
+file.close()
 
 
