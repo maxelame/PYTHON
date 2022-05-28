@@ -29,6 +29,11 @@ print(first_names[a-1].upper(), last_names[b-1].upper())
 > python program.py 1 PHP
 > ['Python', 'PHP', 'JavaScript', 'Java']'''
 
+languages = ['Python', 'C++', 'JavaScript', 'Java']
+import sys
+a, b = int(sys.argv[1]), sys.argv[2]
+languages[a] = b
+print(languages)
 
 
 
