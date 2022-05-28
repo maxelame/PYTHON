@@ -50,4 +50,23 @@ new_file.close()
  '''
 
 
+file_q1 = open ("q1.txt", "r" , encoding = "utf8")
+q1 = file_q1.read()
+file_q1.close()
+file_q2 = open ("q2.txt", "r" , encoding = "utf8")
+q2 = file_q2.read()
+file_q2.close()
+file_q3 = open ("q3.txt", "r" , encoding = "utf8")
+q3 = file_q3.read()
+file_q3.close()
+file_q4 = open ("q4.txt", "r" , encoding = "utf8")
+q4 = file_q4.read()
+file_q4.close()
+q = int(q1) +int(q2)+ int(q3)+ int(q4)
+file_year = open ("year.txt", "w", encoding = "utf8")
+file_year.write(str(q) +"\n")
+file_year.close()
+
+
+
 
