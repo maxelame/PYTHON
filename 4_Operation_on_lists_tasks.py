@@ -5,3 +5,8 @@
 Пример использования:
 > python program.py blank 5
 > ['blank', 'blank', 'blank', 'blank', 'blank']'''
+
+import sys
+mention, repeat = sys.argv[1], int(sys.argv[2])
+j = [mention] * repeat
+print(j)
