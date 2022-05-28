@@ -18,6 +18,16 @@ new_file.close()
 
 После того как программа выполнится, система сама откроет файл template.txt и проверит его содержимое.'''
 
+import sys
+name = str(sys.argv[1])
+new_template = open ("template.txt","r", encoding = "utf8")
+template = new_template.read()
+template = template.replace("{{ name }}",name)
+new_template.close()
+
+new_template = open ("template.txt","w", encoding = "utf8")
+new_template.write(template)
+new_template.close()
 
 
 
