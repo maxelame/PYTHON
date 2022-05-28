@@ -36,5 +36,7 @@ new_template.close()
 
 После того как программа выполнится, система сама откроет файл index.html и проверит его содержимое.'''
 
+new_file = open ("index.html", "w", encoding = "utf8")
+new_file.close()
 
 
