@@ -37,3 +37,9 @@ print(sys.argv)
 > python program.py Нью-Йорк Москва
 > ['Прага', 'Вена', 'Санкт-Петербург', 'Нью-Йорк', 'Москва']'''
 
+import sys
+new = sys.argv
+del sys.argv[0]
+cities = ["Прага", "Вена", "Санкт-Петербург"]
+cities = cities + sys.argv
+print(cities)
