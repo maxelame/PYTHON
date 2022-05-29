@@ -42,3 +42,7 @@ del sys.argv[0]
 cities = ["Прага", "Вена", "Санкт-Петербург"]
 cities = cities + sys.argv
 print(cities)
+
+
+import sys
+new = sys.argv
