@@ -81,3 +81,5 @@ file.close()
 file = open("products.txt", "w", encoding = "utf8")
 file.write(text)
 file.close()
+
+
