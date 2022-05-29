@@ -46,3 +46,4 @@ print(cities)
 
 import sys
 new = sys.argv
+del sys.argv[0]
