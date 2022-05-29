@@ -47,3 +47,5 @@ print(cities)
 import sys
 new = sys.argv
 del sys.argv[0]
+cities = ["Прага", "Вена", "Санкт-Петербург"]
+cities
