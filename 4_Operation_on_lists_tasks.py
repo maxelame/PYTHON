@@ -11,6 +11,9 @@ mention, repeat = sys.argv[1], int(sys.argv[2])
 j = [mention] * repeat
 print(j)
 
+
+import sys
+
 '''Расширяем города
 
 Аргументы командной строки, которые передаются в программу, хранятся в списке sys.argv.
