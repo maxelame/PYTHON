@@ -15,6 +15,8 @@ new_stavka("7.45")
 new_stavka("5.t5")
 new_stavka("0.35")
 new_stavka("8.11")
+
+
 # a =
 # while a < 1:
 #     print(pag.size())
