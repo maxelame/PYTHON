@@ -49,4 +49,10 @@ print(athletes)
 > ['BMW', 'Audi', 'Toyota', 'Mazda', 'Lada']'''
 
 
+import sys
 
+new_car = str(sys.argv[1])
+new_car = [new_car]
+cars = ['BMW', 'Audi', 'Toyota', 'Mazda']
+cars += new_car
+print(cars)
