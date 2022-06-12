@@ -66,6 +66,11 @@ print(cars)
 > python program.py 0
 > ['Ильин', 'Петров', 'Зинько', 'Сидоров', 'Васильев', 'Литвинов']"""
 
+import sys
+index = int(sys.argv[1])
+athletes = ['Иванов', 'Ильин', 'Петров', 'Зинько', 'Сидоров', 'Васильев', 'Литвинов']
+del athletes[index]
+print(athletes)
 
 
 
