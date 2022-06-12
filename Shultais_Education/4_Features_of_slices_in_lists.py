@@ -114,18 +114,3 @@ print(population[year_start-2003:year_end-2003+1])
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
