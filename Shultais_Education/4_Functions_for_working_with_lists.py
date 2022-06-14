@@ -8,7 +8,9 @@
 > 4
  '''
 
-
+import sys
+arg = sys.argv[1:]
+print(len(arg))
 
 
 
