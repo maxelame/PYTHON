@@ -83,13 +83,3 @@ import sys
 del sys.argv[0]
 spisok_int = list(map(int, sys.argv))
 print(max(spisok_int))
-
-
-
-
-
-
-
-
-
-
