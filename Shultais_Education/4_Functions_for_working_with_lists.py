@@ -40,6 +40,19 @@ print(float(sum(revenue) * tax / 100))
 > python program.py 451 145 719 871
 > 980 1423 1275 1557'''
 
+import sys
+new_revenue = sys.argv[1:]
+revenue = [178, 351, 0, 764, 514, 0,
+           411, 145, 0, 245, 441, 0]
+revenue[2] = int(new_revenue[0])
+revenue[5] =  int(new_revenue[1])
+revenue[8] =  int(new_revenue[2])
+revenue[-1] =  int(new_revenue[3])
+#new_revenue[0] = sum(revenue[0:4])
+#new_revenue[1] = sum(revenue[4:7])
+#new_revenue[3] = sum(revenue[7:10])
+#new_revenue[4] = sum(revenue[10:])
+print(sum(revenue[0:3]), sum(revenue[3:6]), sum(revenue[6:9]), sum(revenue[9:]) )
 
 
 
