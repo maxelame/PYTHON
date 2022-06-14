@@ -93,15 +93,3 @@ print(max(spisok_int))
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
