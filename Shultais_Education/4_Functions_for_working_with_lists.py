@@ -64,7 +64,12 @@ print(sum(revenue[0:3]), sum(revenue[3:6]), sum(revenue[6:9]), sum(revenue[9:]) 
 > 321.043
  '''
 
+import sys
+a = float(sys.argv[1])
+values = [184.414, 174.12, 581, 145.98, 159.1, 824.24]
 
+values += [a]
+print("{:.3f}" .format(sum(values)/7))
 
 
 
