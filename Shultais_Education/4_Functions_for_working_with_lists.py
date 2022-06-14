@@ -95,3 +95,6 @@ print("{:.3f}" .format(sum(values)/7))
 
 
 
+
+
+
