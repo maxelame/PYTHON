@@ -70,3 +70,5 @@ print(sum(revenue[0:3]), sum(revenue[3:6]), sum(revenue[6:9]), sum(revenue[9:]) 
 
 
 
+
+
