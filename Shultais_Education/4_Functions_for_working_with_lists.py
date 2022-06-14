@@ -79,7 +79,10 @@ print("{:.3f}" .format(sum(values)/7))
 > python program.py 2 42 3 56 4
 > 56'''
 
-
+import sys
+del sys.argv[0]
+spisok_int = list(map(int, sys.argv))
+print(max(spisok_int))
 
 
 
