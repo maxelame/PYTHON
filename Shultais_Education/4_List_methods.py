@@ -127,4 +127,10 @@ print(school_marks.count(mark))
 > python program.py 2
 > 11.8%'''
 
+import sys
+mark = int(sys.argv[1])
+school_marks = [3, 4, 4, 5, 3, 3, 5, 5, 5, 4, 3, 2, 4, 5, 2, 4, 5]
+count_mark = school_marks.count(mark)
+#total_mark = len(school_marks)
+print("{:.1f}%" .format(count_mark*100/len(school_marks)))
 
