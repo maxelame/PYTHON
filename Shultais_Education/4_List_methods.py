@@ -47,6 +47,12 @@ print(marks)
 > ['Россия', 'Украина', 'Казахстан', 'Беларусь']
  '''
 
+import sys
+index = int(sys.argv[1])
+country = sys.argv[2]
+countries = ["Россия", "Украина", "Белоруссия"]
+countries.insert(index, country)
+print(countries)
 
 
 
