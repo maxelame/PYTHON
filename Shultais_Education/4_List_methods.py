@@ -19,3 +19,5 @@ print(marks)
 Пример использования:
 > python program.py 1
 > ['BMW', 'Mercedes', 'Lada', 'Nissan', 'Audi']'''
+
+
