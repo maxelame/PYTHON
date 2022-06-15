@@ -39,3 +39,5 @@ marks = ["BMW", "Toyota", "Mercedes", "Lada", "Nissan", "Audi"]
 marks.remove(mark)
 print(marks)
 
+
+
