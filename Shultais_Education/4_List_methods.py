@@ -25,3 +25,5 @@ index = int(sys.argv[1])
 marks = ["BMW", "Toyota", "Mercedes", "Lada", "Nissan", "Audi"]
 del marks[index]
 print(marks)
+
+
