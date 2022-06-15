@@ -20,4 +20,8 @@ print(marks)
 > python program.py 1
 > ['BMW', 'Mercedes', 'Lada', 'Nissan', 'Audi']'''
 
-
+import sys
+index = int(sys.argv[1])
+marks = ["BMW", "Toyota", "Mercedes", "Lada", "Nissan", "Audi"]
+del marks[index]
+print(marks)
