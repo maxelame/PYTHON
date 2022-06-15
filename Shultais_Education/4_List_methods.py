@@ -64,6 +64,12 @@ print(countries)
 > [7, 9, 8, 1, 3, 6, 2]'''
 
 
+import sys
+index = int(sys.argv[1])
+values = [7, 9, 4, 8, 1, 5, 3, 6, 2]
+new_index = values.pop(index)
+values.pop(new_index)
+print(values)
 
 
 
