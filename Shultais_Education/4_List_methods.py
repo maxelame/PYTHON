@@ -95,6 +95,12 @@ print(biathletes.index(name)+1)
 > python program.py Ford Focus
 > True'''
 
+import sys
+mark = sys.argv[1]
+model = sys.argv[2]
+cars = ["Ford Focus", "Skoda Octavia", "Toyota Prius",
+        "Hyundai Solaris", "Volkswagen Polo", "Skoda Rapid"]
+print(str(mark+' '+model) in cars)
 
 
 
