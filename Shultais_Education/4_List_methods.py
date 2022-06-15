@@ -32,3 +32,10 @@ print(marks)
 Пример использования:
 > python program.py Toyota
 > ['BMW', 'Mercedes', 'Lada', 'Nissan', 'Audi']'''
+
+import sys
+mark = sys.argv[1]
+marks = ["BMW", "Toyota", "Mercedes", "Lada", "Nissan", "Audi"]
+marks.remove(mark)
+print(marks)
+
