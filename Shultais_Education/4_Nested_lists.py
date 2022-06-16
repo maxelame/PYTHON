@@ -77,3 +77,6 @@ print("{} {} {}" .format(fio[0][index_f], fio[1][index_i], fio[2][index_o]))
 
 
 
+
+
+
