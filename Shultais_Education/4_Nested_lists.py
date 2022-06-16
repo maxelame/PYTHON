@@ -37,6 +37,18 @@ print(budget[year-2019][month-1])
 > python program.py 2019 1 276
 > 3 828 000'''
 
+import sys
+year = int(sys.argv[1])
+month = int(sys.argv[2])
+x = int(sys.argv[3])
+budget = [
+    [176, 148, 245, 378, 451, 568, 135, 146, 761, 414, 135, 171],  # 2019
+    [211, 175, 301, 474, 569, 721, 158, 172, 972, 521, 158, 205],  # 2020
+    [257, 210, 374, 599, 722, 920, 188, 206, 1246, 660, 188, 249]  # 2021
+]
+budget[year-2019][month-1] = x
+year_budget = (sum(budget[year-2019])*1000)
+print(("{:,}" .format(year_budget)).replace(","," "))
 
 
 
