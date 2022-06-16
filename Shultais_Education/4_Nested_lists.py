@@ -84,6 +84,16 @@ print("{} {} {}" .format(fio[0][index_f], fio[1][index_i], fio[2][index_o]))
 > [['молоко', 'кефир'], ['котлеты', 'курица', 'говядина'], ['яблоки', 'груши']]
  '''
 
+import sys
+spisok = sys.argv[1:]
+products = [
+    ["молоко", "кефир"],  # молочка
+    ["котлеты", "курица", "говядина"]  # мясо
+]
+products.extend([spisok])
+print(products)
+
+
 
 
 
