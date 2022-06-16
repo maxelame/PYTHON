@@ -61,6 +61,17 @@ print(("{:,}" .format(year_budget)).replace(","," "))
 > Иванов Юрий Александрович
  '''
 
+import sys
+index_f = int(sys.argv[1])
+index_i = int(sys.argv[2])
+index_o = int(sys.argv[3])
+fio = [
+    ["Иванов", "Юдашкин", "Петров", "Королева", "Коваленко"],  # Фамилии
+    ["Юрий", "Андрей", "Никита", "Вероника", "Игнат", "Пётр", "Валерий"],  # Имена
+    ["Александрович", "Анатольевна", "Викторовна", "Иванович"]   # Отчества
+]
+print("{} {} {}" .format(fio[0][index_f], fio[1][index_i], fio[2][index_o]))
+#print(fio[0][index_f], fio[1][index_i], fio[2][index_o])
 
 
 
