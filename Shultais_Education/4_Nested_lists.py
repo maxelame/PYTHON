@@ -114,7 +114,3 @@ products = [
 products[index].extend(spisok)
 print(products)
 
-
-
-
-
