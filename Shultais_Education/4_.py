@@ -107,19 +107,3 @@ spisok = sys.argv[1:]
 spisok.sort(key = int, reverse = True)
 print(spisok)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
