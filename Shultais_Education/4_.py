@@ -31,3 +31,10 @@ print("Средний доход: {} руб.".format(avg))
 Пример использования:
 > python program.py яблоки ананас бананы
 > ['ананас', 'бананы', 'яблоки']'''
+
+import sys
+spisok = sys.argv[1:]
+sorted_spisok = sorted(spisok, key = str.upper)
+print(sorted_spisok)
+#spisok.sort(key = str.upper)
+#print(spisok)
