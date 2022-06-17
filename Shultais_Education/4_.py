@@ -100,4 +100,9 @@ print(sorted_cars)
 > python program.py 120 56 3 17 100 9
 > ['120', '100' ,'56', '17', '9', '3']'''
 
-
+import sys
+spisok = sys.argv[1:]
+#sorted_spisok = sorted(spisok, key = int, reverse = True)
+#print(sorted_spisok)
+spisok.sort(key = int, reverse = True)
+print(spisok)
