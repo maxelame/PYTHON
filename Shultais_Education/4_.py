@@ -82,6 +82,16 @@ print(sorted_spisok[0], sorted_spisok[-1])
 > python program.py Toyota Honda BMW Kia
 > ['Toyota', 'Kia', 'Honda', 'BMW']'''
 
+import sys
+
+# Получаем список автомобилей.
+cars = sys.argv[1:]
+
+# Сортируем в обратном порядке.
+#sorted_cars = sorted(cars, key=str.upper, reverse=True )
+sorted_cars = sorted(cars, reverse=True, key=str.upper )
+# Выводим результат.
+print(sorted_cars)
 
 
 
