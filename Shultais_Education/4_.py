@@ -23,3 +23,5 @@ avg = int(sum(year) / len(year))
 
 # Выводим результат.
 print("Средний доход: {} руб.".format(avg))
+
+
