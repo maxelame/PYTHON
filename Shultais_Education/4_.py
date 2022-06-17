@@ -106,3 +106,20 @@ spisok = sys.argv[1:]
 #print(sorted_spisok)
 spisok.sort(key = int, reverse = True)
 print(spisok)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
