@@ -64,6 +64,18 @@ print(products)
 Пример использования:
 > python program.py 120 56 3 17 100 9
 > 3 120'''
+import sys
+spisok = sys.argv[1:]
+#min_digit = min(map(int, spisok))
+#max_digit = max(map(int, spisok))
+#print(min_digit, max_digit)
+#spisok.sort(key = int)
+#print(spisok[0], spisok[-1])
+sorted_spisok = sorted(spisok, key = int)
+print(sorted_spisok[0], sorted_spisok[-1])
+
+
+
 
 
 
