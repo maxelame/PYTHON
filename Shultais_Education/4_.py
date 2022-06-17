@@ -47,3 +47,13 @@ print(sorted_spisok)
 > python program.py яблоки Бананы
 > ['апельсины', 'Бананы', 'Хлеб', 'яблоки']
  '''
+
+import sys
+new_products = sys.argv[1:]
+products = ["апельсины", "Хлеб"]
+products += new_products
+#products.extend(new_products)
+#sorted_products = sorted(products, key = str.upper)
+#print(sorted_products)
+products.sort(key = str.upper)
+print(products)
