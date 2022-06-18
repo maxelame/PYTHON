@@ -122,15 +122,15 @@ def click_down(window): # на вход подаем кортеж из двух 
     pag.moveTo(window[0]-463, window[1]+3, 0.2)
     time.sleep(1)
 
-click_up(window_1)
-click_down(window_1)
-new_stake(window_1, 1.23)
-click_up(window_1)
-click_down(window_1)
-new_stake(window_1, 2.46)
-click_up(window_1)
-click_down(window_1)
-new_stake(window_1, 3.69)
+# click_up(window_2)
+# click_down(window_2)
+# new_stake(window_2, 1.23)
+# click_up(window_2)
+# click_down(window_2)
+# new_stake(window_2, 2.46)
+# click_up(window_2)
+# click_down(window_2)
+# new_stake(window_2, 3.69)
 
 # def click_up():
 #     print(pag.size())
@@ -148,14 +148,14 @@ new_stake(window_1, 3.69)
 #     pag.click()  # щелчок мыши
 #
 #
-# while True:
-#     try:
-#         time.sleep(0.5)
-#         with open('click_direction.txt') as fd:
-#             direction = fd.read()
-#             if direction == "up":
-#                 click_up()
-#             elif direction == "down":
-#                 click_down()
-#     except Exception:
-#         print(traceback.format_exc())
+while True:
+    try:
+        time.sleep(0.5)
+        with open('click_direction.txt') as fd:
+            direction = fd.read()
+            if direction == "up":
+                click_up(window_2)
+            elif direction == "down":
+                click_down(window_2)
+    except Exception:
+        print(traceback.format_exc())
