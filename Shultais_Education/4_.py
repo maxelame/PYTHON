@@ -133,3 +133,7 @@ spisok = sys.argv[1:]
 spisok.reverse()
 print(spisok[:3])
 #print(reversed_spisok[0:3])
+
+
+
+
