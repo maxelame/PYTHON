@@ -169,4 +169,10 @@ print("{} {:.2f}" .format(copy_votes, srednee))
 > Иванов И. И.
  '''
 
+import sys
+fio = sys.argv[1]
+#full_name.lower().title()
+f, i, o = fio.split()
+print(f.capitalize(), "{}. {}." .format(i[0].upper(), o[0].upper()))
+
 
