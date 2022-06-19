@@ -123,3 +123,13 @@ reverse_colors = colors[::-1]
 > python program.py Шмидт Иванов Герасимов Базуев Васильев
 > ['Васильев', 'Базуев', 'Герасимов']'''
 
+import sys
+spisok = sys.argv[1:]
+#reversed_spisok = list(reversed(spisok))
+#print(reversed_spisok[0:3])
+#reversed_spisok = spisok[::-1]
+#reversed_spisok = spisok.copy()
+#reversed_spisok.reverse()
+spisok.reverse()
+print(spisok[:3])
+#print(reversed_spisok[0:3])
