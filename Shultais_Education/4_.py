@@ -144,3 +144,18 @@ print(spisok[:3])
 > [10, 9, 8, 7, 9, 10, 9, 9, 8, 9] 8.88'''
 
 
+import sys
+
+votes = sys.argv[1:]
+
+#copy_votes = votes.copy()
+# Преобразуем каждый элемент в целое число.
+# Элемент функционального программирования, будем изучать в отдельном курсе.
+votes = list(map(int, votes))
+copy_votes = votes[:]
+votes.sort()
+
+srednee = sum(votes[1:-1])/len(votes[1:-1])
+print("{} {:.2f}" .format(copy_votes, srednee))
+
+
