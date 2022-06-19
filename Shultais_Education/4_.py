@@ -107,3 +107,8 @@ spisok = sys.argv[1:]
 spisok.sort(key = int, reverse = True)
 print(spisok)
 
+'''Цвета радуги, 2
+
+Создайте список reverse_colors, в котором цвета радуги идут в обратном порядке.
+Список colors изменять или удалять нельзя.
+ '''
