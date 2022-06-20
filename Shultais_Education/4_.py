@@ -213,7 +213,12 @@ print(sorted_words[-1])
 > python program.py "апельсины, ватрушки"
 > ['ананас', 'апельсины', 'ватрушки', 'макароны', 'помидоры', 'яблоки']
 '''
-
+import sys
+spisok = sys.argv[1].split(", ")
+products = ["ананас", "макароны", "помидоры", "яблоки"]
+products.extend(spisok)
+products.sort()
+print(products)
 
 
 
