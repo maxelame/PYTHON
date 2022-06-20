@@ -253,6 +253,9 @@ print(log[2], log[3])
 > 2
  '''
 
+import sys
+log = sys.argv[1].split()
+print(log[4][5:])
 
 
 
