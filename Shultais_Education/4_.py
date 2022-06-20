@@ -239,6 +239,11 @@ print(products)
 > GET /cars/toyota
  '''
 
+import sys
+log = sys.argv[1].split()
+print(log[2], log[3])
+
+
 
 
 
