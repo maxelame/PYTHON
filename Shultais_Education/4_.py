@@ -184,3 +184,44 @@ print(f.capitalize(), "{}. {}." .format(i[0].upper(), o[0].upper()))
 > python program.py "ИваноВ иван   Иванович"
 > Иванов И. И.
  '''
+import sys
+fio = sys.argv[1]
+#full_name.lower().title()
+f, i, o = fio.split()
+print(f.capitalize(), "{}. {}." .format(i[0].upper(), o[0].upper()))
+
+
+'''Самое длинное слово
+
+Напишите программу, которая первым аргументом командной строки принимает строку со списком слов, разделенных пробелом, а после выводит самое длинное из этих слов.
+Пример использования:
+> python program.py "кошки собаки пингвины зебры"
+> пингвины
+ '''
+import sys
+#принимаем и сразу разбиваем на отдельные слова в списке
+words = sys.argv[1].split()
+#words.sort(key = len())
+sorted_words = sorted(words, key = len)
+print(sorted_words[-1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
