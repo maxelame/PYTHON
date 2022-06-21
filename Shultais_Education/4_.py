@@ -298,7 +298,12 @@ print(population[year-2003])
 > python program.py 2006
 > 142753551'''
 
-
+import sys
+year = int(sys.argv[1])
+population_file = open("population.txt")
+population = population_file.read().split("\n")
+start_year = int(population[0])
+print(population[year-start_year+1])
 
 
 
