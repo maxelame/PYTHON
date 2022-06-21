@@ -282,7 +282,7 @@ population_file = open ("population.txt", "r", encoding = "utf8")
 population = population_file.read().split("\n")
 print(population[year-2003])
 
-
+''''''
 
 
 
