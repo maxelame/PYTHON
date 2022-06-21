@@ -275,7 +275,12 @@ print(log[4][5:])
 > python program.py 2006
 > 142753551'''
 
+import sys
+year = int(sys.argv[1])
 
+population_file = open ("population.txt", "r", encoding = "utf8")
+population = population_file.read().split("\n")
+print(population[year-2003])
 
 
 
