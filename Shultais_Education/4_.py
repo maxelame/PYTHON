@@ -158,7 +158,6 @@ votes.sort()
 srednee = sum(votes[1:-1])/len(votes[1:-1])
 print("{} {:.2f}" .format(copy_votes, srednee))
 
-
 '''Фамилия И. О.
 
 Напишите программу, которая принимает фамилию, имя и отчество записанные в одну строку, а затем выводит данные в формате: Фамилия И. О.
@@ -204,7 +203,6 @@ words = sys.argv[1].split()
 #words.sort(key = len())
 sorted_words = sorted(words, key = len)
 print(sorted_words[-1])
-
 
 '''Новые товары
 
@@ -252,7 +250,6 @@ print(log[2], log[3])
 > python program.py "22.15.18.24 [10/Feb/2016:00:20:13] GET /cars/toyota HTTP/2 200"
 > 2
  '''
-
 import sys
 log = sys.argv[1].split()
 print(log[4][5:])
@@ -304,11 +301,6 @@ population_file = open("population.txt")
 population = population_file.read().split("\n")
 start_year = int(population[0])
 print(population[year-start_year+1])
-
-
-
-
-
 
 
 
