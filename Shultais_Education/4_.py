@@ -347,7 +347,37 @@ new_spisok = ", " .join(spisok)
 print(new_spisok)
 
 
+'''ЧПУ
 
+ЧПУ — на языке web-разработчиков означает «Человекопонятный URL», такой вид адреса интернет-страницы, когда вместо идентификаторов используются понятные слова, записанные особым образом. Как правило ЧПУ адреса записываются в нижнем регистре с заменой пробелов черточками.
+
+Например для статьи с названием «Intro to the Python Walrus Operator», ЧПУ может быть таким: intro-to-the-python-walrus-operator.
+
+Напишите программу, которая первым аргументом командной строки получает название статьи, а после выводит для неё ЧПУ. При выводе нужно учитывать следующие правила:
+
+    Пробелы должны заменяться на черточки (-).
+    Если подряд стоит несколько пробелов, то черточка должна быть одна.
+    Все слова должны быть приведены к нижнему регистру
+    Точки, запятые, восклицательные и вопросительные знаки, двоеточия, а также точки с запятыми должны быть удалены.
+
+Пример использования
+> python program.py "Intro to the Python Walrus Operator"
+> intro-to-the-python-walrus-operator'''
+
+
+import sys
+# get the string
+name = sys.argv[1]
+# bring in to lower case
+name = name.lower()
+# removing unnecessary characters
+name = name.replace(".,!?:;?","").replace("?","").replace(":","")
+# converting the string to the list, and removing spaces
+name = name.split()
+# putting back
+name = "-" .join(name)
+# output the result
+print(name)
 
 
 
