@@ -434,3 +434,12 @@ print("{} и {}." .format(stroka, str(spisok[-1])))
 Пример использования (программа перезаписывает файл и ничего не выводит):
 > python program.py
  '''
+
+products_file = open("products.txt", "r", encoding = "utf8")
+products_list = products_file.read().split("\n")
+sorted_products_list = sorted(products_list, key = str.upper, reverse = False)
+products_file.close()
+products_str = "\n" .join(sorted_products_list)
+products_file = open("products.txt", "w", encoding = "utf8")
+products_file.write(products_str)
+products_file.close()
