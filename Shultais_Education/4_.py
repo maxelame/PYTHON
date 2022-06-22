@@ -334,6 +334,18 @@ print(a)
 > python program.py "кошки, собаки, пингвины, зебры"
 > зебры, пингвины, собаки, кошки'''
 
+import sys
+#poluchaem строку
+spisok = sys.argv[1]
+#преобразуем в список убирая разделитель запятая и пробел
+spisok = spisok.split(", ")
+#инвертируем список
+spisok = list(reversed(spisok))
+#соединяем  список в строку с разделителем ", "
+new_spisok = ", " .join(spisok)
+#выводим строку
+print(new_spisok)
+
 
 
 
