@@ -315,6 +315,20 @@ print(population[year-start_year+1])
 > python program.py "Файл с Пробелом.txt"
 > Файл_с_Пробелом.txt'''
 
+import sys
+#принял строку
+new_name = sys.argv[1]
+#преобразую строку в список и удаляю лишние пробклы функцией split()
+a = new_name.split()
+#соединяем элементы списка снова в строку с разделителем _
+a = "_" .join(a)
+print(a)
+
+
+#name_file = sys.argv[1]
+#name_file.split()
+#new_name_file = "_" .join(name_file)
+#print(new_name_file)
 
 
 
