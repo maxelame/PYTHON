@@ -443,3 +443,5 @@ products_str = "\n" .join(sorted_products_list)
 products_file = open("products.txt", "w", encoding = "utf8")
 products_file.write(products_str)
 products_file.close()
+
+
