@@ -146,3 +146,26 @@ print("{}%" .format(rent))
  '''
 
 
+import sys
+month_1, month_2 = int(sys.argv[1])-1, int(sys.argv[2])-1
+fin = [
+    {"income": 987, "expenses": 345},
+    {"income": 1987, "expenses": 1247},
+    {"income": 3011, "expenses": 2098},
+    {"income": 3400, "expenses": 2798},
+    {"income": 1987, "expenses": 1783},
+    {"income": 2684, "expenses": 2004},
+    {"income": 2008, "expenses": 1555},
+    {"income": 2498, "expenses": 2210},
+    {"income": 1714, "expenses": 1789},
+    {"income": 6971, "expenses": 6971},
+    {"income": 345, "expenses": 147},
+    {"income": 2487, "expenses": 2101}
+]
+profit_1 = fin[month_1]["income"]-fin[month_1]["expenses"]
+profit_2 = fin[month_2]["income"]-fin[month_2]["expenses"]
+profit = profit_2 - profit_1
+print(profit)
+
+
+
