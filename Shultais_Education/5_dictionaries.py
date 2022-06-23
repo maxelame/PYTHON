@@ -176,6 +176,16 @@ print(profit)
 > python program.py 68646
 > 9'''
 
-
+import sys
+id_film = int(sys.argv[1])
+# Данные.
+imdb = {
+    111161: [{"rating": 8}, {"rating": 9}, {"rating": 10}, {"rating": 9}, {"rating": 10}],
+    68646: [{"rating": 8}, {"rating": 10}, {"rating": 9}, {"rating": 9}, {"rating": 9}],
+    468569: [{"rating": 10}, {"rating": 10}, {"rating": 8}, {"rating": 8}],
+    71562: [{"rating": 9}, {"rating": 9}, {"rating": 10}],
+    167260: [{"rating": 8}, {"rating": 7}, {"rating": 9}, {"rating": 9}, {"rating": 8}, {"rating": 9}]
+}
+print(imdb[id_film][-1]["rating"])
 
 
