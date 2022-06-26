@@ -248,6 +248,19 @@ print(product)
 > python program.py age 18
 > {'first_name': 'Егор', 'last_name': 'Михеев', 'sex': 'm', 'age': '18'}
  '''
+import sys
+key, value = sys.argv[1], sys.argv[2]
+user = {
+    "first_name": "Егор",
+    "last_name": "Михеев",
+    "sex": "m"
+}
+user_new = {
+    key: value,
+   }
+
+user.update(user_new)
+print(user)
 
 
 
