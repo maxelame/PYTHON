@@ -404,3 +404,5 @@ print("{}-{}-{}" .format(new_name, sizes.get(new_size, "all"), sex.get(new_sex, 
 
 
 
+
+
