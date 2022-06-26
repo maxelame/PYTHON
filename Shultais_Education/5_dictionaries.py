@@ -348,6 +348,20 @@ print(revenue.get(year1, 0)-revenue.get(year2, 0))
 > 88000
  '''
 
+import sys
+years = map(int, sys.argv[1:])
+# провожу сортировку для разделения раннего и позднего годов
+sorted_year = sorted(years, key=int)
+revenue = {
+    2017: 123_000,
+    2018: 127_000,
+    2019: 134_000,
+    2020: 201_000,
+    2021: 289_000
+}
+print(revenue.get(sorted_year[-1],0)-revenue.get(sorted_year[0],0))
+
+
 
 
 
