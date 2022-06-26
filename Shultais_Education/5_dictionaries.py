@@ -377,6 +377,25 @@ print(revenue.get(sorted_year[-1],0)-revenue.get(sorted_year[0],0))
 > python program.py "Adidas Original Superstar" "" ""
 > adidas-original-superstar-all-unisex'''
 
+import sys
+new_name = sys.argv[1].lower().replace(" ","-")
+new_size = sys.argv[2]
+new_sex = sys.argv[3]
+sizes = {
+    "44": "xs",
+    "46": "s",
+    "48": "m",
+    "50": "l",
+    "52": "xl"
+}
+
+sex = {
+    "m": "m",
+    "f": "w",
+    "w": "w"
+}
+#print(new_name + "-" +sizes(new_size, "all"))
+print("{}-{}-{}" .format(new_name, sizes.get(new_size, "all"), sex.get(new_sex, "unisex")))
 
 
 
