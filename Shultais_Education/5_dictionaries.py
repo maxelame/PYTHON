@@ -523,6 +523,18 @@ print(born_x - death_x)
 > python program.py 2018
 > 67%
  '''
+import sys
+year = int(sys.argv[1])
+
+plans = {
+    2017: [False, False, False, False, False, False, False, False, False, False, False, False],
+    2018: [True, True, False, False, True, False, True, True, False, True, True, True],
+    2019: [True, True, True, True, True, False, True, True, False, True, True, True],
+    2020: [True, True, True, True, True, False, True, True, False, False, False, False],
+    2021: [True, True, True, True, True, True, True, True, True, True, True, True]
+}
+result = round(plans[year].count(True)*100/12)
+print("{}%" .format(result))
 
 
 
