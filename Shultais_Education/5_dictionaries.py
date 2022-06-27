@@ -526,3 +526,5 @@ print(born_x - death_x)
 
 
 
+
+
