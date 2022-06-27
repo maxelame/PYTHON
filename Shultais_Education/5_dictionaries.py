@@ -404,7 +404,18 @@ print("{}-{}-{}" .format(new_name, sizes.get(new_size, "all"), sex.get(new_sex, 
 > python program.py last_name
 > Иванов
  '''
+import sys
 
+key = sys.argv[1]
+
+user = {
+    'first_name': 'Олег',
+    'last_name': 'Иванов',
+    #'last_name': 'Петров',
+    'age': 28
+}
+
+print(user[key])
 
 
 
