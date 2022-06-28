@@ -122,6 +122,14 @@ else:
 > python program.py 199
 > 200'''
 
+import sys
+number = int(sys.argv[1])
+list_number = list(sys.argv[1])
+#print(list_number)
+if list_number[-1]==list_number[-2]=='9':
+    print(number+1)
+else:
+    print(number)
 
 
 
