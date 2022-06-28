@@ -84,7 +84,12 @@ else:
 > python program.py 17
 > нечетное'''
 
-
+import sys
+number = int(sys.argv[1])
+if number % 2:
+    print("нечетное")
+else:
+    print("четное")
 
 
 
