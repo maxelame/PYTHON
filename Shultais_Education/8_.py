@@ -168,5 +168,16 @@ if value in values:
 > python program.py Огурцы
 > Масло, Молоко, Овсянка, Огурцы, Хлеб, Яйца
 '''
-
+import sys
+# получаем строку
+product = sys.argv[1]
+# есть список
+products = ["Молоко", "Масло", "Хлеб", "Овсянка", "Яйца"]
+# проверяем есть ли new_product в products
+if product not in products:
+    products.append(product)
+# сортируем списки
+products.sort()
+# выводим
+print(", ".join(products))
 
