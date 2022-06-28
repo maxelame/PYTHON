@@ -8,7 +8,14 @@
 > Доступ закрыт
  '''
 
+import sys
+new_password  = sys.argv[1]
+password = "idY*49amd6z"
 
+if new_password == password:
+    print("Доступ открыт")
+else:
+    print("Доступ закрыт")
 
 
 
