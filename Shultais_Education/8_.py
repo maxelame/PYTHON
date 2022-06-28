@@ -98,7 +98,18 @@ else:
 > python program.py 17 33
 > 33'''
 
-
+import sys
+numbers = list(map(int, sys.argv[1:]))
+#numbers.sort(key = int)
+#print(numbers[-1])
+if numbers[0] > numbers[-1]:
+    print(numbers[0])
+else:
+    print(numbers[-1])
+#if numbers[0] < numbers[-1]:
+#    print(numbers[-1])
+#if numbers[0] == numbers[-1]:
+#    print(numbers[0])
 
 
 
