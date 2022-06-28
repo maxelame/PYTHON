@@ -55,6 +55,26 @@ print(hash_password)
 
 Примечание. В настоящий момент алгоритм md5 является небезопасным. Не используйте его в реальных программах.'''
 
+import sys
+password = sys.argv[1]
+import hashlib
+# Задаем "сырой" (незашифрованный) пароль.
+raw_password = password
+# Кодируем "сырой" пароль.
+# Нужно для того, чтобы воспользоваться md5.
+raw_password = raw_password.encode()
+# Получаем шифр-объект.
+new_hash_password = hashlib.md5(raw_password)
+
+# Получаем зашифрованный пароль.
+new_hash_password = new_hash_password.hexdigest()
+
+hash_password = 'c8b667f4e6953d59b6ae9b9659772333'
+
+if new_hash_password == hash_password:
+    print("Доступ открыт")
+else:
+    print("Доступ закрыт")
 
 
 
