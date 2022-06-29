@@ -181,3 +181,5 @@ products.sort()
 # выводим
 print(", ".join(products))
 
+
+
