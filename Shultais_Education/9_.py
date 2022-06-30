@@ -39,7 +39,13 @@ while i <= 9:
 Числа должны идти в обратном порядке. Используйте цикл while.
  '''
 
-
+numbers = []
+i = 30
+while i>=18:
+    if i%2==0:
+        numbers.append(i)
+    i -=1
+print(numbers)
 
 
 
