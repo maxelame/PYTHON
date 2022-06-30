@@ -65,7 +65,19 @@ print(numbers)
 Посчитайте и выведете на экран сумму элементов списка numbers. Используйте цикл while.
  '''
 
-
+numbers = [1, 7, 8, 34, 56, 14, 9]
+"""
+i = 0
+summa = 0
+while i <= (len(numbers)-1):
+    summa += numbers[i]
+    i += 1
+print(summa)
+"""
+summa = 0
+while len(numbers):
+    summa += numbers.pop()
+print(summa)
 
 
 
