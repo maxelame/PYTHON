@@ -32,3 +32,21 @@ while i <= 9:
     i += 1
 #str_from_spisok = " ".join(spisok)
 #print(str_from_spisok)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
