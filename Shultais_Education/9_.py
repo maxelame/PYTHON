@@ -196,3 +196,10 @@ else:
 
 Если продавать можно, то программа должна вывести «Разрешено» иначе «Запрещено».
  '''
+import sys
+age = int(sys.argv[1])
+hour = int(sys.argv[2])
+if age > 17 and hour >=7 and hour <22:
+    print("Разрешено")
+else:
+    print("Запрещено")
