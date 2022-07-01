@@ -159,5 +159,32 @@ else:
 Если длина от 6 до 8 символов, то выведите «Хорошо, но можно и лучше».
 Если длина более 8 символов — «Пароль подходит».'''
 
+import sys
+
+password = sys.argv[1]
+
+# Используем функцию len()
+if len(password) < 6:
+    print("Пароль слишком короткий")
+# Используем метод __len__()
+elif 6 <= password.__len__() <= 8:
+    print("Хорошо, но можно и лучше")
+else:
+    print("Пароль подходит")
+
+# Функция len() и метод __len__() равнозначны
+
+
+"""
+import sys
+password = sys.argv[1]
+len_password = len(password)
+if len_password > 8 :
+    print("Пароль подходит")
+elif len_password > 5 :
+    print("Хорошо, но можно и лучше")
+else:
+    print("Пароль слишком короткий")
+"""
 
 
