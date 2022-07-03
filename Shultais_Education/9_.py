@@ -203,3 +203,6 @@ if age > 17 and hour >=7 and hour <22:
     print("Разрешено")
 else:
     print("Запрещено")
+
+
+
