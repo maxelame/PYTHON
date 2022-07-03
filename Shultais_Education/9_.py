@@ -227,6 +227,15 @@ print(numbers)
 Пример использования:
 > python program.py 4
 4 8 12 16 20 24 28 32 36'''
+import sys
+number = int(sys.argv[1])    # получаем число из коммандной строки
+#spisok = []
+i = 1
+while i <= 9:
+    print(number * i, end=" ")
+    i += 1
+#str_from_spisok = " ".join(spisok)
+#print(str_from_spisok)
 
 
 
