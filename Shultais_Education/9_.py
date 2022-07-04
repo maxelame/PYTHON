@@ -302,7 +302,18 @@ print(summa)
 > python program.py 3 4
 11 12 13 21 22 23 31 32 33 41 42 43'''
 
+import sys
+n, f = sys.argv[1], sys.argv[2]
+floor = 1
 
+li = []
+while floor <= int(f):
+    room = 1
+    while room <= int(n):
+        li.append(str(floor)+str(room))
+        room +=1
+    floor +=1
+print(" ".join(li))
 
 
 
