@@ -282,3 +282,11 @@ print(summa)
 120
  '''
 
+import sys
+number = int(sys.argv[1])
+i = 1
+summa = 1
+while i <= number:
+    summa *= i
+    i += 1
+print(summa)
