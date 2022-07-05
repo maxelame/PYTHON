@@ -335,6 +335,19 @@ for n in range(1, int(sys.argv[1]) + 1):
 > python program.py 111 2 33 41
 33'''
 
-
+import sys
+numbers = sys.argv[1:]
+counter1 = 0
+max_num = 0
+num = 0
+while counter1 <= len(numbers)-1:
+    current_num = numbers[counter1]
+    list1 = list(current_num)
+    list1 = list(map(int,list1))
+    if max_num < sum(list1):
+        max_num = sum(list1)
+        num = "".join(list(map(str,list1)))
+    counter1 += 1
+print(num)
 
 
