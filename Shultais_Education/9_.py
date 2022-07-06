@@ -482,3 +482,12 @@ print(" ".join(spisok))
 > python program.py 127 624 235 235 77 288
 > -497 0 -389 -389 -547 -336
  '''
+
+import sys
+indicators = sys.argv[1:]
+best_indicator = max(map(int, indicators))
+s = []
+for i in map(int, indicators):
+    s.append(str(i-best_indicator))
+print(" ".join(s))
+
