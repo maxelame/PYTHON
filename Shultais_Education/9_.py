@@ -450,3 +450,27 @@ for a in numbers:
 Пример использования:
 > python program.py 1 2 3 4 5
 > 1 3 6 10 15'''
+
+"""
+import sys
+daily_revenue = sys.argv[1:]
+
+summ = 0
+#spisok = []
+for item in daily_revenue:
+    i = int(item)
+    summ += i
+    print(summ, end=" ")
+#spisok.append(str(summ))
+#print(summ, end=" ")
+"""
+import sys
+daily_revenue = sys.argv[1:]
+summ = 0
+spisok = []
+for item in daily_revenue:
+    i = int(item)
+    summ += i
+    spisok.append(str(summ))
+print(" ".join(spisok))
+
