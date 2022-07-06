@@ -503,3 +503,26 @@ print(" ".join(s))
 > python program.py null null 2017 null 2019 null
 > null null 2017 2017 2019 2019
  '''
+import sys
+
+values = sys.argv[1:]
+s = [values[0]]
+x = values[0]
+for value in values[1:]:
+    if value == "null":
+        value = x
+    x = value
+    s.append(value)
+print(" ".join(s))
+
+"""import sys
+data = sys.argv[1:]
+result = [data[0]] # Создаём список с результатом и сразу помещаем в него первый элемент искомого списка (т.к. он в любом случае останется неизменным, будь то значение или "null") 
+pred = data[0] # Создаём переменную с предыдущим значением
+for i in data[1:]:
+    if i == "null":
+        i = pred
+    pred = i
+    result.append(i)
+print(" ".join(result))
+"""
