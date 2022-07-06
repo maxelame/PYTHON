@@ -428,3 +428,16 @@ print(", ".join(s))
 '''Сумма элементов списка, 2
 
 Посчитайте и выведете на экран сумму элементов списка numbers. Используйте цикл for.'''
+
+numbers = [41, 5, 83, 4, 16, 14, 59]
+summ = 0
+for item in numbers:
+    summ += item
+print(summ)
+"""
+i = 0
+for a in numbers:
+    i += a
+    print(a, i)
+"""
+
