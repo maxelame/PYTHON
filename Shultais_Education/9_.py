@@ -537,3 +537,15 @@ print(" ".join(result))
 > python program.py 100 -23 301 401 -194
 > Доходы: 802 руб.
 > Расходы: 217 руб.'''
+
+import sys
+a = map(int, sys.argv[1:])
+doh = []
+rash = []
+for i in a:
+    if i >= 0:
+        doh.append(i)
+    else:
+        rash.append(i)
+print("Доходы: {} руб.".format(sum(doh)))
+print("Расходы: {} руб.".format(sum(rash)*(-1)))
