@@ -558,3 +558,38 @@ print("Расходы: {} руб.".format(sum(rash)*(-1)))
 Пример использования (считаем сумму 2 -3 -5 7 11):
 > python program.py "2 -3 -5 7 11 0 13 17 19"
 > 12'''
+
+"""
+import sys
+a = sys.argv[1]
+b = a.split(' ')
+i = s = 0
+while i < len(b):
+    if int(b[i]) == 0:
+       break
+    s += int(b[i])
+    i += 1
+
+print(s)
+"""
+
+import sys
+
+numbers = sys.argv[1]
+# преобразуем строку в список с помощью split
+numbers = numbers.split(" ")
+
+i = 0
+summa = 0
+while i < len(numbers):
+    if int(numbers[i]) == 0:
+        break
+    summa += int(numbers[i])
+    i += 1
+
+print(summa)
+
+
+
+
+
