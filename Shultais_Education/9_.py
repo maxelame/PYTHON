@@ -598,7 +598,21 @@ print(summa)
 > python program.py 156
 > Виктор Осипов'''
 
-
+import sys
+id_num = int(sys.argv[1])    # получаем id номер
+users = [
+    {"id": 17, "first_name": "Дмитрий", "last_name": "Иванов"},
+    {"id": 156, "first_name": "Виктор", "last_name": "Осипов"},
+    {"id": 23, "first_name": "Алёна", "last_name": "Гордеева"},
+    {"id": 84, "first_name": "Семён", "last_name": "Васильев"},
+    {"id": 21, "first_name": "София", "last_name": "Зинько"},
+    {"id": 55, "first_name": "Антон", "last_name": "Ватутин"},
+    {"id": 287, "first_name": "Виталий", "last_name": "Новиков"}
+]
+i = 0
+while users[i]["id"] != id_num:
+    i +=1
+print("{first_name} {last_name}" .format(**users[i]))
 
 
 
