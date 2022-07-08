@@ -693,3 +693,14 @@ print("{id}".format(**user))
 Пример использования:
 > python program.py 'Никому не говорите код: 3987! Вход в Тинкькофф.'
 > 3987'''
+
+import sys
+sms = sys.argv[1]
+pin =""
+for i in sms:
+    if i in "0123456789":
+        pin +=i
+print(pin)
+
+
+
