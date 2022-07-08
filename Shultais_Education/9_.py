@@ -712,7 +712,16 @@ print(pin)
 > python program.py aBcDeFGhiKL
 > acehiBDFGKL'''
 
-
+import sys
+word = sys.argv[1]
+syllables_H = ""
+syllables_L = ""
+for char in word:
+    if char in "qwertyuiopasdfghjklzxcvbnm":
+        syllables_L += char
+    elif char in "QWERTYUIOPASDFGHJKLZXCVBNM":
+        syllables_H += char
+print(syllables_L+syllables_H)
 
 
 
