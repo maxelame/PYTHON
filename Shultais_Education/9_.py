@@ -763,6 +763,24 @@ print(" ".join(s_negative + s_positive))
 green green green red red green'''
 
 
+import sys
+trend = list(map(int, sys.argv[1:]))
+start = int(sys.argv[1])
+previous_color = "green"
+s = ["green"]
+for item in trend[1:]:
+    if item - start > 0:
+        s.append("green")
+        previous_color = "green"
+        start = item
+    elif item - start < 0:
+        s.append("red")
+        previous_color = "red"
+        start = item
+    else:
+        s.append(previous_color)
+        start = item
+print(" ".join(s))
 
 
 
