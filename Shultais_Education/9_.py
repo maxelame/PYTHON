@@ -735,7 +735,17 @@ print(syllables_L+syllables_H)
 > python program.py 5 1 -3 6 -8 9
 > -3 -8 5 1 6 9'''
 
+import sys
+numbers = map(int, sys.argv[1:])
+s_positive = []
+s_negative = []
+for number in numbers:
+    if number < 0:
+        s_negative.append(str(number))
+    else:
+        s_positive.append(str(number))
 
+print(" ".join(s_negative + s_positive))
 
 
 
