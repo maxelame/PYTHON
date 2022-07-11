@@ -797,5 +797,24 @@ numbers = list(range(10, 1, -2))
 > python program.py 5
 120'''
 
+"""import sys
+n = list(range(1, int(sys.argv[1])+1))
+
+factorial = 1
+for i in n:
+    factorial *=i
+print(factorial)"""
+
+import sys
+
+n = int(sys.argv[1])
+
+# Задаем начальное значение factorial.
+factorial = 1
+# Запускаем цикл.
+for i in range(2, n + 1):
+    factorial *= i
+
+print(factorial)
 
 
