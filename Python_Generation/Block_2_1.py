@@ -44,5 +44,6 @@ while True:
             print("UP 2")
         elif signal == -2 and (last_25[-2] == 1 and last_25[-1] == 0) and percent_odd > 53:
             print("DOWN 2")
-    print(signal)
+    print(f"signal = {signal}, percent_over = {percent_over}% , percent_odd = {percent_odd}%")
+
 
