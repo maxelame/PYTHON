@@ -49,3 +49,4 @@ while True:
     print(f"signal = {signal}, percent_over = {percent_over}%, percent_odd = {percent_odd}%")
 
 
+
