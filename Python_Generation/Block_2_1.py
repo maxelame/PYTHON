@@ -36,13 +36,13 @@ while True:
             #print("DOWN 2")
 
 
-        if signal == 1 and (last_25[-3] == 1 and last_25[-2] == 1 and last_25[-1] == 0):
+        if signal == 1 and (last_25[-3] == 1 and last_25[-2] == 1 and last_25[-1] == 0) and percent_over > 53:
             print("UP 1")
-        elif signal == -1 and (last_25[-3] == 0 and last_25[-2] == 0 and last_25[-1] == 1):
+        elif signal == -1 and (last_25[-3] == 0 and last_25[-2] == 0 and last_25[-1] == 1) and percent_odd > 53:
             print("DOWN 1")
-        elif signal == 2 and (last_25[-2] == 0 and last_25[-1] == 1):
+        elif signal == 2 and (last_25[-2] == 0 and last_25[-1] == 1) and percent_over > 53:
             print("UP 2")
-        elif signal == -2 and (last_25[-2] == 1 and last_25[-1] == 0):
+        elif signal == -2 and (last_25[-2] == 1 and last_25[-1] == 0) and percent_odd > 53:
             print("DOWN 2")
     print(signal)
 
