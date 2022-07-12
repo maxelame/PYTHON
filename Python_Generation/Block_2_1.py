@@ -7,6 +7,8 @@ import random
 from collections import Counter
 ticks_list = []
 signal = 0
+percent_over = None
+percent_odd = None
 while True:
     time.sleep(1)
     r_n = random.randint(0, 1)  # r_n - random number
@@ -44,6 +46,6 @@ while True:
             print("UP 2")
         elif signal == -2 and (last_25[-2] == 1 and last_25[-1] == 0) and percent_odd > 53:
             print("DOWN 2")
-    print(f"signal = {signal}, percent_over = {percent_over}% , percent_odd = {percent_odd}%")
+    print(f"signal = {signal}, percent_over = {percent_over}%, percent_odd = {percent_odd}%")
 
 
