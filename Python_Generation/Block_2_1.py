@@ -34,8 +34,7 @@ while True:
         elif last_25[-4] == 0 and last_25[-3] == 0 and last_25[-2] == 1 and last_25[-1] == 1:
             signal = -2
             #print("DOWN 2")
-        else:
-            signal = 0
+
 
         if signal == 1 and (last_25[-3] == 1 and last_25[-2] == 1 and last_25[-1] == 0):
             print("UP 1")
