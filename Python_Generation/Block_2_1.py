@@ -6,6 +6,7 @@ import time
 import random
 from collections import Counter
 ticks_list = []
+signal = 0
 while True:
     time.sleep(1)
     r_n = random.randint(0, 1)  # r_n - random number
@@ -19,7 +20,7 @@ while True:
         #print(f"{c}-----{c[0]}----{c[1]}----{percent_over}%----{percent_odd}%")
 
     ### Paterns ### last_25[] last_25[] last_25[] last_25[]
-    signal = 0
+
     if len(last_25) >= 25:
         if last_25[-4] == 1 and last_25[-3] == 1 and last_25[-2] == 0 and last_25[-1] == 1:
             signal = 1
