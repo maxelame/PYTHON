@@ -856,3 +856,5 @@ for transaction in open("transactions.txt", "r"):
     total += int(amount.strip())
 
 print(total)
+
+
