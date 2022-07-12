@@ -16,11 +16,33 @@ while True:
     if c[0] != 0 and c[1] != 0:
         percent_over = int(c[0]*100/(c[1] + c[0]))
         percent_odd = 100 - percent_over
-        print(f"{c}-----{c[0]}----{c[1]}----{percent_over}%----{percent_odd}%")
+        #print(f"{c}-----{c[0]}----{c[1]}----{percent_over}%----{percent_odd}%")
 
+    ### Paterns ### last_25[] last_25[] last_25[] last_25[]
+    signal = 0
+    if len(last_25) >= 25:
+        if last_25[-4] == 1 and last_25[-3] == 1 and last_25[-2] == 0 and last_25[-1] == 1:
+            signal = 1
+            #print("UP 1")
+        elif last_25[-4] == 0 and last_25[-3] == 0 and last_25[-2] == 1 and last_25[-1] == 0:
+            signal = -1
+            #print("DOWN 1")
+        elif last_25[-4] == 1 and last_25[-3] == 1 and last_25[-2] == 0 and last_25[-1] == 0:
+            signal = 2
+            #print("UP 2")
+        elif last_25[-4] == 0 and last_25[-3] == 0 and last_25[-2] == 1 and last_25[-1] == 1:
+            signal = -2
+            #print("DOWN 2")
+        # else:
+        #     signal = 0
 
-
-
-
-
+        if signal == 1 and (last_25[-3] == 1 and last_25[-2] == 1 and last_25[-1] == 0):
+            print("UP 1")
+        elif signal == -1 and (last_25[-3] == 0 and last_25[-2] == 0 and last_25[-1] == 1):
+            print("DOWN 1")
+        elif signal == 2 and (last_25[-2] == 0 and last_25[-1] == 1):
+            print("UP 2")
+        elif signal == -2 and (last_25[-2] == 1 and last_25[-1] == 0):
+            print("DOWN 2")
+    print(signal)
 
