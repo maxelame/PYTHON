@@ -907,3 +907,12 @@ Sample Input 1:
 145
 139'''
 
+
+a1, a2, a3 = int(input()), int(input()), int(input())
+if a1 == a2 or a2 == a3 or a1 == a3:
+    if a1 == a2 == a3:
+        print("Равносторонний")
+    else:
+        print("Равнобедренный")
+else:
+    print("Разносторонний")
