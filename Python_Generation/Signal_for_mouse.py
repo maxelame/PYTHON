@@ -150,7 +150,7 @@ def click_down(window): # на вход подаем кортеж из двух 
 #
 while True:
     try:
-        time.sleep(0.5)
+        time.sleep(0.1)
         with open('click_direction.txt') as fd:
             direction = fd.read()
             if direction == "up":

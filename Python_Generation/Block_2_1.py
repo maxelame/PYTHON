@@ -11,6 +11,8 @@ percent_over = None
 percent_odd = None
 while True:
     time.sleep(1)
+    with open("click_direction.txt", "w") as file:
+        file.write("wait signal")
     r_n = random.randint(0, 1)  # r_n - random number
     ticks_list.append(r_n)
     last_25 = ticks_list[-25:]
@@ -39,12 +41,20 @@ while True:
 
 
         if signal == 1 and (last_25[-3] == 1 and last_25[-2] == 1 and last_25[-1] == 0) and percent_over > 53:
+            with open("click_direction.txt", "w") as file:
+                file.write("up")
             print("UP 1")
         elif signal == -1 and (last_25[-3] == 0 and last_25[-2] == 0 and last_25[-1] == 1) and percent_odd > 53:
+            with open("click_direction.txt", "w") as file:
+                file.write("down")
             print("DOWN 1")
         elif signal == 2 and (last_25[-2] == 0 and last_25[-1] == 1) and percent_over > 53:
+            with open("click_direction.txt", "w") as file:
+                file.write("up")
             print("UP 2")
         elif signal == -2 and (last_25[-2] == 1 and last_25[-1] == 0) and percent_odd > 53:
+            with open("click_direction.txt", "w") as file:
+                file.write("down")
             print("DOWN 2")
     print(f"signal = {signal}, percent_over = {percent_over}%, percent_odd = {percent_odd}%")
 
