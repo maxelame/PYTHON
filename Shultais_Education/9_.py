@@ -1043,4 +1043,31 @@ print(summ_total)
  """
 
 
+sales_file = open("sales.txt")
+
+# Словарь для хранения сгруппированных данных по всем менеджерам.
+managers = {}
+
+# Переменные для хранения текущего лучшего менеджера и его результата.
+best_manager = None
+best_result = 0
+
+for sale in sales_file:
+    # Получаем данные.
+    manager, amount = sale.strip().split("\t")
+
+    # Заполняем словарь.
+    if manager not in managers:
+        managers[manager] = 0
+    managers[manager] += int(amount)
+
+    # Проверяем лучшего менеджера.
+    if best_result < managers[manager]:
+        best_manager = manager
+        best_result = managers[manager]
+
+print(f"{best_manager}, {best_result}")
+
+
+
 
