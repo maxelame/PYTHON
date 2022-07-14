@@ -1006,6 +1006,22 @@ print(total)
 > 400
  """
 
+import sys
+count = sys.argv[1]
+summ_total=0
+# Проходимся по всем строка файла
+for transaction in open("bank.txt", "r"):
+    # Разбиваем строку ну две переменные
+    count1, count2,  summ = transaction.split(";")
+    if count in count1:
+        summ_total -= int(summ)
+    if count in count2:
+        summ_total += int(summ)
+
+    # Подсчитываем результат
+print(summ_total)
+
+
 
 
 
