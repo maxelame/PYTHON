@@ -9,7 +9,14 @@ ticks_list = []
 signal = 0
 percent_over = None
 percent_odd = None
+CHECK_SIGN = None
 while True:
+    # здесь еще есть память о результате предыдущего сигнала сигнале
+    # если сигнал был "up 1" : CHECK_SIGN = UP_1
+    # если сигнал был "up 2" : CHECK_SIGN = UP_2
+    # если сигнал был "down 1" : CHECK_SIGN = DOWN_1
+    # если сигнал был "down 2" : CHECK_SIGN = DOWN_2
+    # если сигнал был "wait signal" : CHECK_SIGN = None
     time.sleep(1)
     with open("click_direction.txt", "w") as file:
         file.write("wait signal")
@@ -43,7 +50,7 @@ while True:
         if signal == 1 and (last_25[-3] == 1 and last_25[-2] == 1 and last_25[-1] == 0) and percent_over > 53:
             with open("click_direction.txt", "w") as file:
                 file.write("up")
-            print("UP 1")
+            print("UP 1") # то следующим этапом нужно проверить был ли плюс или его не было и записать результат в отдельный файл
         elif signal == -1 and (last_25[-3] == 0 and last_25[-2] == 0 and last_25[-1] == 1) and percent_odd > 53:
             with open("click_direction.txt", "w") as file:
                 file.write("down")
