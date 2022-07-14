@@ -976,3 +976,15 @@ print(total)
 Пример использования:
 > python program.py
 > 8100"""
+
+total = 0
+# Проходимся по всем строка файла
+for transaction in open("transactions.txt", "r"):
+    # Разбиваем строку ну две переменные
+    subject, sign,  amount = transaction.split(";")
+    if sign == "income":
+        total += int(amount.strip())
+    else:
+        total += (-1)*int(amount.strip())
+    # Подсчитываем результат
+print(total)
