@@ -935,3 +935,25 @@ else:
 Пример использования:
 > python program.py
 > 8100"""
+
+temp = []
+for line in open("transactions.txt", "r"):
+    line1 = line.split(";")
+    temp.append(line1[-1])
+summ = 0
+for element in temp:
+    summ += int(element)
+print(summ)
+##################################
+
+
+total = 0
+# Проходимся по всем строка файла
+for transaction in open("transactions.txt", "r"):
+    # Разбиваем строку ну две переменные
+    subject, amount = transaction.split(";")
+    # Подсчитываем результат
+    total += int(amount.strip())
+
+print(total)
+
