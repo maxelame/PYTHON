@@ -1093,4 +1093,18 @@ print(f"{best_manager}, {best_result}")
 Интерстеллар"""
 
 
+import sys
 
+name = sys.argv[1].lower()
+
+founded = []
+# Открываем файл в кодировке cp1251
+for line in open("films.txt", "r", encoding="cp1251"):
+    # Получаем элементы строки
+    _, ru_name, en_name = line.strip().split(",")
+
+    # Ищем совпадения
+    if name in ru_name.lower() or name in en_name.lower():
+        founded.append(ru_name)
+
+print("\n".join(founded))
