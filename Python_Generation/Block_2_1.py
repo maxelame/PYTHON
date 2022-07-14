@@ -45,21 +45,60 @@ while True:
         elif last_25[-4] == 0 and last_25[-3] == 0 and last_25[-2] == 1 and last_25[-1] == 1:
             signal = -2
             #print("DOWN 2")
+######################### CHECK MODULE ###################################################
+        if CHECK_SIGN == "UP 1":
+            if last_25[-4] == 1 and last_25[-3] == 1 and last_25[-2] == 0 last_25[-1] == 1:
+                with open("result.txt", "w") as file:
+                    file.write("+")
+            else:
+                with open("result.txt", "w") as file:
+                    file.write("-")
+
+        if CHECK_SIGN == "UP 2":
+            if last_25[-3] == 0 and last_25[-2] == 1 and last_25[-1] == 1:
+                with open("result.txt", "w") as file:
+                    file.write("+")
+            else:
+                with open("result.txt", "w") as file:
+                    file.write("-")
+
+        if CHECK_SIGN == "DOWN 1":
+            if last_25[-4] == 0 and last_25[-3] == 0 and last_25[-2] == 1 last_25[-1] == 0:
+                with open("result.txt", "w") as file:
+                    file.write("+")
+            else:
+                with open("result.txt", "w") as file:
+                    file.write("-")
+
+        if CHECK_SIGN == "DOWN 2":
+            if last_25[-3] == 1 and last_25[-2] == 0 and last_25[-1] == 0:
+                with open("result.txt", "w") as file:
+                    file.write("+")
+            else:
+                with open("result.txt", "w") as file:
+                    file.write("-")
+
+######################### END CHECK MODULE #################################################
+
 
 
         if signal == 1 and (last_25[-3] == 1 and last_25[-2] == 1 and last_25[-1] == 0) and percent_over > 53:
+            CHECK_SIGN = "UP 1"
             with open("click_direction.txt", "w") as file:
                 file.write("up")
             print("UP 1") # то следующим этапом нужно проверить был ли плюс или его не было и записать результат в отдельный файл
         elif signal == -1 and (last_25[-3] == 0 and last_25[-2] == 0 and last_25[-1] == 1) and percent_odd > 53:
+            CHECK_SIGN = "DOWN 1"
             with open("click_direction.txt", "w") as file:
                 file.write("down")
             print("DOWN 1")
         elif signal == 2 and (last_25[-2] == 0 and last_25[-1] == 1) and percent_over > 53:
+            CHECK_SIGN = "UP 2"
             with open("click_direction.txt", "w") as file:
                 file.write("up")
             print("UP 2")
         elif signal == -2 and (last_25[-2] == 1 and last_25[-1] == 0) and percent_odd > 53:
+            CHECK_SIGN = "DOWN 2"
             with open("click_direction.txt", "w") as file:
                 file.write("down")
             print("DOWN 2")
