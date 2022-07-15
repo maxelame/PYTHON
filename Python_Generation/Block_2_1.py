@@ -10,6 +10,8 @@ signal = 0
 percent_over = None
 percent_odd = None
 CHECK_SIGN = None
+with open("result.txt", "w") as file:
+    file.write("")
 while True:
     # здесь еще есть память о результате предыдущего сигнала сигнале
     # если сигнал был "up 1" : CHECK_SIGN = UP_1
@@ -48,34 +50,34 @@ while True:
 ######################### CHECK MODULE ###################################################
         if CHECK_SIGN == "UP 1":
             if last_25[-4] == 1 and last_25[-3] == 1 and last_25[-2] == 0 and last_25[-1] == 1:
-                with open("result.txt", "w") as file:
+                with open("result.txt", "a+") as file:
                     file.write("+")
             else:
-                with open("result.txt", "w") as file:
+                with open("result.txt", "a+") as file:
                     file.write("-")
 
         if CHECK_SIGN == "UP 2":
             if last_25[-3] == 0 and last_25[-2] == 1 and last_25[-1] == 1:
-                with open("result.txt", "w") as file:
+                with open("result.txt", "a+") as file:
                     file.write("+")
             else:
-                with open("result.txt", "w") as file:
+                with open("result.txt", "a+") as file:
                     file.write("-")
 
         if CHECK_SIGN == "DOWN 1":
             if last_25[-4] == 0 and last_25[-3] == 0 and last_25[-2] == 1 and last_25[-1] == 0:
-                with open("result.txt", "w") as file:
+                with open("result.txt", "a+") as file:
                     file.write("+")
             else:
-                with open("result.txt", "w") as file:
+                with open("result.txt", "a+") as file:
                     file.write("-")
 
         if CHECK_SIGN == "DOWN 2":
             if last_25[-3] == 1 and last_25[-2] == 0 and last_25[-1] == 0:
-                with open("result.txt", "w") as file:
+                with open("result.txt", "a+") as file:
                     file.write("+")
             else:
-                with open("result.txt", "w") as file:
+                with open("result.txt", "a+") as file:
                     file.write("-")
 
 ######################### END CHECK MODULE #################################################
