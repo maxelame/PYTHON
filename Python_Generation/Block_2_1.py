@@ -47,7 +47,7 @@ while True:
             #print("DOWN 2")
 ######################### CHECK MODULE ###################################################
         if CHECK_SIGN == "UP 1":
-            if last_25[-4] == 1 and last_25[-3] == 1 and last_25[-2] == 0 last_25[-1] == 1:
+            if last_25[-4] == 1 and last_25[-3] == 1 and last_25[-2] == 0 and last_25[-1] == 1:
                 with open("result.txt", "w") as file:
                     file.write("+")
             else:
@@ -63,7 +63,7 @@ while True:
                     file.write("-")
 
         if CHECK_SIGN == "DOWN 1":
-            if last_25[-4] == 0 and last_25[-3] == 0 and last_25[-2] == 1 last_25[-1] == 0:
+            if last_25[-4] == 0 and last_25[-3] == 0 and last_25[-2] == 1 and last_25[-1] == 0:
                 with open("result.txt", "w") as file:
                     file.write("+")
             else:
