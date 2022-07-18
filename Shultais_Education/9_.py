@@ -1209,3 +1209,8 @@ elif (colour_1 == "желтый" and colour_2 == "синий") or (colour_2 == "
 elif (colour_1 == "желтый" and colour_2 == "красный") or (colour_2 == "желтый" and colour_1 == "красный"):
     print("оранжевый")
 
+
+
+
+
+
