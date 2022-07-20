@@ -39,6 +39,22 @@ def click_down():
     pag.moveTo(1313, 163, 5)
     pag.click()  # щелчок мыши
 
+def condition_1():
+    if len(last_25) >= 25:
+        if percent_over >= 68:
+            flag = "+ON"
+        if flag == "+ON" and last_25[-2] == 0 and last_25[-1] == 0:
+            print("+")
+            flag = "OFF"
+        elif flag == "+ON" and last_25[-2] == 0 and last_25[-1] == 1:
+            print("-")
+        if percent_odd >= 68:
+            flag = "-ON"
+        if flag == "-ON" and last_25[-2] == 1 and last_25[-1] == 1:
+            print("+")
+            flag = "OFF"
+        elif flag == "-ON" and last_25[-2] == 1 and last_25[-1] == 0:
+            print("-")
 
 ticks_list = []
 signal = 0
@@ -47,6 +63,7 @@ percent_odd = None
 CHECK_SIGN = None
 flag = None
 line_1 = 0
+predict_len_ticks_list = 0
 while True:
     try:
         time.sleep(0.01)
@@ -60,21 +77,23 @@ while True:
                         direction = 1
                         #sound_up()
                         ticks_list.append(direction)
+                        #condition_1() # сюда поставить функцию проверки условия
                     else:
                         direction = 0
                         #sound_down()
                         ticks_list.append(direction)
-        with open("result.txt", "w") as file:
-            file.write("")
-            # здесь еще есть память о результате предыдущего сигнала сигнале
-            # если сигнал был "up 1" : CHECK_SIGN = UP_1
-            # если сигнал был "up 2" : CHECK_SIGN = UP_2
-            # если сигнал был "down 1" : CHECK_SIGN = DOWN_1
-            # если сигнал был "down 2" : CHECK_SIGN = DOWN_2
-            # если сигнал был "wait signal" : CHECK_SIGN = None
-        with open("click_direction.txt", "w") as file:
-            file.write("wait signal")
-            ####
+                        #condition_1()  # сюда поставить функцию проверки условия
+        # with open("result.txt", "w") as file:
+        #     file.write("")
+        #     # здесь еще есть память о результате предыдущего сигнала сигнале
+        #     # если сигнал был "up 1" : CHECK_SIGN = UP_1
+        #     # если сигнал был "up 2" : CHECK_SIGN = UP_2
+        #     # если сигнал был "down 1" : CHECK_SIGN = DOWN_1
+        #     # если сигнал был "down 2" : CHECK_SIGN = DOWN_2
+        #     # если сигнал был "wait signal" : CHECK_SIGN = None
+        # with open("click_direction.txt", "w") as file:
+        #     file.write("wait signal")
+        #     ####
 
             #r_n = random.randint(0, 1)  # r_n - random number
 
@@ -84,26 +103,35 @@ while True:
         #print(last_25)
         c = Counter(last_25)
         if c[0] != 0 and c[1] != 0:
-            percent_over = int(c[0] * 100 / (c[1] + c[0]))
-            percent_odd = 100 - percent_over
-                # print(f"{c}-----{c[0]}----{c[1]}----{percent_over}%----{percent_odd}%")
+            percent_odd = int(c[0] * 100 / (c[1] + c[0]))
+            percent_over = 100 - percent_odd
+            #print(f"{c}-----{c[0]}----{c[1]}----{percent_over}%----{percent_odd}%")
 
             ### Paterns ### last_25[] last_25[] last_25[] last_25[]
-        if len(last_25) >= 25:
+
+
+        if len(last_25) >= 25 and len(ticks_list) != predict_len_ticks_list:
             if percent_over >= 68:
-                flag = "ON"
-            if flag == "ON" and last_25[-2] == 0 and last_25[-1] == 0:
-                print("+")
-                flag = "OFF"
-            elif flag == "ON" and last_25[-2] == 0 and last_25[-1] == 1:
-                print("-")
+                flag = "+ON"
             if percent_odd >= 68:
-                flag = "ON"
-            if flag == "ON" and last_25[-2] == 1 and last_25[-1] == 1:
-                print("+")
+                flag = "-ON"
+
+            if flag == "+ON" and last_25[-3] == 1 and last_25[-2] == 0 and last_25[-1] == 0:
+                print("+", flag)
                 flag = "OFF"
-            elif flag == "ON" and last_25[-2] == 1 and last_25[-1] == 0:
-                print("-")
+            elif flag == "+ON" and last_25[-3] == 1 and last_25[-2] == 0 and last_25[-1] == 1:
+                print("-", flag)
+
+            if flag == "-ON" and last_25[-3] == 0 and last_25[-2] == 1 and last_25[-1] == 1:
+                print("+", flag)
+                flag = "OFF"
+            elif flag == "-ON" and last_25[-3] == 0 and last_25[-2] == 1 and last_25[-1] == 0:
+                print("-", flag)
+            predict_len_ticks_list = len(ticks_list)
+
+
+
+
         # if len(last_25) >= 25:
         #     if last_25[-4] == 1 and last_25[-3] == 1 and last_25[-2] == 0 and last_25[-1] == 1:
         #         signal = 1
