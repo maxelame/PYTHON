@@ -1399,3 +1399,6 @@ else:
     else:
         print(21 + 4 * (dog_age - 2))
 
+
+        ff
+
