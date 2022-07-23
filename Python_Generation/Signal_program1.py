@@ -34,8 +34,6 @@ def click_down():
 
 line_1 = 0
 while True:
-    # ani = animation.FuncAnimation(fig, animate, interval=100)
-    # plt.show()
     try:
         time.sleep(0.01)
         with open('Ticks_1\R_50.dat') as fd:
