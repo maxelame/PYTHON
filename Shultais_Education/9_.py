@@ -1414,3 +1414,11 @@ else:
 n = float(input())
 print(n % 1)
 
+
+"""Минимумы и максимумы"""
+a1, a2, a3, a4, a5 = int(input()),int(input()),int(input()),int(input()),int(input())
+print('Наименьшее число =', min(a1, a2, a3, a4, a5))
+print('Наибольшее число =', max(a1, a2, a3, a4, a5))
+
+
+
