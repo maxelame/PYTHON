@@ -1421,4 +1421,7 @@ print('Наименьшее число =', min(a1, a2, a3, a4, a5))
 print('Наибольшее число =', max(a1, a2, a3, a4, a5))
 
 
-
+a, b, c = int(input()), int(input()), int(input())
+print(max(a, b, c))
+print(a + b + c - min(a, b, c) - max(a, b, c))
+print(min(a, b, c))
