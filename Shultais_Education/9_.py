@@ -1442,3 +1442,7 @@ print(f'Hello {input()} {input()}! You just delved into Python')
 
 name = input()
 print(f'Футбольная команда {name} имеет длину {len(name)} символов')
+
+city_1, city_2, city_3 = input(),input(),input()
+print(min(city_1, city_2, city_3, key = len))
+print(max(city_1, city_2, city_3, key = len))
