@@ -1436,3 +1436,5 @@ print(abs(a - c) + abs(b - d))
 
 
 print('"Python is a great language!", said Fred. "I don\'t ever remember having this much fun before."')
+
+print(f'Hello {input()} {input()}! You just delved into Python')
