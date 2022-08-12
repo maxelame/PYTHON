@@ -1461,3 +1461,8 @@ if "синий" in input():
     print("YES")
 else:
     print("NO")
+
+
+
+text = input()
+print('YES' if 'суббота' in text or 'воскресенье' in text else 'NO')
