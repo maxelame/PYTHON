@@ -1466,3 +1466,11 @@ else:
 
 text = input()
 print('YES' if 'суббота' in text or 'воскресенье' in text else 'NO')
+
+
+
+string = input()
+if "@" in string and "." in string:
+    print("YES")
+else:
+    print("NO")
