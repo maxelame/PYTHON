@@ -1455,3 +1455,9 @@ if sorted_list[1] - sorted_list[0] ==  sorted_list[2] - sorted_list[1]:
     print("YES")
 else:
     print("NO")
+
+
+if "синий" in input():
+    print("YES")
+else:
+    print("NO")
