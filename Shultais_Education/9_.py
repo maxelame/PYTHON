@@ -1446,3 +1446,12 @@ print(f'Футбольная команда {name} имеет длину {len(na
 city_1, city_2, city_3 = input(),input(),input()
 print(min(city_1, city_2, city_3, key = len))
 print(max(city_1, city_2, city_3, key = len))
+
+
+str_1, str_2, str_3 = input(), input(), input()
+list_1 = [len(str_1), len(str_2), len(str_3)]
+sorted_list = sorted(list_1)
+if sorted_list[1] - sorted_list[0] ==  sorted_list[2] - sorted_list[1]:
+    print("YES")
+else:
+    print("NO")
