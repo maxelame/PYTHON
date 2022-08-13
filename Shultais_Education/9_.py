@@ -1495,3 +1495,9 @@ else:
 from math import sqrt
 x = [float(input()) for x in '0123']
 print(sqrt(pow(x[0] - x[2], 2)+pow(x[1] - x[3], 2)))
+
+
+from math import *
+R = float(input())
+print(pi*pow(R, 2))
+print(2*pi*R)
