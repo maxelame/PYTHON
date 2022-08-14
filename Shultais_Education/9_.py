@@ -1529,3 +1529,8 @@ from math import *
 x = float(input())
 r = radians(x)
 print(sin(r) + cos(r) + tan(r) ** 2)
+
+
+from math import floor, ceil
+x = float(input())
+print(floor(x) + ceil(x))
