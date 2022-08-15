@@ -1548,3 +1548,10 @@ else:
     x2 = (-b+sqrt(D))/(2*a)
     print(min(x1, x2))
     print(max(x1, x2))
+
+
+
+from math import *
+n = int(input())
+a = float(input())
+print((n*a ** 2)/(4 * tan(pi/n)))
