@@ -1573,3 +1573,8 @@ for i in range(number):
 print("E")
 [print("TTTTT") for _ in range(9)]
 print("G")
+
+
+
+n = int(input())
+[print("*"*19) for _ in range(n)]
