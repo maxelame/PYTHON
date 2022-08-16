@@ -1559,3 +1559,9 @@ print((n*a ** 2)/(4 * tan(pi/n)))
 
 for i in range(10):
     print("Python is awesome!")
+
+
+text = input()
+number = int(input())
+for i in range(number):
+    print(text)
