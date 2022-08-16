@@ -1565,3 +1565,11 @@ text = input()
 number = int(input())
 for i in range(number):
     print(text)
+
+
+
+[print("AAA") for _ in range(6)]
+[print("BBBB") for _ in range(5)]
+print("E")
+[print("TTTTT") for _ in range(9)]
+print("G")
