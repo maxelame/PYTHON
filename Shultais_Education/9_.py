@@ -1578,3 +1578,9 @@ print("G")
 
 n = int(input())
 [print("*"*19) for _ in range(n)]
+
+
+
+text = input()
+for i in range(10):
+    print(i, text)
