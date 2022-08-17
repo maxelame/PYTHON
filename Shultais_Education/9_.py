@@ -1584,3 +1584,9 @@ n = int(input())
 text = input()
 for i in range(10):
     print(i, text)
+
+
+
+text = input()
+for i in range(10):
+    print(i, text)
