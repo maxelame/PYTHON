@@ -1590,3 +1590,8 @@ for i in range(10):
 text = input()
 for i in range(10):
     print(i, text)
+
+
+number = int(input())
+for i in range(number + 1):
+    print(f"Квадрат числа {i} равен {i ** 2}")
