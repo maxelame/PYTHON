@@ -1606,3 +1606,10 @@ for i in range(number):
 m, p , n = int(input()), int(input()), int(input())
 for i in range(n):
     print(i +1, m * (1 + p/100) ** i)
+
+
+
+m, n = int(input()), int(input())
+if m <= n:
+    for i in range(m, n + 1):
+        print(i)
