@@ -1616,6 +1616,6 @@ if m <= n:
 
 
 m, n = int(input()), int(input())
-if m <= n:
-    for i in range(m, n + 1):
-        print(i)
+for i in range(m, n + 1):
+    print(i)
+
