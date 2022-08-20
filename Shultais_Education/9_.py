@@ -1619,3 +1619,12 @@ m, n = int(input()), int(input())
 for i in range(m, n + 1):
     print(i)
 
+m, n = int(input()), int(input())
+if m < n:
+    k = 1
+    n += 1
+else:
+    k = -1
+    n -= 1
+for i in range(m, n , k):
+    print(i)
