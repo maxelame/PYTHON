@@ -1628,3 +1628,13 @@ else:
     n -= 1
 for i in range(m, n , k):
     print(i)
+
+
+
+m, n = int(input()), int(input())
+if m % 2 == 1:
+    for i in range(m, n - 1, -2):
+        print(i)
+else:
+    for i in range(m - 1, n - 1, -2):
+        print(i)
