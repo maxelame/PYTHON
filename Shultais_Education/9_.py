@@ -1650,3 +1650,10 @@ for i in range(m, n + 1):
 n = int(input())
 for i in range(1, 11):
     print(f"{n} x {i} = {n * i}")
+
+
+num1 = 4
+num2 = 6
+num1 += num2
+num1 *= num1
+print(num1) # 100
