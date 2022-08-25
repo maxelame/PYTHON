@@ -1709,3 +1709,12 @@ factorial = 1
 for i in range(1, n+1):
     factorial *= i
 print(factorial)
+
+
+
+mult = 1
+for _ in range(10):
+    i = int(input())
+    if i != 0:
+        mult *= i
+print(mult)
