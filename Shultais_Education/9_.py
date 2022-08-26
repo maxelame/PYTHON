@@ -1722,3 +1722,12 @@ print(mult)
 
 n = int(input())
 print(sum(x for x in range(1, n + 1) if not n % x))
+
+
+
+
+n = int(input())
+summ = 0
+for i in range(1, n + 1):
+    summ += ((-1) ** (i + 1)) * i
+print(summ)
