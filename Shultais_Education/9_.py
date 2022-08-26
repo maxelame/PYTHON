@@ -1731,3 +1731,17 @@ summ = 0
 for i in range(1, n + 1):
     summ += ((-1) ** (i + 1)) * i
 print(summ)
+
+
+n = int(input())
+max_1 = float('-inf')
+max_2 = float('-inf')
+for _ in range(n):
+    x = int(input())
+    if x >= max_1:
+        max_2 = max_1
+        max_1 = x
+    if x < max_1 and x >= max_2:
+        max_2 = x
+print(max_1)
+print(max_2)
