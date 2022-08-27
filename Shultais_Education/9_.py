@@ -1761,3 +1761,11 @@ factorial = 1
 for i in range(1, n+1):
     factorial *= i
 print(factorial)
+
+
+flag = "YES"
+for _ in range(10):
+    n = int(input())
+    if n % 2 == 1:
+        flag = "NO"
+print(flag)
