@@ -1789,3 +1789,9 @@ text = input()
 while text not in 'КОНЕЦконец':
     print(text)
     text= input()
+
+
+text = input()
+while text != 'КОНЕЦ' and  text != 'конец':
+    print(text)
+    text= input()
