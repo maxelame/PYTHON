@@ -1796,4 +1796,7 @@ while text != 'КОНЕЦ' and  text != 'конец':
     print(text)
     text= input()
 
-
+number = int(input())
+while number % 7 == 0:
+    print(number)
+    number = int(input())
