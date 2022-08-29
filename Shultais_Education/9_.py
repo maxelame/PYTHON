@@ -1783,3 +1783,9 @@ text = input()
 while text != 'КОНЕЦ':
     print(text)
     text = input()
+
+
+text = input()
+while text not in 'КОНЕЦконец':
+    print(text)
+    text= input()
