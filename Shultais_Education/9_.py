@@ -1813,3 +1813,10 @@ while num >= 0:
     summ += num
     num = int(input())
 print(summ)
+
+
+
+c = 0
+while (n:=int(input())) > -1:
+    c += n
+print(c)
