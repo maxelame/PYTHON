@@ -1805,3 +1805,11 @@ while number % 7 == 0:
 s=0
 while (x := int(input())) >= 0: s+=x
 print(s)
+
+
+summ = 0
+num = int(input())
+while num >= 0:
+    summ += num
+    num = int(input())
+print(summ)
