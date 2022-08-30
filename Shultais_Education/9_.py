@@ -1800,3 +1800,8 @@ number = int(input())
 while number % 7 == 0:
     print(number)
     number = int(input())
+
+
+s=0
+while (x := int(input())) >= 0: s+=x
+print(s)
