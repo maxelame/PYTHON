@@ -1829,3 +1829,13 @@ while True:
         case 1 | 2 | 3 | 4:continue
         case _: break
 print(a)
+
+
+
+mark = int(input())
+summ = 0
+while 0 <= mark <= 5:
+    if mark == 5:
+        summ += 1
+    mark = int(input())
+print(summ)
