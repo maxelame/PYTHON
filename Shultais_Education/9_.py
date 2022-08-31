@@ -1821,4 +1821,11 @@ while (n:=int(input())) > -1:
     c += n
 print(c)
 
-
+a = 0
+while True:
+    n = int(input())
+    match n:
+        case 5: a += 1
+        case 1 | 2 | 3 | 4:continue
+        case _: break
+print(a)
