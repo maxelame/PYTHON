@@ -1839,3 +1839,7 @@ while 0 <= mark <= 5:
         summ += 1
     mark = int(input())
 print(summ)
+
+
+
+
