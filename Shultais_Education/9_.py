@@ -1840,6 +1840,20 @@ while 0 <= mark <= 5:
     mark = int(input())
 print(summ)
 
-
+cost = int(input())
+count = 0
+while cost > 24:
+    cost = cost - 25
+    count += 1
+while cost > 9:
+    cost = cost - 10
+    count += 1
+while cost > 4:
+    cost = cost - 5
+    count += 1
+while cost > 0:
+    cost = cost - 1
+    count += 1
+print(count)
 
 
