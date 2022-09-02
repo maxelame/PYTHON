@@ -1875,3 +1875,7 @@ while num != 0:
         total += 1
     num = num // 10
 print(total)
+
+
+for i in reversed(input()):
+    print(i)
