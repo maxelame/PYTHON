@@ -1892,3 +1892,15 @@ while n:
 string = input()
 reversed_string = string[::-1]
 print(reversed_string)
+
+
+
+n, maxi, mini = int(input()), 0, 9
+while n != 0:
+    if n % 10 > maxi:
+        maxi = n % 10
+    if n % 10 < mini:
+        mini = n % 10
+    n = n // 10
+print('Максимальная цифра равна', maxi)
+print('Минимальная цифра равна', mini)
