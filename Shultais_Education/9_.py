@@ -1904,3 +1904,24 @@ while n != 0:
     n = n // 10
 print('Максимальная цифра равна', maxi)
 print('Минимальная цифра равна', mini)
+
+
+n, maxi, mini = int(input()), 0, 9
+while n != 0:
+    if n % 10 > maxi:
+        maxi = n % 10
+    if n % 10 < mini:
+        mini = n % 10
+    n = n // 10
+print('Максимальная цифра равна', maxi)
+print('Минимальная цифра равна', mini)
+
+
+a = int(input())
+num = str()
+while a != 0:
+    n = a % 10
+    a = a // 10
+    num += str(n)
+print('Максимальная цифра равна', max(num))
+print('Минимальная цифра равна', min(num))
