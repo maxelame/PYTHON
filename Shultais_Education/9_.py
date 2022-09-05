@@ -1979,3 +1979,12 @@ while n > 0:
     counter += 1
     n //= 10
 print((num // 10 ** (counter - 2)) % 10)
+
+
+num = int(input())
+x = num
+n = 0
+while x != 0:
+    x //= 10
+    n += 1
+print((num // (10 ** (n-2)))%10)
