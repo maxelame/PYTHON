@@ -1988,3 +1988,11 @@ while x != 0:
     x //= 10
     n += 1
 print((num // (10 ** (n-2)))%10)
+
+
+s = list(input())
+t = len(set(s))
+if t == 1:
+    print('YES')
+else:
+    print('NO')
