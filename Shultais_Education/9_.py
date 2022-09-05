@@ -1963,3 +1963,19 @@ while n > 9:
     x = n
     n = n // 10
 print(x % 10)
+
+
+p=input()
+x=int(p)
+c=len(p)
+s=(x//10**(c-2))%10
+print(s)
+
+
+n = int(input())
+num = n
+counter = 0
+while n > 0:
+    counter += 1
+    n //= 10
+print((num // 10 ** (counter - 2)) % 10)
