@@ -1906,15 +1906,7 @@ print('Максимальная цифра равна', maxi)
 print('Минимальная цифра равна', mini)
 
 
-n, maxi, mini = int(input()), 0, 9
-while n != 0:
-    if n % 10 > maxi:
-        maxi = n % 10
-    if n % 10 < mini:
-        mini = n % 10
-    n = n // 10
-print('Максимальная цифра равна', maxi)
-print('Минимальная цифра равна', mini)
+
 
 
 a = int(input())
@@ -1925,3 +1917,22 @@ while a != 0:
     num += str(n)
 print('Максимальная цифра равна', max(num))
 print('Минимальная цифра равна', min(num))
+
+
+
+
+n, summ, quantity, multiply = int(input()), 0, 0, 1
+n_1 = n
+while n != 0:
+    last_digit = n % 10
+    summ += last_digit       #    сумму его цифр;
+    quantity += 1            #    количество цифр в нем;
+    multiply *= last_digit   #    произведение его цифр;
+    n = n // 10
+print(summ)
+print(quantity)
+print(multiply)
+print(summ/quantity)           #    среднее арифметическое его цифр;
+print(n_1 // (10 ** (quantity - 1))) #    его первую цифру;
+print((n_1 % 10) + (n_1 // (10 ** (quantity - 1))))  #    сумму его первой и последней цифры.
+
