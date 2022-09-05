@@ -1946,3 +1946,13 @@ while n:
     proizvedenie *= lg
     first = lg
 print(summa, count, proizvedenie, summa / count, first, first + last, sep='\n')
+
+
+
+n, second_digit = int(input()), -1
+while n:
+    last_digit = n % 10
+    if 1 <= n // 10 <= 9:
+        second_digit = last_digit
+    n = n // 10
+print(second_digit)
