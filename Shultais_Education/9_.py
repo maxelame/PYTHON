@@ -1956,3 +1956,10 @@ while n:
         second_digit = last_digit
     n = n // 10
 print(second_digit)
+
+
+n, x = int(input()), 0
+while n > 9:
+    x = n
+    n = n // 10
+print(x % 10)
