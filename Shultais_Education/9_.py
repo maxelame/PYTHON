@@ -1936,3 +1936,13 @@ print(summ/quantity)           #    среднее арифметическое 
 print(n_1 // (10 ** (quantity - 1))) #    его первую цифру;
 print((n_1 % 10) + (n_1 // (10 ** (quantity - 1))))  #    сумму его первой и последней цифры.
 
+n, count, summa, proizvedenie = int(input()), 0, 0, 1
+last = n % 10
+while n:
+    lg = n % 10
+    n = n // 10
+    count += 1
+    summa += lg
+    proizvedenie *= lg
+    first = lg
+print(summa, count, proizvedenie, summa / count, first, first + last, sep='\n')
