@@ -2011,3 +2011,12 @@ while number:
     number = number // 10
 else:
     print("YES")
+
+
+a = 'YES'
+r = int(input())
+while r // 10 != 0:
+    if r // 10 % 10 < r % 10:
+        a = 'NO'
+    r //= 10
+print(a)
