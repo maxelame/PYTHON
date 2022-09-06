@@ -2020,3 +2020,22 @@ while r // 10 != 0:
         a = 'NO'
     r //= 10
 print(a)
+
+
+a = 'YES'
+r = int(input())
+while r // 10 != 0:
+    if r // 10 % 10 < r % 10:
+        a = 'NO'
+    r //= 10
+print(a)
+
+n = int(input())
+
+list = []
+
+while n != 0:
+    list.append(n % 10)
+    n = n // 10
+
+print('YES') if list == sorted(list) else print('NO')
