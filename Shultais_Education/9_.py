@@ -1996,3 +1996,18 @@ if t == 1:
     print('YES')
 else:
     print('NO')
+
+
+
+number = int(input())
+previous_digit = 0
+while number:
+    last_digit = number % 10
+    if last_digit < previous_digit:
+        print("NO")
+        break
+    else:
+        previous_digit = last_digit
+    number = number // 10
+else:
+    print("YES")
