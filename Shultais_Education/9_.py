@@ -2046,3 +2046,11 @@ for i in range(10):
     if i > 6:
         break
 #0*1*2*3*4*5*6*7*
+
+
+i = 100
+while i > 0:
+    if i == 40:
+        break
+    print(i, end='*')
+    i -= 20
