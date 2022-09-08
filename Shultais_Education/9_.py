@@ -2054,3 +2054,11 @@ while i > 0:
         break
     print(i, end='*')
     i -= 20   #100*80*60*
+
+
+n = 10
+while n > 0:
+    n -= 1
+    if n == 2:
+        continue
+    print(n, end='*')
