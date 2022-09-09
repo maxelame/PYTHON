@@ -2086,6 +2086,6 @@ for i in range(2, num + 1):
 
 num = int(input())
 for i in range(1, num + 1):
-    if 5 <= num <= 9  or 17 <= num <= 37 or 78 <= num <= 87:
+    if 5 <= i <= 9  or 17 <= i <= 37 or 78 <= i <= 87:
         continue
     print(i)
