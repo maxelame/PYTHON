@@ -2089,3 +2089,13 @@ for i in range(1, num + 1):
     if 5 <= i <= 9  or 17 <= i <= 37 or 78 <= i <= 87:
         continue
     print(i)
+
+
+n = 0
+while n < 10:
+    n += 2
+    if n == 7:
+        break
+    print(n)
+else:
+    print('Цикл завершен.')
