@@ -2294,3 +2294,10 @@ if max_digit == -1:
     print('NO')
 else:
     print(max_digit)
+
+n = int(input())
+first = 0
+while n > 0:
+    first = n
+    n //= 10
+print(first)
