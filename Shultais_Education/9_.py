@@ -2301,3 +2301,6 @@ while n > 0:
     first = n
     n //= 10
 print(first)
+
+
+Прямоугольник
