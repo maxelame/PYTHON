@@ -2338,3 +2338,9 @@ for i in range(1, n +1):
     for l in range(5):
         print(i, end = " ")
     print()
+
+
+a = input()
+
+for i in range(1,int(a)+1):
+    print(i, i, i, i, i)
