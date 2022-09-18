@@ -2330,3 +2330,11 @@ for i in range(n):
     for j in range(3):
         print(n, end=' ')
     print()
+
+
+
+n = int(input())
+for i in range(1, n +1):
+    for l in range(5):
+        print(i, end = " ")
+    print()
