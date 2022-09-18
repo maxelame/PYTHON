@@ -2344,3 +2344,10 @@ a = input()
 
 for i in range(1,int(a)+1):
     print(i, i, i, i, i)
+
+
+
+n = int(input())
+
+for i in range(1,n+1):
+    print((str(i) + ' ')*5, sep=' ')
