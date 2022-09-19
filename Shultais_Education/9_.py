@@ -2351,3 +2351,11 @@ n = int(input())
 
 for i in range(1,n+1):
     print((str(i) + ' ')*5, sep=' ')
+
+
+
+n = int(input())
+for i in range(1, n+1):
+    for l in range(1, 10):
+        print(f"{i} + {l} = {i + l}")
+    print('')
