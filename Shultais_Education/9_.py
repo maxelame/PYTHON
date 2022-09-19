@@ -2359,3 +2359,11 @@ for i in range(1, n+1):
     for l in range(1, 10):
         print(f"{i} + {l} = {i + l}")
     print('')
+
+n = int(input())
+for i in range(1):
+    for l in range(1, n // 2 + 2):
+        print("*" * l)
+    for k in range(n // 2, 0, -1):
+        print("*" * k)
+    print()
