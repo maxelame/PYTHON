@@ -2376,3 +2376,11 @@ for i in range(1):
     for k in range(n // 2, 0, -1):
         print("*" * k)
     print()
+
+
+a = int(input())
+for i in range(1,a+1):
+    if i > a//2 + 1:
+        print("*"*(a-i+1))
+    else:
+        print("*"*i)
