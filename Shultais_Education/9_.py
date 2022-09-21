@@ -2420,3 +2420,13 @@ for n in range(1, 365 // 28):
                 total += 1
                 print('n =', n, 'k =', k, 'm =', m)
 print('Общее количество натуральных решений =', total)
+
+
+total = 0
+for n in range(1, 10):
+    for k in range(1, 20):
+        for m in range(1, 100):
+            if n * 10 + k * 5 + m * 0.5 == 100 and n + k + m == 100:
+                total += 1
+                print('n =', n, 'k =', k, 'm =', m)
+print('Общее количество натуральных решений =', total)
