@@ -2430,3 +2430,16 @@ for n in range(1, 10):
                 total += 1
                 print('n =', n, 'k =', k, 'm =', m)
 print('Общее количество натуральных решений =', total)
+
+
+total = 0
+for a in range(1, 151):
+    for b in range(1, 151):
+        print(b)
+        for c in range(1, 151):
+            for d in range(1, 151):
+                for e in range(1, 151):
+                    if a ** 5 + b ** 5 + c ** 5 + d ** 5 == e ** 5:
+                        total += 1
+                        print('a =', a, 'b =', b, 'c =', c, 'd =', d, 'e =', e)
+print('a + b + c + d + e =', a + b + c + d + e)
