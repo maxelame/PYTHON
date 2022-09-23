@@ -2475,3 +2475,7 @@ for i_res in res:            #  исключаем повторения
 
 end_time = datetime.now()
 print('Duration: {}'.format(end_time - start_time))
+
+
+
+
