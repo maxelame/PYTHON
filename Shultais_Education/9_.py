@@ -2478,4 +2478,10 @@ print('Duration: {}'.format(end_time - start_time))
 
 
 
-
+n = int(input())
+k = 1
+for i in range(1, n+1):
+    for l in range(k, k + i):
+        print(l, end = " ")
+    k = l + 1
+    print()
