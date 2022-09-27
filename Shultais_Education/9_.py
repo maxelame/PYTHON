@@ -2555,3 +2555,16 @@ print(s[0]*3 + s[-1]*3 + s[3]*2 + s[3]*2)
 s = '01234567891011121314151617'
 for i in range(0, len(s), 5):
     print(s[i], end='')
+
+
+num1, num2, summ_max, num_max = int(input()), int(input()), 0, 0
+
+for i in range(num1, num2 + 1):
+    summ = 0
+    for k in range(1, i+1):
+        if i % k == 0:
+            summ += k
+            if summ >= summ_max:
+                summ_max = summ
+                num_max = i
+print(num_max, summ_max)
