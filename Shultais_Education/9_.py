@@ -2568,3 +2568,15 @@ for i in range(num1, num2 + 1):
                 summ_max = summ
                 num_max = i
 print(num_max, summ_max)
+
+
+
+
+
+num = int(input())
+for i in range(1, num + 1):
+    count = 0
+    for k in range(1, i + 1):
+        if i % k == 0:
+            count += 1
+    print(i, "+" * count, sep = "")
