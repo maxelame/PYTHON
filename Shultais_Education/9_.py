@@ -2589,3 +2589,9 @@ while num > 10:
         summ += int(i)
     num = summ
 print(summ)
+
+
+n = int(input())
+while n > 9:
+    n = sum(int(i) for i in str(n))
+print(n)
