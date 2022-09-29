@@ -2595,3 +2595,16 @@ n = int(input())
 while n > 9:
     n = sum(int(i) for i in str(n))
 print(n)
+
+
+
+num = int(input())
+while True:
+    if num < 10:
+        print(num)
+        break
+    else:
+        summ = 0
+        for i in str(num):
+            summ += int(i)
+        num = summ
