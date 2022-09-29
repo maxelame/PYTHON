@@ -2580,3 +2580,12 @@ for i in range(1, num + 1):
         if i % k == 0:
             count += 1
     print(i, "+" * count, sep = "")
+
+
+num = int('192')
+while num > 10:
+    summ = 0
+    for i in str(num):
+        summ += int(i)
+    num = summ
+print(summ)
