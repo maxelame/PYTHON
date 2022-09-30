@@ -2608,3 +2608,10 @@ while True:
         for i in str(num):
             summ += int(i)
         num = summ
+
+
+import math
+num, summ = int(input()), 0
+for i in range(1, num + 1):
+    summ += math.factorial(i)
+print(summ)
