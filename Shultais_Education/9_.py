@@ -2615,3 +2615,15 @@ num, summ = int(input()), 0
 for i in range(1, num + 1):
     summ += math.factorial(i)
 print(summ)
+
+
+
+a, b = int(input()), int(input())
+counter = 0
+for i in range(a, b + 1):
+    for k in range(1, i+1):
+        if i % k == 0:
+            counter += 1
+    if counter == 2:
+        print(i)
+    counter = 0
