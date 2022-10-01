@@ -2627,3 +2627,8 @@ for i in range(a, b + 1):
     if counter == 2:
         print(i)
     counter = 0
+
+
+s = "In 2010, someone paid 10k Bitcoin for two pizzas."
+
+print(s[7]
