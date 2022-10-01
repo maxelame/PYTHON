@@ -2653,3 +2653,11 @@ for a in range(1,40):
                 z = a**3 + b**3
                 if z == c**3 + d**3:
                     print(a, " ", b, " ", c, " ", d, " ", z)
+
+
+for a in range(1, 34):
+    for b in range(1, 34):
+        for c in range(1, 34):
+            for d in range(1, 34):
+                if a ** 3 + b ** 3 == c ** 3 + d ** 3 and a != b and c != d and a != c and b != d and a != d and b != c:
+                    print(a, b, c, d, a ** 3 + b ** 3)
