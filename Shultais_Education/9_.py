@@ -2644,3 +2644,12 @@ print(s[-10])
 s = input()
 for i in range(0, len(s), 2):
     print(s[i])
+
+
+for a in range(1,40):
+    for b in range(a+1,40):
+        for c in range(a+1,40):
+            for d in range(a+1, 40):
+                z = a**3 + b**3
+                if z == c**3 + d**3:
+                    print(a, " ", b, " ", c, " ", d, " ", z)
