@@ -2632,3 +2632,9 @@ for i in range(a, b + 1):
 s = "In 2010, someone paid 10k Bitcoin for two pizzas."
 
 print(s[7]
+
+
+
+s = "In 2010, someone paid 10k Bitcoin for two pizzas."
+
+print(s[-10])
