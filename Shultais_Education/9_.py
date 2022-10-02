@@ -2669,3 +2669,9 @@ for i in input()[::-1]: # с помощью [::-1] инвертируем стр
 
 name, surname, patronymic = input(), input(), input()
 print(surname[0],name[0],patronymic[0], sep = "")
+
+name, surname, patronymic = input(), input(), input()
+print(surname[0],name[0],patronymic[0], sep = "")
+
+
+print('{1}{0}{2}'.format(*[input()[0] for _ in range(3)]))
