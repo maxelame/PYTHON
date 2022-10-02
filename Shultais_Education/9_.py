@@ -2665,3 +2665,7 @@ for a in range(1, 34):
 
 for i in input()[::-1]: # с помощью [::-1] инвертируем строку
     print(i)
+
+
+name, surname, patronymic = input(), input(), input()
+print(surname[0],name[0],patronymic[0], sep = "")
