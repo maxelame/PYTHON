@@ -2675,3 +2675,9 @@ print(surname[0],name[0],patronymic[0], sep = "")
 
 
 print('{1}{0}{2}'.format(*[input()[0] for _ in range(3)]))
+
+
+summ = 0
+for i in input():
+    summ += int(i)
+print(summ)
