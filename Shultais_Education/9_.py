@@ -2681,3 +2681,6 @@ summ = 0
 for i in input():
     summ += int(i)
 print(summ)
+
+
+print(sum([int(j) for j in [i for i in input()]]))
