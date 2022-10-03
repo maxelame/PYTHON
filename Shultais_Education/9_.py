@@ -2710,3 +2710,14 @@ for c in s:
         break
 else:
     print('Цифр нет')
+
+
+s = input()
+counter = 0
+for i in range(len(s)):
+    if s[i] in '0123456789':
+        counter += 1
+if counter > 0:
+    print('Цифра')
+else:
+    print('Цифр нет')
