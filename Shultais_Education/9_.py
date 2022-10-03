@@ -2700,3 +2700,13 @@ if mark == False:
     print('Цифр нет')
 else:
     print("Цифра")
+
+
+
+s = input()
+for c in s:
+    if c in '0123456789':
+        print('Цифра')
+        break
+else:
+    print('Цифр нет')
