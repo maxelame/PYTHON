@@ -2688,3 +2688,15 @@ print(sum([int(j) for j in [i for i in input()]]))
 
 a = input()
 print(int(a[0]) + int(a[1]) + int(a[2]) + int(a[3]))
+
+
+str = input()
+mark = False
+for i in str:
+    if i in '1234567890':
+        mark = True
+        break
+if mark == False:
+    print('Цифр нет')
+else:
+    print("Цифра")
