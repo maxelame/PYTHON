@@ -2721,3 +2721,15 @@ if counter > 0:
     print('Цифра')
 else:
     print('Цифр нет')
+
+
+
+str = input()
+counter_1, counter_2 = 0, 0
+for i in str:
+    if i == "+":
+        counter_1 +=1
+    if i == "*":
+        counter_2 +=1
+print(f"Символ + встречается {counter_1} раз")
+print(f"Символ * встречается {counter_2} раз")
