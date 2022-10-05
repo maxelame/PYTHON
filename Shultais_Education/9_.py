@@ -2742,3 +2742,13 @@ for i in str:
         count += 1
     previous_char = i
 print(count)
+
+
+
+
+a = input()
+count = 0
+for i in range(len(a) -1):
+    if a[i] == a[i + 1]:
+        count += 1
+print(count)
