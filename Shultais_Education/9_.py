@@ -2752,3 +2752,13 @@ for i in range(len(a) -1):
     if a[i] == a[i + 1]:
         count += 1
 print(count)
+
+
+str, glas, soglas = input(), 0, 0
+for i in str.lower():
+    if i in "ауоыиэяюёе":
+        glas += 1
+    if i in "бвгджзйклмнпрстфхцчшщ":
+        soglas += 1
+print(f"Количество гласных букв равно {glas}")
+print(f"Количество согласных букв равно {soglas}")
