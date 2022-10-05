@@ -2733,3 +2733,12 @@ for i in str:
         counter_2 +=1
 print(f"Символ + встречается {counter_1} раз")
 print(f"Символ * встречается {counter_2} раз")
+
+
+
+str, count, previous_char = input(), 0, ""
+for i in str:
+    if i == previous_char:
+        count += 1
+    previous_char = i
+print(count)
