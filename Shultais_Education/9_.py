@@ -2762,3 +2762,9 @@ for i in str.lower():
         soglas += 1
 print(f"Количество гласных букв равно {glas}")
 print(f"Количество согласных букв равно {soglas}")
+
+
+
+num = int(input())
+result= bin(num)
+print(result[2:])
