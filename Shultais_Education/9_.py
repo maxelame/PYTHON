@@ -2768,3 +2768,7 @@ print(f"Количество согласных букв равно {soglas}")
 num = int(input())
 result= bin(num)
 print(result[2:])
+
+
+
+print(f'{int(input()):b}')
