@@ -2772,3 +2772,12 @@ print(result[2:])
 
 
 print(f'{int(input()):b}')
+
+
+
+number = int(input())
+b = ''
+while number > 0:
+    b = str(number % 2) + b
+    number = number // 2
+print(b)
