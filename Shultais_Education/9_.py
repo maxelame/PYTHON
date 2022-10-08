@@ -2807,3 +2807,7 @@ if s == s[::-1]:
     print("YES")
 else:
     print("NO")
+
+
+s = input()
+print(s[(len(s)-int(0.5*len(s))):]+s[:(len(s)-int(0.5*len(s)))])
