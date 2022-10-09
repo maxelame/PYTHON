@@ -2823,3 +2823,6 @@ else:
 
 
 print(('NO', 'YES')[input().istitle()])
+
+
+print('YES' if (s:=input())==s.title() else 'NO')
