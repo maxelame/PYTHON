@@ -2811,3 +2811,12 @@ else:
 
 s = input()
 print(s[(len(s)-int(0.5*len(s))):]+s[:(len(s)-int(0.5*len(s)))])
+
+
+
+
+name = input()
+if name == name.title():
+    print("YES")
+else:
+    print("NO")
