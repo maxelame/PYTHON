@@ -2820,3 +2820,6 @@ if name == name.title():
     print("YES")
 else:
     print("NO")
+
+
+print(('NO', 'YES')[input().istitle()])
