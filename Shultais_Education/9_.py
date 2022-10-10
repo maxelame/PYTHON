@@ -2845,3 +2845,11 @@ else :
 
 
 print("YES" if "хорош" in input().lower() else "NO")
+
+
+s = input()
+b = s.lower()
+if "хорош" in b:
+    print("YES")
+else:
+    print("NO")
