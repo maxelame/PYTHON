@@ -2835,3 +2835,10 @@ print(s.swapcase())
 
 
 print('YNEOS'[not 'ХОРОШ' in input().upper()::2])
+
+
+s = input()
+if "ХОРОШ" in s.upper() :
+    print("YES")
+else :
+    print("NO")
