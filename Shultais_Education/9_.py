@@ -2830,3 +2830,8 @@ print('YES' if (s:=input())==s.title() else 'NO')
 
 s = input()
 print(s.swapcase())
+
+
+
+
+print('YNEOS'[not 'ХОРОШ' in input().upper()::2])
