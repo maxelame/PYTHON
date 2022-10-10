@@ -2842,3 +2842,6 @@ if "ХОРОШ" in s.upper() :
     print("YES")
 else :
     print("NO")
+
+
+print("YES" if "хорош" in input().lower() else "NO")
