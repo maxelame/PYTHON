@@ -10,3 +10,10 @@ for char in x:
     if char != char.upper():
         counter_lower += 1
 print(counter_lower)
+
+
+s, cnt = input(), 0
+for char in s:
+    if char != char.upper():
+        cnt += 1
+print(cnt)
