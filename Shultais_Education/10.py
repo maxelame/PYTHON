@@ -17,3 +17,6 @@ for char in s:
     if char != char.upper():
         cnt += 1
 print(cnt)
+
+
+print(len(input().split()))
