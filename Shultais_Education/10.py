@@ -20,3 +20,7 @@ print(cnt)
 
 
 print(len(input().split()))
+
+
+s = input()
+print(s.count(" ") + 1)
