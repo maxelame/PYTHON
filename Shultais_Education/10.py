@@ -35,3 +35,11 @@ print(f"Аденин: {count_A}")
 print(f"Гуанин: {count_G}")
 print(f"Цитозин: {count_C}")
 print(f"Тимин: {count_T}")
+
+
+s = input()
+
+print("Аденин:", s.lower().count('а'))
+print("Гуанин:",s.lower().count('г'))
+print("Цитозин:",s.lower().count('ц'))
+print("Тимин:",s.lower().count('т'))
