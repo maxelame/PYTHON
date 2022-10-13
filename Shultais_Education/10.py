@@ -62,3 +62,12 @@ for _ in range(n):
     if counter > 2:
         result += 1
 print(result)
+
+
+
+n = int(input())
+m=0
+for i in range(n):
+    if input().count('11')>=3:
+        m+=1
+print(m)
