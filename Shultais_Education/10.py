@@ -51,3 +51,14 @@ print('Аденин:', s.count('А'))
 print('Гуанин:', s.count('Г'))
 print('Цитозин:', s.count('Ц'))
 print('Тимин:', s.count('Т'))
+
+
+
+n = int(input())
+result = 0
+for _ in range(n):
+    s = input()
+    counter = s.replace("11", "_").count("_")
+    if counter > 2:
+        result += 1
+print(result)
