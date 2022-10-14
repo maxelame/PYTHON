@@ -71,3 +71,11 @@ for i in range(n):
     if input().count('11')>=3:
         m+=1
 print(m)
+
+
+
+s, count = input(), 0
+for i in s:
+    if i.isdigit():
+        count += 1
+print(count)
