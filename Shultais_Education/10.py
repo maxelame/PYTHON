@@ -83,3 +83,11 @@ print(count)
 
 import re
 print(len(re.findall(r'\d', input())))
+
+
+s = input()
+count = 0
+for i in range(len(s)):
+    if s[i] in '0123456789':
+        count += 1
+print(count)
