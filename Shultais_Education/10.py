@@ -108,3 +108,10 @@ if domen is True:
     print("YES")
 else:
     print("NO")
+
+
+s = input()
+if s.endswith(".ru") or s.endswith(".com"):
+    print("YES")
+else:
+    print("NO")
