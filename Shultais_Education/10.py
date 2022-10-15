@@ -91,3 +91,10 @@ for i in range(len(s)):
     if s[i] in '0123456789':
         count += 1
 print(count)
+
+
+site = input()
+if site.endswith((".com", ".ru")):
+    print("YES")
+else:
+    print("NO")
