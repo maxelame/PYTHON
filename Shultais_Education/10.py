@@ -98,3 +98,13 @@ if site.endswith((".com", ".ru")):
     print("YES")
 else:
     print("NO")
+
+
+
+site = input()
+domen = site.endswith((".com", ".ru"))
+
+if domen is True:
+    print("YES")
+else:
+    print("NO")
