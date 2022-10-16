@@ -151,3 +151,5 @@ s = input()
 index_start = s.find("h")
 index_stop = s.rfind("h")
 print(s[:index_start] + s[index_stop + 1:])
+
+
