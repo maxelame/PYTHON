@@ -130,3 +130,17 @@ elif s.count("f") > 1:
     print(s.find("f"), s.rfind("f"))
 else:
     print("NO")
+
+
+n = str(input())
+first = n.find('f')
+last = n.rfind('f')
+count = n.count('f')
+if count == 1:
+    print(first)
+
+elif count >= 1:
+    print(first,last)
+
+else:
+    print('NO')
