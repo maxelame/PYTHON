@@ -155,3 +155,10 @@ print(s[:index_start] + s[index_stop + 1:])
 s = 'In {0}, someone paid {1} {2} for two pizzas.'
 "In 2010, someone paid 10k Bitcoin for two pizzas.» (без кавычек)"
 print(s.format("2010", "10k", "Bitcoin"))
+
+
+s = 'In {0}, someone paid {1} {2} for two pizzas.'
+year = 2010
+price = '10k'
+curr = 'Bitcoin'
+print(s.format(year, price, curr))
