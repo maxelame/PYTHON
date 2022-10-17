@@ -152,4 +152,6 @@ index_start = s.find("h")
 index_stop = s.rfind("h")
 print(s[:index_start] + s[index_stop + 1:])
 
-
+s = 'In {0}, someone paid {1} {2} for two pizzas.'
+"In 2010, someone paid 10k Bitcoin for two pizzas.» (без кавычек)"
+print(s.format("2010", "10k", "Bitcoin"))
