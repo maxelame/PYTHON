@@ -168,3 +168,10 @@ s = 2010
 m = "10k"
 b = "Bitcoin"
 print(f'In {s}, someone paid {m} {b} for two pizzas.')
+
+
+year = 2010
+amount = '10K'
+currency = 'Bitcoin'
+
+print(f'In {year}, someone paid {amount} {currency} for two pizzas.')
