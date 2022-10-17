@@ -162,3 +162,9 @@ year = 2010
 price = '10k'
 curr = 'Bitcoin'
 print(s.format(year, price, curr))
+
+
+s = 2010
+m = "10k"
+b = "Bitcoin"
+print(f'In {s}, someone paid {m} {b} for two pizzas.')
