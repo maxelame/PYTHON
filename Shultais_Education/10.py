@@ -175,3 +175,9 @@ amount = '10K'
 currency = 'Bitcoin'
 
 print(f'In {year}, someone paid {amount} {currency} for two pizzas.')
+
+
+
+n1, n2 = int(input()), int(input())
+for i in range(n1, n2+1):
+    print(chr(i), end = " ")
