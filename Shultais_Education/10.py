@@ -187,4 +187,9 @@ for i in input():
     print(ord(i), end = " ")
 
 
-rerrfergrweffewewf
+n, s = int(input()), input()
+for i in s:
+    if ord(i) - n >= 97:
+        print(chr(ord(i) - n) ,end = "")
+    if ord(i) - n < 97:
+        print(chr(ord(i) + 26 - n) ,end = "")
