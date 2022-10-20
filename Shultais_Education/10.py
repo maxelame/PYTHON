@@ -193,3 +193,9 @@ for i in s:
         print(chr(ord(i) - n) ,end = "")
     if ord(i) - n < 97:
         print(chr(ord(i) + 26 - n) ,end = "")
+
+
+
+n1, n2 = int(input()), int(input())
+for i in range(n1, n2+1):
+    print(chr(i), end = " ")
