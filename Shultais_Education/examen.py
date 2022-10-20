@@ -1,5 +1,3 @@
-s = "Python"
-for i in range(len(s)):
-    if i not in [0,3,6,9]:
-        print(s[i], end="")
+s = "1001"
+print(s.replace("1", "one"))
 

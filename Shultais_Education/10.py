@@ -199,3 +199,19 @@ for i in s:
 n1, n2 = int(input()), int(input())
 for i in range(n1, n2+1):
     print(chr(i), end = " ")
+
+
+s = input()
+for i in range(len(s)):
+    if i % 3 != 0:
+        print(s[i], end='')
+
+
+s = input()
+if s.count("f") == 0:
+    print("-2")
+elif s.count("f") == 1:
+    print("-1")
+else:
+    s.replace("f", "!", 1)
+    print(s.replace("f", "!", 1).find("f"))
