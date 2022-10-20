@@ -215,3 +215,13 @@ elif s.count("f") == 1:
 else:
     s.replace("f", "!", 1)
     print(s.replace("f", "!", 1).find("f"))
+
+
+s = input()
+index1 = s.find("h")
+index2 = s.rfind("h")
+s1 = s[:index1]
+s2 = s[index1: index2 + 1]
+s2 = s2[::-1]
+s3 = s[index2 + 1:]
+print(s1+s2+s3)
