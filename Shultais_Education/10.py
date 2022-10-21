@@ -225,3 +225,10 @@ s2 = s[index1: index2 + 1]
 s2 = s2[::-1]
 s3 = s[index2 + 1:]
 print(s1+s2+s3)
+
+
+n = int(input())
+list_1 = []
+for i in range(1, n + 1):
+    list_1 += [i]
+print(list_1)
