@@ -249,3 +249,14 @@ print(s)
 n = int(input())
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 print(list(alphabet[:n]))
+
+
+
+n = int(input())
+abc = ""
+for i in range(97, 97 + n):
+    abc += chr(i)
+print(list(abc))
+
+
+print(list(map(chr, range(97, 97 + int(input())))))
