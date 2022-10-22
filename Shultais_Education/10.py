@@ -237,3 +237,10 @@ print(list_1)
 
 n = int(input())
 print (list(range(1,n+1)))
+
+
+n = int(input())
+s = []
+for i in range(97, 97 + n):
+    s += [str(chr(i))]
+print(s)
