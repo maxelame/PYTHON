@@ -244,3 +244,8 @@ s = []
 for i in range(97, 97 + n):
     s += [str(chr(i))]
 print(s)
+
+
+n = int(input())
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+print(list(alphabet[:n]))
