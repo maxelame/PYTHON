@@ -284,3 +284,9 @@ rainbow = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']
 rainbow[3:7:3] = ['Зеленый', 'Фиолетовый']
 
 print(rainbow)
+
+
+rainbow = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']
+
+
+print([x.replace("Green", "Зеленый").replace("Violet", "Фиолетовый") for x in rainbow])
