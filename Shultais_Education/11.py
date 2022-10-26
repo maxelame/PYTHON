@@ -44,3 +44,9 @@ for i in range(1, n + 1):
   num = input()
   s += [num]
 print(s)
+
+
+list = []
+for _ in range(int(input())):
+    list.append(input())
+print(list)
