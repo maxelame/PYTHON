@@ -36,3 +36,11 @@ n, s = int(input()), []
 for _ in range(n):
     s.append(input())
 print(s)
+
+
+n = int(input())
+s = []
+for i in range(1, n + 1):
+  num = input()
+  s += [num]
+print(s)
