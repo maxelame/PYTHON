@@ -29,3 +29,10 @@ else:
 del numbers[0]
 del numbers[-1]
 print(numbers)#Вывел список с удаленным первым и последним элементами.
+
+
+
+n, s = int(input()), []
+for _ in range(n):
+    s.append(input())
+print(s)
