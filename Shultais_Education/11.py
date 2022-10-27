@@ -70,3 +70,6 @@ s = []
 for _ in range(int(input())):
   s.append(int(input()) ** 3)
 print(s)
+
+
+print([int(input()) ** 3 for _ in range(int(input()))])
