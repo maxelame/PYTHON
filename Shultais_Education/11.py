@@ -50,3 +50,9 @@ list = []
 for _ in range(int(input())):
     list.append(input())
 print(list)
+
+
+s = []
+for i in range(26):
+  s.append(chr(61 + i))
+print(s)
