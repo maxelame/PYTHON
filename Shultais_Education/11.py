@@ -56,3 +56,17 @@ s = []
 for i in range(26):
   s.append(chr(97 + i) * (i + 1))
 print(s)
+
+
+s = []
+for _ in range(int(input()):
+               x = int(input())
+               s.append(x ** 3)
+print(s)
+
+
+
+s = []
+for _ in range(int(input())):
+  s.append(int(input()) ** 3)
+print(s)
