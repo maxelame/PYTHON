@@ -82,3 +82,14 @@ for i in range(1, n + 1):
     if n % i == 0:
         s.append(i)
 print(s)
+
+
+def list_of_dividers(number):
+    list = []
+    for i in range(1, number + 1):
+        if number % i == 0:
+            list.append(i)
+    return list
+
+
+print(list_of_dividers(int(input())))
