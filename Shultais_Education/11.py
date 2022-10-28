@@ -73,3 +73,12 @@ print(s)
 
 
 print([int(input()) ** 3 for _ in range(int(input()))])
+
+
+
+n = int(input())
+s = []
+for i in range(1, n + 1):
+    if n % i == 0:
+        s.append(i)
+print(s)
