@@ -93,3 +93,13 @@ def list_of_dividers(number):
 
 
 print(list_of_dividers(int(input())))
+
+
+n = int(input())
+previous_x = int(input())
+s = []
+for i in range(1, n):
+    x = int(input())
+    s.append(x + previous_x)
+    previous_x = x
+print(s)
