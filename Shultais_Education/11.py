@@ -148,3 +148,5 @@ for i in range(n):
     s.append(int(input()))
 del s[1::2]
 print(s)
+
+print([int(input()) for i in range(int(input()))][::2])
