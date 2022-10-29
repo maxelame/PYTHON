@@ -135,3 +135,9 @@ for i in range(n):
     if i > 0:
         s.append(l[i] + l[i - 1])
 print(s)
+
+
+n, s = int(input()), []
+for i in range(n):
+    s.append(int(input()))
+print(s[::2])
