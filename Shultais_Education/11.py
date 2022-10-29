@@ -113,3 +113,14 @@ while n > 0:
 s1 = [s[i]+s[i+1] for i in range(len(s)-1)]
 
 print(s1)
+
+
+
+
+_range = int(input())
+mylist = []
+a, b = 0, int(input())
+for i in range(1, _range):
+    a, b = b, int(input())
+    mylist.append(a + b)
+print(mylist)
