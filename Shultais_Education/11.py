@@ -103,3 +103,13 @@ for i in range(1, n):
     s.append(x + previous_x)
     previous_x = x
 print(s)
+
+
+n = int(input())
+s = []
+while n > 0:
+    s.append(int(input()))
+    n -= 1
+s1 = [s[i]+s[i+1] for i in range(len(s)-1)]
+
+print(s1)
