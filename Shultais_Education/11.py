@@ -124,3 +124,14 @@ for i in range(1, _range):
     a, b = b, int(input())
     mylist.append(a + b)
 print(mylist)
+
+
+
+
+n = int(input())
+l, s = [], []
+for i in range(n):
+    l.append(int(input()))
+    if i > 0:
+        s.append(l[i] + l[i - 1])
+print(s)
