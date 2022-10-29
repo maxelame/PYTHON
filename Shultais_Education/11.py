@@ -141,3 +141,10 @@ n, s = int(input()), []
 for i in range(n):
     s.append(int(input()))
 print(s[::2])
+
+
+n, s = int(input()), []
+for i in range(n):
+    s.append(int(input()))
+del s[1::2]
+print(s)
