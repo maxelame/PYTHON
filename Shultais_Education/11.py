@@ -168,3 +168,10 @@ _list, k = [input() for _ in range(int(input()))], int(input())
 for i in _list:
     if len(i) >= k:
         print(i[k-1], end='')
+
+
+n = int(input())
+s = []
+for _ in range(n):
+    s.extend(list(input()))
+print(s)
