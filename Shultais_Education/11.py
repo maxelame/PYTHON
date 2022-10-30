@@ -150,3 +150,14 @@ del s[1::2]
 print(s)
 
 print([int(input()) for i in range(int(input()))][::2])
+
+
+
+n = int(input())
+s = []
+for _ in range(n):
+    s.append(input())
+k = int(input())
+for i in s:
+    if len(i) >= k:  #игнорируем строки меньше чем k
+        print(i[k-1], end = "") # забираем k-ый элемент строки i[k-1]
