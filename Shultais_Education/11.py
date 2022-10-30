@@ -161,3 +161,10 @@ k = int(input())
 for i in s:
     if len(i) >= k:  #игнорируем строки меньше чем k
         print(i[k-1], end = "") # забираем k-ый элемент строки i[k-1]
+
+
+
+_list, k = [input() for _ in range(int(input()))], int(input())
+for i in _list:
+    if len(i) >= k:
+        print(i[k-1], end='')
