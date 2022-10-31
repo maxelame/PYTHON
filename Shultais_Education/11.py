@@ -195,3 +195,14 @@ for i in range(len(numbers)):
 	numbers[i] = numbers[i] ** 2
 
 print(sum(numbers))
+
+
+
+n, s, f = int(input()), [], []
+for _ in range(n):
+    x = int(input())
+    s.append(x)
+    f.append(x ** 2 + 2 * x + 1)
+print(*s, sep = "\n")
+print()
+print(*f, sep = "\n")
