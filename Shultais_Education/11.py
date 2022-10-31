@@ -219,3 +219,6 @@ print(*_list, sep='\n', end='\n\n')
 print(*[i**2+i*2+1 for i in _list], sep='\n')
 
 
+
+
+
