@@ -206,3 +206,16 @@ for _ in range(n):
 print(*s, sep = "\n")
 print()
 print(*f, sep = "\n")
+
+
+
+
+#Обожаю генераторы!
+#Meowmeow!
+
+
+_list = [int(input()) for _ in range(int(input()))]
+print(*_list, sep='\n', end='\n\n')
+print(*[i**2+i*2+1 for i in _list], sep='\n')
+
+
