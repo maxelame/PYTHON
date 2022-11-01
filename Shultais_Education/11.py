@@ -261,3 +261,10 @@ print(*sp, sep = '\n')
 
 
 
+s = [int(input()) for _ in range(int(input()))]
+s.remove(max(s)), s.remove(min(s))
+print(*s, sep='\n')
+
+
+
+
