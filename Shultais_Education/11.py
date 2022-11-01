@@ -239,5 +239,25 @@ del lst[lst.index(min(lst))]
 print(*lst, sep='\n')
 
 
+n = int(input())
+sp = []
+for i in range(n):
+    a = int(input())
+    sp.append(a)
+del sp[sp.index(max(sp))]
+del sp[sp.index(min(sp))]
+print(*sp, sep = '\n')
+
+
+n = int(input())
+sp = []
+for i in range(n):
+    a = int(input())
+    sp.append(a)
+del sp[sp.index(max(sp))]
+del sp[sp.index(min(sp))]
+print(*sp, sep = '\n')
+
+
 
 
