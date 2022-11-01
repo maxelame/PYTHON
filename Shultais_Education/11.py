@@ -233,5 +233,11 @@ del s[max_index]
 print(*s, sep = "\n")
 
 
+lst = [int(input()) for _ in range(int(input()))]
+del lst[lst.index(max(lst))]
+del lst[lst.index(min(lst))]
+print(*lst, sep='\n')
+
+
 
 
