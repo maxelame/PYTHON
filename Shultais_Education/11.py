@@ -219,6 +219,19 @@ print(*_list, sep='\n', end='\n\n')
 print(*[i**2+i*2+1 for i in _list], sep='\n')
 
 
+n, s, min_index, max_index = int(input()), [], -1, -1
+for i in range(n):
+    s.append(int(input()))
+for k in range(len(s)):
+    if s[k] == min(s):
+        min_index = k
+del s[min_index]
+for k in range(len(s)):
+    if s[k] == max(s):
+        max_index = k
+del s[max_index]
+print(*s, sep = "\n")
+
 
 
 
