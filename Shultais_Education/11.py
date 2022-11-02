@@ -262,9 +262,17 @@ print(*sp, sep = '\n')
 
 
 s = [int(input()) for _ in range(int(input()))]
+s = [int(input()) for _ in range(int(input()))]
+
 s.remove(max(s)), s.remove(min(s))
 print(*s, sep='\n')
 
-
+n = int(input())
+k = []
+s = [input() for _ in range(n)]
+for i in s:
+    if i not in k:
+        k.append(i)
+print(*k, sep = "\n")
 
 
