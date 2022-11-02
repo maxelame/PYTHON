@@ -275,4 +275,4 @@ for i in s:
         k.append(i)
 print(*k, sep = "\n")
 
-
+print(*{input(): 0 for _ in range(int(input()))}, sep='\n')
