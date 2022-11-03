@@ -336,3 +336,6 @@ for i in google:  # Начинаем новый цикл (проходимся �
 
 
 
+ss = [input() for _ in range(int(input()))]
+reqs = [input().lower() for _ in range(int(input()))]
+print(*[s for s in ss if all(req in s.lower() for req in reqs)], sep='\n')
