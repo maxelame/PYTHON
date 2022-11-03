@@ -308,4 +308,13 @@ for i in s:
 
 
 
-
+s = [input() for _ in range(int(input()))]
+search = [input() for _ in range(int(input()))]
+result = []
+for i in s:
+    flag = 1
+    for j in search:
+        if j.lower() not in i.lower():
+            flag = 0
+    if flag == 1:
+        print(i)
