@@ -305,3 +305,7 @@ s = [input() for _ in range(int(input()))]
 word = input()
 for i in s:
     if word.lower() in i.lower(): print(i)
+
+
+
+
