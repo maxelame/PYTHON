@@ -284,3 +284,18 @@ s = input()
 for c in lst:
     if s.lower() in c.lower():
         print(c)
+
+
+
+a=int(input())
+s=[]
+g=[]
+for i in range (a):
+    b=input()
+    s.append(b)
+k=input()
+k=k.lower()
+for j in s:
+    if k in j.lower():
+        g.append(j)
+print(*g, sep=("\n"))
