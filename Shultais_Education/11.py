@@ -350,3 +350,14 @@ for c in lst:
             flag = False
     if flag:
         print(c)
+
+
+s1 = [input() for _ in range(int(input()))]
+s2 = [input() for _ in range(int(input()))]
+for i in range(len(s1)-1, -1, -1):
+    k = True
+    for j in s2:
+        if j.lower() not in s1[i].lower(): k = False
+    if k == False: s1.remove(s1[i])
+
+print(*s1, sep='\n')
