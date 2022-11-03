@@ -276,3 +276,11 @@ for i in s:
 print(*k, sep = "\n")
 
 print(*{input(): 0 for _ in range(int(input()))}, sep='\n')
+
+
+
+lst = [input() for _ in range(int(input()))]
+s = input()
+for c in lst:
+    if s.lower() in c.lower():
+        print(c)
