@@ -361,3 +361,16 @@ for i in range(len(s1)-1, -1, -1):
     if k == False: s1.remove(s1[i])
 
 print(*s1, sep='\n')
+
+
+
+s = [int(input()) for _ in range(int(input()))]
+for i in s:
+    if i < 0:
+        print(i)
+for i in s:
+    if i == 0:
+        print(i)
+for i in s:
+    if i > 0:
+        print(i)
