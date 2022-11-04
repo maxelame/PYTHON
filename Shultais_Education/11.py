@@ -391,3 +391,17 @@ for i in range(n):
 print(*Negatives, sep='\n')
 print(*Zeros, sep='\n')
 print(*Positives, sep='\n')
+
+
+
+negative, zero, pozitive = [], [], []
+
+for _ in range(int(input())):
+    n = int(input())
+    if n < 0:
+        negative.append(n)
+    if n == 0:
+        zero.append(n)
+    if n > 0:
+        pozitive.append(n)
+print(*negative + zero + pozitive, sep="\n")
