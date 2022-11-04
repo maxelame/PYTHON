@@ -374,3 +374,20 @@ for i in s:
 for i in s:
     if i > 0:
         print(i)
+
+
+n = int(input())
+Negatives = []
+Zeros = []
+Positives = []
+for i in range(n):
+    a = int(input())
+    if a<0:
+        Negatives.append(a)
+    elif a==0:
+        Zeros.append(a)
+    elif a>0:
+        Positives.append(a)
+print(*Negatives, sep='\n')
+print(*Zeros, sep='\n')
+print(*Positives, sep='\n')
