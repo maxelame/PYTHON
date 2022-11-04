@@ -405,3 +405,10 @@ for _ in range(int(input())):
     if n > 0:
         pozitive.append(n)
 print(*negative + zero + pozitive, sep="\n")
+
+
+
+a = [int(input()) for _ in range(int(input()))]
+print(*[i for i in a if i<0], sep="\n")
+print(*[i for i in a if i==0], sep="\n")
+print(*[i for i in a if i>0], sep="\n")
