@@ -412,3 +412,8 @@ a = [int(input()) for _ in range(int(input()))]
 print(*[i for i in a if i<0], sep="\n")
 print(*[i for i in a if i==0], sep="\n")
 print(*[i for i in a if i>0], sep="\n")
+
+
+
+
+print("\n".join(input().split()))
