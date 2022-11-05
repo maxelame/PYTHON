@@ -426,3 +426,6 @@ print(*text, sep="\n")
 s = []
 s.append(input())
 print(*s[0].split(), sep='\n')
+
+
+print(*input().split(), sep = '\n')
