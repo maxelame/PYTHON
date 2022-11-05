@@ -417,3 +417,7 @@ print(*[i for i in a if i>0], sep="\n")
 
 
 print("\n".join(input().split()))
+
+
+text = input().split()
+print(*text, sep="\n")
