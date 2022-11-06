@@ -436,5 +436,6 @@ s_list = input().split()
 for i in s_list:
     print(i.upper()[0] + ".", end = "")
 
-
+sp = input().split()
+print( '.'.join([sp[0][0], sp[1][0], sp[2][0]]), '.', sep = '' )
 
