@@ -445,3 +445,14 @@ s = input().split()
 for i in range(len(s)):
     s[i] = s[i][0]
 print('.'.join(s), '.', sep='')
+
+
+s = input()  # put your python code here
+fio = s.split()
+name = []
+for i in fio:
+    for j in range(len(i)):
+        x = i[0]
+    name.append(x)
+    v = '.'.join(name)
+print(v + '.', end = '')
