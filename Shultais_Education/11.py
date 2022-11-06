@@ -439,3 +439,9 @@ for i in s_list:
 sp = input().split()
 print( '.'.join([sp[0][0], sp[1][0], sp[2][0]]), '.', sep = '' )
 
+
+
+s = input().split()
+for i in range(len(s)):
+    s[i] = s[i][0]
+print('.'.join(s), '.', sep='')
