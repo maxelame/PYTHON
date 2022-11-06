@@ -429,3 +429,9 @@ print(*s[0].split(), sep='\n')
 
 
 print(*input().split(), sep = '\n')
+
+
+
+s_list = input().split()
+for i in s_list:
+    print(i.upper()[0] + ".", end = "")
