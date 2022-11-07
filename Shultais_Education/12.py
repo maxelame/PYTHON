@@ -5,3 +5,8 @@ print("\n".join(input().split('\\'))) # не забываем, что одна \
 
 
 print(*input().split(chr(92)), sep='\n')
+
+
+s_list = input().split()
+for i in s_list:
+    print("+" * int(i))
