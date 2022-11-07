@@ -18,3 +18,5 @@ print(*[int(char) * '+' for char in input().split()], sep='\n')
 
 lst = map(int, input().split())  # такая нехитрая запись позволяет делать список из чисел, а не строк
 print(*['+' * i for i in lst], sep='\n')
+
+
