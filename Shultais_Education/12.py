@@ -61,3 +61,12 @@ for i in a:
         flag = 'НЕТ'
         break
 print(flag)
+
+
+s = input().split('.')
+for i in s:
+    if int(i) > 255:
+        print('НЕТ')
+        break
+else:
+    print('ДА')
