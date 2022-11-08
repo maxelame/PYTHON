@@ -28,3 +28,11 @@ for i in s_list:
         break
 else:
     print("ДА")
+
+for b in listig:
+    if int(b) > 255:
+        flag = False
+if flag == True:
+    print('ДА')
+else:
+    print('НЕТ')
