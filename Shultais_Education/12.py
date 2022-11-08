@@ -51,3 +51,13 @@ if flag:
     print('ДА')
 else:
     print('НЕТ')
+
+
+s = input()
+a = s.split('.')
+flag = 'ДА'
+for i in a:
+    if not 0 <= int(i) <=255:
+        flag = 'НЕТ'
+        break
+print(flag)
