@@ -70,3 +70,15 @@ for i in s:
         break
 else:
     print('ДА')
+
+
+print(('НЕТ', 'ДА')[sum([int(n)<256 for n in input().split('.')]) == 4])
+
+
+ip = input().split('.')
+for i in ip:
+    if int(i) not in range(0, 256):
+        print('НЕТ')
+        break
+else:
+    print('ДА')
