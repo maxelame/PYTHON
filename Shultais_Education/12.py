@@ -36,3 +36,18 @@ if flag == True:
     print('ДА')
 else:
     print('НЕТ')
+
+
+text = input()
+List = text.split('.')
+
+for i in List:
+    flag = False
+    if 0 <= int(i) <= 255:
+        flag = True
+    else:
+        break
+if flag:
+    print('ДА')
+else:
+    print('НЕТ')
