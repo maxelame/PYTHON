@@ -100,3 +100,6 @@ print(c.join(s))
 
 s = input()
 print(input().join(s))
+
+
+print(*[input().join(i) for i in input().split('.')], end=' ')
