@@ -19,4 +19,10 @@ print(*[int(char) * '+' for char in input().split()], sep='\n')
 lst = map(int, input().split())  # такая нехитрая запись позволяет делать список из чисел, а не строк
 print(*['+' * i for i in lst], sep='\n')
 
-
+s_list = map(int, input().split("."))
+for i in s_list:
+    if i < 0 or i > 255:
+        print("НЕТ")
+        break
+else:
+    print("ДА")
