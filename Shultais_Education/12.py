@@ -96,3 +96,7 @@ print(*List)
 
 s, c = list(input()), input()
 print(c.join(s))
+
+
+s = input()
+print(input().join(s))
