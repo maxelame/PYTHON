@@ -82,3 +82,8 @@ for i in ip:
         break
 else:
     print('ДА')
+
+
+s_list = list(input())
+razdelitel = input()
+print(razdelitel.join(s_list))
