@@ -87,3 +87,8 @@ else:
 s_list = list(input())
 razdelitel = input()
 print(razdelitel.join(s_list))
+
+
+text, sep = input(), input()
+List = sep.join(text).split()
+print(*List)
