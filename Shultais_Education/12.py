@@ -129,3 +129,14 @@ s = 0
 for i in range(len(a) - 1):
     s += a[i + 1:].count(a[i])
 print(s)
+
+s = input()
+spisok = s.split(' ')
+counter = 0
+for i in spisok:
+    spisok = spisok[1:]
+    for j in spisok:
+        if i == j:
+            counter += 1
+
+print(counter)
