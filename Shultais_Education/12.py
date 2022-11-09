@@ -114,3 +114,11 @@ for i in s_list[t:]:
             counter += 1
     t += 1
 print(counter)
+
+
+m, counter = input().split(), 0
+for i in range(len(m)):
+    for j in range(i + 1, len(m)):
+        if m[i] == m[j]:
+            counter += 1
+print(counter)
