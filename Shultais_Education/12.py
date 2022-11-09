@@ -103,3 +103,14 @@ print(input().join(s))
 
 
 print(*[input().join(i) for i in input().split('.')], end=' ')
+
+
+
+s_list = list(map(int, input().split()))
+counter, t = 0, 0
+for i in s_list[t:]:
+    for j in s_list[t + 1:]:
+        if i == j:
+            counter += 1
+    t += 1
+print(counter)
