@@ -122,3 +122,10 @@ for i in range(len(m)):
         if m[i] == m[j]:
             counter += 1
 print(counter)
+
+
+a = input().split()
+s = 0
+for i in range(len(a) - 1):
+    s += a[i + 1:].count(a[i])
+print(s)
