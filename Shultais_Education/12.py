@@ -152,3 +152,13 @@ colors.insert(0, 'Violet')
 colors.insert(2, 'Purple')
 
 print(colors)
+
+
+
+numbers = [8, 9, 10, 11]
+numbers[1] = 17 #    Заменил второй элемент списка на 17;
+numbers.extend([4, 6, 7]) #    Добавил числа 4, 5 и 6 в конец списка;
+del numbers[0]#    Удалил первый элемент списка;
+numbers *= 2 #    Удвоил список;
+numbers.insert(3, 25)#    Вставил число 25 по индексу 3;
+print(numbers) #    Вывел список, с помощью функции print()
