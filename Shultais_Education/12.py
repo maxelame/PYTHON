@@ -190,3 +190,17 @@ m_min, m_max = min(l), max(l)
 m_min_i, m_max_i = l.index(min(l)), l.index(max(l))
 l[m_min_i], l[m_max_i] = m_max, m_min
 print(*l, sep=' ')
+
+x = input().split()
+int_x = [int(x) for x in x]  # преобразование в целое число
+
+ma = max(int_x)
+mi = min(int_x)
+
+for i in range(len(int_x)):
+    if int_x[i] == ma:
+        int_x[i] = mi
+    elif int_x[i] == mi:
+        int_x[i] = ma
+
+print(*int_x)
