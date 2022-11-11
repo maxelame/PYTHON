@@ -180,3 +180,13 @@ position_min= s_list.index(min(s_list))
 s_list[position_max], s_list[position_min] = s_list[position_min], s_list[position_max]
 s_list = list(map(str, s_list))
 print(" ".join(s_list))
+
+
+
+m, l = input().split(), []
+for i in m:
+    l.append(int(i))
+m_min, m_max = min(l), max(l)
+m_min_i, m_max_i = l.index(min(l)), l.index(max(l))
+l[m_min_i], l[m_max_i] = m_max, m_min
+print(*l, sep=' ')
