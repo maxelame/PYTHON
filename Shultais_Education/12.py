@@ -204,3 +204,12 @@ for i in range(len(int_x)):
         int_x[i] = ma
 
 print(*int_x)
+
+
+
+s = input().split()
+s = [int(i) for i in s]
+index_max = s.index(max(s))
+index_min = s.index(min(s))
+s[index_max], s[index_min] = s[index_min], s[index_max]
+print(*s)
