@@ -174,4 +174,9 @@ numbers.insert(3, 25)#    Вставил число 25 по индексу 3;
 print(numbers) #    Вывел список, с помощью функции print()
 
 
-
+s_list = list(map(int, input().split()))
+position_max= s_list.index(max(s_list))
+position_min= s_list.index(min(s_list))
+s_list[position_max], s_list[position_min] = s_list[position_min], s_list[position_max]
+s_list = list(map(str, s_list))
+print(" ".join(s_list))
