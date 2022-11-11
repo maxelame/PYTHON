@@ -213,3 +213,10 @@ index_max = s.index(max(s))
 index_min = s.index(min(s))
 s[index_max], s[index_min] = s[index_min], s[index_max]
 print(*s)
+
+
+
+nums = [int(c) for c in input().split()]
+max_i, min_i = nums.index(max(nums)), nums.index(min(nums))
+nums[max_i], nums[min_i] = min(nums), max(nums)
+print(*nums)
