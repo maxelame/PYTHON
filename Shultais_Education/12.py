@@ -220,3 +220,10 @@ nums = [int(c) for c in input().split()]
 max_i, min_i = nums.index(max(nums)), nums.index(min(nums))
 nums[max_i], nums[min_i] = min(nums), max(nums)
 print(*nums)
+
+
+count = 0
+for i in input().split():
+    if i == 'a' or i == 'A' or i == 'an' or i == 'An' or i == 'the' or i == 'The':
+        count += 1
+print(f"Общее количество артиклей: {count}")
