@@ -227,3 +227,11 @@ for i in input().split():
     if i == 'a' or i == 'A' or i == 'an' or i == 'An' or i == 'the' or i == 'The':
         count += 1
 print(f"Общее количество артиклей: {count}")
+
+
+s = input().lower().split()
+k = ['a', 'an', 'the']
+count = 0
+for a in k:
+  count += s.count(a)
+print('Общее количество артиклей:', count)
