@@ -235,3 +235,6 @@ count = 0
 for a in k:
   count += s.count(a)
 print('Общее количество артиклей:', count)
+
+
+print('Общее количество артиклей:',len([word for word in input().lower().split() if word in ['a', 'an', 'the']]))
