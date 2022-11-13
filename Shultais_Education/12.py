@@ -238,3 +238,15 @@ print('Общее количество артиклей:', count)
 
 
 print('Общее количество артиклей:',len([word for word in input().lower().split() if word in ['a', 'an', 'the']]))
+
+
+
+n = int(input()[1:])
+s_list = [input() for i in range(n)]
+l = []
+for t in s_list:
+    if "#" in t:
+        l.append(t.split("#")[0].rstrip())
+    else:
+        l.append(t.rstrip())
+print(*l, sep = "\n")
