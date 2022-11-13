@@ -250,3 +250,7 @@ for t in s_list:
     else:
         l.append(t.rstrip())
 print(*l, sep = "\n")
+
+
+
+print(*map(lambda i: i.split('#')[0].rstrip(), __import__('sys').stdin.read().splitlines()[1:]), sep='\n')
