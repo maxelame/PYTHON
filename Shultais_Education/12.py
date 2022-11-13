@@ -254,3 +254,12 @@ print(*l, sep = "\n")
 
 
 print(*map(lambda i: i.split('#')[0].rstrip(), __import__('sys').stdin.read().splitlines()[1:]), sep='\n')
+
+
+
+n = input()
+for _ in range(int(n[1:])):
+    s = input()
+    if '#' in s:
+        s = s[:s.find('#')]
+    print(s.rstrip())
