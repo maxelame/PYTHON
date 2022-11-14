@@ -263,3 +263,11 @@ for _ in range(int(n[1:])):
     if '#' in s:
         s = s[:s.find('#')]
     print(s.rstrip())
+
+
+
+s_list = list(map(int, input().split()))
+s_list.sort()
+print(*s_list, sep = " ")
+s_list.sort(reverse = True)
+print(*s_list, sep = " ")
