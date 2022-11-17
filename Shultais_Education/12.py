@@ -296,7 +296,9 @@ print(new_keywords)
 palindromes = [i for i in range(100, 1000) if str(i) == str(i)[::-1]]
 print(palindromes)
 
-
+n = int(input())
+s_list = [i ** 2 for i in range(1, n + 1)]
+print(*s_list, sep = "\n")
 
 
 
