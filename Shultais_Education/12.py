@@ -301,4 +301,6 @@ s_list = [i ** 2 for i in range(1, n + 1)]
 print(*s_list, sep = "\n")
 
 
-
+ist_square = [i**2 for i in range(1, int(input()) + 1)]
+for b in list_square:
+    print(b)
