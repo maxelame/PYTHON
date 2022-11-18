@@ -304,3 +304,6 @@ print(*s_list, sep = "\n")
 ist_square = [i**2 for i in range(1, int(input()) + 1)]
 for b in list_square:
     print(b)
+
+
+print(*[int(i) ** 3 for i in input().split()])
