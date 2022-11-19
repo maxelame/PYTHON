@@ -310,3 +310,7 @@ print(*[int(i) ** 3 for i in input().split()])
 
 n = input().split()
 list = [print(int(n[i])**3, end =' ') for i in range(len(n))]
+
+
+
+print(*input().split(), sep = "\n")
