@@ -319,3 +319,6 @@ print(*input().split(), sep = "\n")
 
 digit = [i for i in list(input()) if i in '0123456789']
 print(*digit, sep = '')
+
+
+print(*[i[k] for i in input().split() for k in range(len(i)) if i[k].isdigit() == True], sep='')
