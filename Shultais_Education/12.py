@@ -322,3 +322,7 @@ print(*digit, sep = '')
 
 
 print(*[i[k] for i in input().split() for k in range(len(i)) if i[k].isdigit() == True], sep='')
+
+
+
+[print(d, end='') for d in input() if d.isdigit()]
