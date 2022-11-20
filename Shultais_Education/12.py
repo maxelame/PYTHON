@@ -326,3 +326,6 @@ print(*[i[k] for i in input().split() for k in range(len(i)) if i[k].isdigit() =
 
 
 [print(d, end='') for d in input() if d.isdigit()]
+
+
+print(*[int(i) ** 2 for i in input().split() if int(i) % 2 == 0 and (int(i) ** 2) % 10 != 4])
