@@ -314,3 +314,8 @@ list = [print(int(n[i])**3, end =' ') for i in range(len(n))]
 
 
 print(*input().split(), sep = "\n")
+
+
+
+digit = [i for i in list(input()) if i in '0123456789']
+print(*digit, sep = '')
