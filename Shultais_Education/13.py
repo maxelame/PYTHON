@@ -95,3 +95,10 @@ n = int(input())
 
 # вызываем функцию
 print_digit_sum(n)
+
+
+
+def print_digit_sum(num):
+    print(sum(int(i) for i in num))
+n = input()
+print_digit_sum(n)
