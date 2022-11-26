@@ -102,3 +102,10 @@ def print_digit_sum(num):
     print(sum(int(i) for i in num))
 n = input()
 print_digit_sum(n)
+
+
+def print_paris():
+    print(s)
+    s = 'I love Paris'
+
+print_paris()
