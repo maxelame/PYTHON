@@ -134,3 +134,16 @@ y = int(input())
 is_prime(x)
 is_prime(y)
 is_prime(number)
+
+
+
+x = 5
+
+def add():
+    global x
+    x = 3
+    x = x + 5
+    print(x)
+
+add()
+print(x)
