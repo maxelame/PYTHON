@@ -175,3 +175,17 @@ def get_days(month):
         return "30"
 num = int(input())
 print(get_days(num))
+
+# объявление функции
+def get_factors(num):
+    s = []
+    for i in range(1, num + 1):
+        if num % i == 0:
+            s += [i]
+    return s
+
+# считываем данные
+n = int(input())
+
+# вызываем функцию
+print(get_factors(n))
