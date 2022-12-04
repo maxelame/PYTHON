@@ -263,3 +263,12 @@ numbers2 = [int(c) for c in input().split()]
 
 # вызываем функцию
 print(merge(numbers1, numbers2))
+
+
+
+n = int(input())
+s = []
+for i in range(n):
+    s += list(map(int, input().split()))
+s.sort()
+print(*s, sep = " ")
