@@ -301,3 +301,7 @@ while n - 1 != 0:
     list1 = quick_merge(list1, list2)
     n -= 1
 print(*list1)
+
+
+# put your python code here
+arr =[];[arr.extend([int(c) for c in input().split()])  for i in range(int(input()))]; arr.sort(); print(*arr)
