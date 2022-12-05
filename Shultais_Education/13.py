@@ -375,3 +375,12 @@ if len(n) == 12:
         print("NO")
 if len(n) not in [12,14]:
     print("NO")
+
+
+
+list1 = input().split()
+max_len = len(list1[0])
+for i in list1:
+    if len(i) >= max_len:
+        max_len = len(i)
+print(max_len)
