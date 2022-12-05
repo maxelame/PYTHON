@@ -331,3 +331,20 @@ a, b, c = int(input()), int(input()), int(input())
 
 # вызываем функцию
 print(is_valid_triangle(a, b, c))
+
+
+l = list(map(int, input().split()))
+m = list(map(int, input().split()))
+
+for i, j in zip(l, m):
+    print(i + j, end=" ")
+
+
+
+lst1 = list(map(int, input().split()))
+lst2 = list(map(int, input().split()))
+lst3 = []
+for i in range(len(lst1)):
+    lst3 = lst1[i] + lst2[i]
+
+    print(lst3, end=" ")
