@@ -348,3 +348,11 @@ for i in range(len(lst1)):
     lst3 = lst1[i] + lst2[i]
 
     print(lst3, end=" ")
+
+
+
+
+
+list1 = [int(i) for i in input().split()]
+print(*list1, sep = "+", end = "=")
+print(sum(list1))
