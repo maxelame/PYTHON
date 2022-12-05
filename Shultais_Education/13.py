@@ -384,3 +384,6 @@ for i in list1:
     if len(i) >= max_len:
         max_len = len(i)
 print(max_len)
+
+
+print(max([len(i) for i in input().split()]))
