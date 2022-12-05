@@ -387,3 +387,6 @@ print(max_len)
 
 
 print(max([len(i) for i in input().split()]))
+
+
+print(*((i + i[0] + 'ки')[1:] for i in input().split()))
