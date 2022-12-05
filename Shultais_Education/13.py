@@ -356,3 +356,22 @@ for i in range(len(lst1)):
 list1 = [int(i) for i in input().split()]
 print(*list1, sep = "+", end = "=")
 print(sum(list1))
+
+
+
+
+n = input()
+if len(n) == 14:
+    list1 = n.split("-")
+    if list1[0] == "7" and list1[1].isdigit() and len(list1[1]) == 3 and list1[2].isdigit() and len(list1[2]) == 3 and list1[3].isdigit() and len(list1[3]) == 4:
+        print("YES")
+    else:
+        print("NO")
+if len(n) == 12:
+    list1 = n.split("-")
+    if list1[0].isdigit() and len(list1[0]) == 3 and list1[1].isdigit() and len(list1[1]) == 3 and list1[2].isdigit() and len(list1[2]) == 4:
+                 print("YES")
+    else:
+        print("NO")
+if len(n) not in [12,14]:
+    print("NO")
