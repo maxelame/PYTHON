@@ -54,3 +54,18 @@ n = int(input())
 
 # вызываем функцию
 print(get_next_prime(n))
+
+
+# объявление функции
+def is_password_good(password):
+    if len(password) > 7 and not password.isupper() and not password.islower() and password.isalnum() and not password.isdigit() and not password.isalpha():
+        return True
+    else:
+        return False
+
+
+# считываем данные
+txt = input()
+
+# вызываем функцию
+print(is_password_good(txt))
