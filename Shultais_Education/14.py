@@ -93,3 +93,29 @@ txt1 = input()
 txt2 = input()
 # вызываем функцию
 print(is_one_away(txt1, txt2))
+
+
+
+
+
+# объявление функции
+def is_palindrome(text):
+    s_list = list(text.lower())
+    new_list = []
+    for i in s_list:
+        if i.isalpha():
+            new_list.append(i)
+    print(new_list)
+    s = "".join(new_list)
+    print(s)
+    if s == s[::-1]:
+        return True
+    else:
+        return False
+
+
+# считываем данные
+txt = "Standart - smallest, sell Amstrad nats."
+
+# вызываем функцию
+print(is_palindrome(txt))
