@@ -176,3 +176,19 @@ psw = input()
 
 # вызываем функцию
 print(is_valid_password(psw))
+
+
+
+# объявление функции
+def is_valid_password(password):
+    pas = [int(i) for i in password.split(':')]
+    a, b = str(pas[0]), len([i for i in range(1, pas[1] + 1) if pas[1] % i == 0])
+    return a == a[::-1] and b == 2 and pas[2] % 2 == 0 and len(pas) == 3
+
+# считываем данные
+psw = input()
+
+# вызываем функцию
+print(is_valid_password(psw))
+
+
