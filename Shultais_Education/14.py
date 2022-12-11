@@ -146,3 +146,33 @@ txt = input()
 # вызываем функцию
 print(is_palindrome(txt))
 
+
+# объявление функции
+def is_valid_password(password):
+    s = password.split(":")
+    flag1, flag2, flag3, flag4 = 0, 0, 0, 0
+    if len(s) == 3:
+        flag1 = 1  # проидена проверка на наличие 3х чисел
+    if s[0] == s[0][::-1]:
+        flag2 = 1  # проидена проверка палиндром
+    counter = 0
+    for i in range(1, int(s[1]) + 1):
+        if int(s[1]) % i == 0:
+            counter += 1
+    if counter == 2:
+        flag3 = 1  # проидена проверка на простое число
+
+    if int(s[2]) % 2 == 0:
+        flag4 = 1  # проидена проверка на четность
+
+    if flag1 * flag2 * flag3 * flag4 == 1:
+        return True
+    else:
+        return False
+
+
+# считываем данные
+psw = input()
+
+# вызываем функцию
+print(is_valid_password(psw))
