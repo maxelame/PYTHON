@@ -147,6 +147,22 @@ txt = input()
 print(is_palindrome(txt))
 
 
+
+
+# объявление функции
+def is_correct_bracket(text):
+    while text.count("()") > 0:
+        text = text.replace("()","")
+    if len(text) != 0:
+        return False
+    else:
+        return True
+# считываем данные
+txt = input()
+
+# вызываем функцию
+print(is_correct_bracket(txt))
+
 # объявление функции
 def is_valid_password(password):
     s = password.split(":")
