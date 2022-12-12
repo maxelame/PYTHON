@@ -208,3 +208,17 @@ psw = input()
 print(is_valid_password(psw))
 
 
+# объявление функции
+def is_correct_bracket(text):
+    while "()" in text:
+        text = text.replace("()", "")
+    if text == "":
+        return True
+    return False
+
+
+# считываем данные
+txt = input()
+
+# вызываем функцию
+print(is_correct_bracket(txt))
