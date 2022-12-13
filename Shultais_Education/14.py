@@ -222,3 +222,21 @@ txt = input()
 
 # вызываем функцию
 print(is_correct_bracket(txt))
+
+
+
+
+def convert_to_python_case(text):
+    s = list(text)
+    string = s[0].lower()
+    for i in s[1:]:
+        if i.isupper():
+            string += "_" + i.lower()
+        else:
+            string += i
+    return string
+# считываем данные
+txt = input()
+
+# вызываем функцию
+print(convert_to_python_case(txt))
