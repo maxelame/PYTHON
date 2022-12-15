@@ -279,3 +279,17 @@ r = float(input())
 length, square = get_circle(r)
 print(length, square)
 
+
+
+
+# объявление функции
+def get_circle(radius):
+    pi = __import__('math').pi
+    return 2 * pi * radius, pi * radius ** 2
+
+# считываем данные
+r = float(input())
+
+# вызываем функцию
+length, square = get_circle(r)
+print(length, square)
