@@ -268,5 +268,14 @@ x_2, y_2 = int(input()), int(input())
 x, y = get_middle_point(x_1, y_1, x_2, y_2)
 print(x, y)
 
+import math
+def get_circle(radius):
+    return 2*math.pi*radius, math.pi*radius**2
 
+# считываем данные
+r = float(input())
+
+# вызываем функцию
+length, square = get_circle(r)
+print(length, square)
 
