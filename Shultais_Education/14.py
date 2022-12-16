@@ -328,3 +328,15 @@ a, b, c = int(input()), int(input()), int(input())
 # вызываем функцию
 x1, x2 = solve(a, b, c)
 print(x1, x2)
+
+
+
+def solve(a, b, c):
+    return sorted([(-b - ((-b) ** 2 - 4 * a * c) ** 0.5) / (2 * a), (-b + ((-b) ** 2 - 4 * a * c) ** 0.5) / (2 * a)])
+
+# считываем данные
+a, b, c = int(input()), int(input()), int(input())
+
+# вызываем функцию
+x1, x2 = solve(a, b, c)
+print(x1, x2)
