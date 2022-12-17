@@ -363,3 +363,16 @@ n = int(input())
 
 # вызываем функцию
 print(get_shipping_cost(n))
+
+
+
+import math
+def compute_binom(n, k):
+    return int(math.factorial(n)/(math.factorial(k) * math.factorial(n-k)))
+
+# считываем данные
+n = int(input())
+k = int(input())
+
+# вызываем функцию
+print(compute_binom(n, k))
