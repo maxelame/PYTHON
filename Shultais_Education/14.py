@@ -340,3 +340,13 @@ a, b, c = int(input()), int(input()), int(input())
 # вызываем функцию
 x1, x2 = solve(a, b, c)
 print(x1, x2)
+
+
+
+# объявление функции
+def draw_triangle():
+    for i in range(1,8):
+        print(" "* (8-i) + (i *2 - 1) * "*")
+
+# основная программа
+draw_triangle()  # вызов функции
