@@ -408,3 +408,18 @@ num = int(input())
 
 # вызываем функцию
 print(get_month(lan, num))
+
+
+
+# объявление функции
+def is_magic(date):
+    d = date.split(".")
+    if int(d[0]) * int(d[1]) == int(d[2]) % 100:
+        return True
+    else:
+        return False
+
+# считываем данные
+date = input()
+# вызываем функцию
+print(is_magic(date))
