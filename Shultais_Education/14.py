@@ -423,3 +423,17 @@ def is_magic(date):
 date = input()
 # вызываем функцию
 print(is_magic(date))
+
+
+
+# объявление функции
+def is_pangram(text):
+    if len(set(text.lower().replace(" ", ""))) == 26:
+        return True
+    else:
+        return False
+# считываем данные
+text = input()
+
+# вызываем функцию
+print(is_pangram(text))
