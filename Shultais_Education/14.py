@@ -476,3 +476,9 @@ for _ in range(10):
         print('Орел')
     else:
         print('Решка')
+
+
+
+rom random import *
+for i in range(10):
+    print(choice(['Орёл','Решка']))
