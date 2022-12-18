@@ -482,3 +482,7 @@ for _ in range(10):
 rom random import *
 for i in range(10):
     print(choice(['Орёл','Решка']))
+
+
+
+[print(('Решка', 'Орел')[__import__('random').randint(0, 1)]) for _ in range(10)]
