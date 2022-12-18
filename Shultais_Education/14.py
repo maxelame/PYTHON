@@ -446,3 +446,10 @@ random.seed(17)   # явно устанавливаем начальное зн�
 
 for _ in range(10):
     print(random.randint(1, 100))
+
+import random
+
+print('Бросаем кубики... ')
+print('Значения граней:')
+print(random.randint(1, 6))
+print(random.randint(1, 6))
