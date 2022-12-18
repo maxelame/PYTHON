@@ -465,3 +465,14 @@ while again.lower() == 'д':
     print(random.randint(1, 6))
     print(random.randint(1, 6))
     again = input('Бросить кубики еще раз? (д = да, н = нет): ')
+
+
+
+import random
+
+for _ in range(10):
+    num = random.randint(0, 1)
+    if num == 0:
+        print('Орел')
+    else:
+        print('Решка')
