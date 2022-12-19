@@ -486,3 +486,11 @@ for i in range(10):
 
 
 [print(('Решка', 'Орел')[__import__('random').randint(0, 1)]) for _ in range(10)]
+
+
+
+import random
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+random.shuffle(numbers)
+print(numbers)
