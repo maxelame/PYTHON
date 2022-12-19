@@ -510,3 +510,12 @@ print(random.sample(numbers, 1))
 print(random.sample(numbers, 2))
 print(random.sample(numbers, 3))
 print(random.sample(numbers, 5))
+
+import random
+
+numbers = [2, 5, 8, 9, 12]
+
+print(random.sample(numbers, 1))
+print(random.sample(numbers, 2))
+print(random.sample(numbers, 3))
+print(random.sample(numbers, 5))
