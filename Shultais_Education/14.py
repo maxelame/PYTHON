@@ -525,3 +525,11 @@ print(random.sample(numbers, 5))
 from math import ceil, log
 n = int(input())
 print(ceil(log(n, 2)))
+
+
+a=int(input())
+b=0
+while a>1:
+    b=b+1
+    a=a/2
+print(b)
