@@ -519,3 +519,9 @@ print(random.sample(numbers, 1))
 print(random.sample(numbers, 2))
 print(random.sample(numbers, 3))
 print(random.sample(numbers, 5))
+
+
+
+from math import ceil, log
+n = int(input())
+print(ceil(log(n, 2)))
