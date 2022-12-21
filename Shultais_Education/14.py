@@ -533,3 +533,29 @@ while a>1:
     b=b+1
     a=a/2
 print(b)
+
+
+
+import random
+
+x = random.randint(1, 100)
+print('Добро пожаловать в числовую угадайку')
+
+
+def is_valid(n:int):
+    return int(n) < 100 and n.isdigit()
+
+
+while True:
+    num = input('Введите целое число от 1 до 100: ')
+    if not is_valid(num):
+        print('А может быть все-таки введем целое число от 1 до 100?')
+    else:
+        if int(num) < x:
+            print('Ваше число меньше загаданного, попробуйте еще разок')
+        elif int(num) > x:
+            print('Ваше число больше загаданного, попробуйте еще разок')
+        else:
+            print('Вы угадали, поздравляем!')
+            print('Спасибо, что играли в числовую угадайку. Еще увидимся...')
+            break
