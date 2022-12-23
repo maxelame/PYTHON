@@ -587,3 +587,10 @@ elif imt < 18.5:
     print('Недостаточная масса')
 else:
     print('Оптимальная масса')
+
+
+
+def cost(s):
+    return f"{len(s) * 60 // 100} р. {len(s) * 60 % 100 } коп."
+
+print(cost(input()))
