@@ -559,3 +559,19 @@ while True:
             print('Вы угадали, поздравляем!')
             print('Спасибо, что играли в числовую угадайку. Еще увидимся...')
             break
+
+
+
+
+def IMT(m, l):
+    imt = m / l ** 2
+    if 18.5 <= imt <= 25:
+        return "Оптимальная масса"
+    elif imt < 18.5:
+        return "Недостаточная масса"
+    else:
+        return "Избыточная масса"
+
+m = float(input())
+l = float(input())
+print(IMT(m, l))
