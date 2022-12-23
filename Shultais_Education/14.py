@@ -594,3 +594,6 @@ def cost(s):
     return f"{len(s) * 60 // 100} р. {len(s) * 60 % 100 } коп."
 
 print(cost(input()))
+
+
+print("{} р. {} коп.".format(int(x:=(len(input())*0.6)),round((x-int(x))*100)))
