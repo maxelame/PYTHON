@@ -15,3 +15,7 @@ if len(num) == 6:
     print(int(num[0] + num2))
 else:
     print(int(num[::-1]))
+
+
+s = input()
+print(int(s[:-5] + s[-5:][::-1]))
