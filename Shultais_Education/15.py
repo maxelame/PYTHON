@@ -29,3 +29,8 @@ print('{0:,}'.format(x))
 
 num = int(input())
 print(f'{num:,}')
+
+
+
+x = int(input())
+print('{0:,}'.format(x)) # {0:,} - указываем запятую в качестве разделителя разрядов
