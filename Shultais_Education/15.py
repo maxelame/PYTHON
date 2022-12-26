@@ -19,3 +19,8 @@ else:
 
 s = input()
 print(int(s[:-5] + s[-5:][::-1]))
+
+
+
+x = int(input())
+print('{0:,}'.format(x))
