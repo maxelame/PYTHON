@@ -61,3 +61,21 @@ a = 0
 for i in range(1, n + 1):
     a = (a + k) % i
 print(a +1)
+
+
+
+c1, c2, c3, c4 = 0,0,0,0
+for i in range(int(input())):
+               x, y = list(map(int, input().split()))
+               if (x > 0 and y > 0):
+                   c1 += 1
+               elif (x < 0 and y > 0):
+                    c2 += 1
+               elif (x < 0 and y < 0):
+                    c3 += 1
+               elif (x > 0 and y < 0):
+                    c4 += 1
+print(f"Первая четверть: {c1}")
+print(f"Вторая четверть: {c2}")
+print(f"Третья четверть: {c3}")
+print(f"Четвертая четверть: {c4}")
