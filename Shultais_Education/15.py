@@ -92,3 +92,14 @@ for i in range(1, len(numbers)):
         counter += 1
 
 print(counter)
+
+
+num_list = list(map(int, input().split()))
+counter, counter_max, previous_num = 0, 0, num_list[0]
+for i in num_list[1:]:
+    if i > previous_num:
+        counter += 1
+        if counter > counter_max:
+            counter_max = counter
+    previous_num = i
+print(counter_max)
