@@ -94,6 +94,7 @@ for i in range(1, len(numbers)):
 print(counter)
 
 
+
 num_list = list(map(int, input().split()))
 counter, counter_max, previous_num = 0, 0, num_list[0]
 for i in num_list[1:]:
