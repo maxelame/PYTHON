@@ -110,3 +110,10 @@ s_list = [int(i) for i in input().split()]
 for k in range(0, len(s_list) - 1, 2):
     s_list[k], s_list[k + 1] =  s_list[k + 1], s_list[k]
 print(*s_list, sep = " ")
+
+
+
+sp = [i for i in input().split()]
+last = sp.pop()
+sp.insert(0, last)
+print(*sp)
