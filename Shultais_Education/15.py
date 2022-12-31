@@ -117,3 +117,5 @@ sp = [i for i in input().split()]
 last = sp.pop()
 sp.insert(0, last)
 print(*sp)
+
+
