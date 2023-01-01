@@ -118,4 +118,4 @@ last = sp.pop()
 sp.insert(0, last)
 print(*sp)
 
-
+print(len(set(input().split()))) # формируем список, спомощью метода SET делаем уникальным (убираем повторы), LEN - возвращает длину
