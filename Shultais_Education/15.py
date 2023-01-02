@@ -119,3 +119,15 @@ sp.insert(0, last)
 print(*sp)
 
 print(len(set(input().split()))) # формируем список, спомощью метода SET делаем уникальным (убираем повторы), LEN - возвращает длину
+
+
+
+n = int(input())
+sp = [int(input()) for i in range(n)]
+num = int(input())
+flag = "НЕТ"
+for i in range(len(sp)):
+    for j in range(i + 1, len(sp)):
+        if sp[i] * sp[j] == num:
+            flag = "ДА"
+print(flag)
