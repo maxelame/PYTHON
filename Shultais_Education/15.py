@@ -131,3 +131,17 @@ for i in range(len(sp)):
         if sp[i] * sp[j] == num:
             flag = "ДА"
 print(flag)
+
+
+
+# выяснить, является ли заданное число произведением двух любых чисел из списка
+n=int(input())
+spis=[int(input()) for _ in range(n)]
+number=int(input())
+
+temp=[[spis[i]*spis[j] for j in range(i+1,len(spis))] for i in range(len(spis)-1)] # создали набор списков,
+# содержащих произведение элементов между собой
+mass=list(set([j for i in temp for j in i])) #распаковали эти списки внутри набора и из этого набора
+# взяли только те элементы, что не повторяются
+
+print('ДА' if number in mass else 'НЕТ')
