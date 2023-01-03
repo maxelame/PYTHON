@@ -145,3 +145,14 @@ mass=list(set([j for i in temp for j in i])) #распаковали эти сп
 # взяли только те элементы, что не повторяются
 
 print('ДА' if number in mass else 'НЕТ')
+
+
+timur_input, ruslan_input  = input(), input()
+def game(a, b):
+    if (a == 'камень' and b == "ножницы") or (a == 'ножницы' and b == "бумага") or (a == 'бумага' and b == "камень"):
+        return "Тимур"
+    elif (b == 'камень' and a == "ножницы") or (b == 'ножницы' and a == "бумага") or (b == 'бумага' and a == "камень"):
+        return "Руслан"
+    else:
+        return "ничья"
+print(game(timur_input, ruslan_input))
