@@ -156,3 +156,10 @@ def game(a, b):
     else:
         return "ничья"
 print(game(timur_input, ruslan_input))
+
+
+
+x, y = input(), input()
+var = ['камень', 'ножницы', 'бумага']
+ans = ['ничья', 'Руслан', 'Тимур']
+print(ans[var.index(x) - var.index(y)])
