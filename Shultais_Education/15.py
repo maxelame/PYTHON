@@ -161,5 +161,12 @@ print(game(timur_input, ruslan_input))
 
 x, y = input(), input()
 var = ['камень', 'ножницы', 'бумага']
-ans = ['ничья', 'Руслан', 'Тимур']
+ans = ['ничья', 'Руслан', 'Тимур', 'Руслан', 'Тимур']
+print(ans[var.index(x) - var.index(y)])
+
+
+
+x, y = input(), input()
+var = ['камень', 'ножницы', 'бумага']
+ans = ['ничья', 'Руслан', 'Тимур', 'Руслан', 'Тимур']
 print(ans[var.index(x) - var.index(y)])
