@@ -181,9 +181,8 @@ print(ans[var.index(x) - var.index(y)])
 s = input()
 counter, counter_max = 0, 0
 for i in s:
-    if i == "P":
+    if i == "Р":
         counter += 1
-        print(counter)
         if counter > counter_max:
             counter_max = counter
     else:
