@@ -176,3 +176,16 @@ x, y = input(), input()
 var = ['камень', 'ножницы', 'бумага']
 ans = ['ничья', 'Руслан', 'Тимур', 'Руслан', 'Тимур']
 print(ans[var.index(x) - var.index(y)])
+
+
+s = input()
+counter, counter_max = 0, 0
+for i in s:
+    if i == "P":
+        counter += 1
+        print(counter)
+        if counter > counter_max:
+            counter_max = counter
+    else:
+        counter = 0
+print(counter_max)
