@@ -188,3 +188,12 @@ for i in s:
     else:
         counter = 0
 print(counter_max)
+
+
+print(len(max(input().split("О"), key=len)))
+
+
+import re
+pattern = "anton"
+result = [i+1 for i in range(int(input())) if re.findall(r'\w*a\w*n\w*t\w*o\w*n\w*', input())]
+print(*result)
