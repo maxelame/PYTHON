@@ -205,3 +205,6 @@ res = 0
 for num in numbers:
     res += (num % 2 == 1) and (num > 1)
 print(res)
+
+
+print(bool('abc'))
