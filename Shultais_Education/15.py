@@ -208,3 +208,6 @@ print(res)
 
 
 print(bool('abc'))
+
+
+print(bool(list(range(10))))
