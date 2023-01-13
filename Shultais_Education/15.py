@@ -254,3 +254,8 @@ numbers = [10, 20, 30, 40, 50, 60, 70, 80]
 print(numbers[2:5])
 print(numbers[:4])
 print(numbers[3:])
+
+
+numbers = [4, 8, 12, 16, 34, 56, 100]
+numbers[1:4] = [20, 24, 28]
+print(numbers)
