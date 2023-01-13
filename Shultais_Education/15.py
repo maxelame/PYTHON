@@ -259,3 +259,11 @@ print(numbers[3:])
 numbers = [4, 8, 12, 16, 34, 56, 100]
 numbers[1:4] = [20, 24, 28]
 print(numbers)
+
+
+numbers = [10, 20, 30, 40, 50]
+numbers.append(60)
+print(numbers)
+
+numbers.append(60)
+print(numbers)
