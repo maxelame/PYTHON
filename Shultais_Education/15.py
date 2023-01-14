@@ -275,3 +275,6 @@ print(numbers)
 
 numbers.pop(2)
 print(numbers)
+
+
+letters = ['a', 'b', 'c', 'd']
