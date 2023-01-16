@@ -294,3 +294,8 @@ print(max(words))
 numbers = [1, 2, 3, 4, 5, 6, 7]
 new_numbers =  [2 * x for x in numbers]
 print(new_numbers)
+
+
+
+list1 = [[1, 8, 9], [4, 8, 12, 16], [0, 2, 7]]
+print(list1[0][1] + list1[1][2] + list1[2][2])
