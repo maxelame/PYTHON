@@ -299,3 +299,8 @@ print(new_numbers)
 
 list1 = [[1, 8, 9], [4, 8, 12, 16], [0, 2, 7]]
 print(list1[0][1] + list1[1][2] + list1[2][2])
+
+
+list1 = ['Beegeek', [4, 8, 12, 16]]
+print(list1[0][1])
+print(list1[1][3])
