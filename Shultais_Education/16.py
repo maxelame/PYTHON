@@ -44,3 +44,5 @@ for i in list1:
     total += sum(i)
     counter += len(i)
 print(total / counter)
+
+
