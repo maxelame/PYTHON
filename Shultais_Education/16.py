@@ -68,3 +68,13 @@ for _ in range(n):
     list1.extend(row)
 
 print(list1) # один саисок без вложенности
+
+
+
+my_list = [[1], [2, 3], [4, 5, 6]]
+total = 0
+
+for row in my_list:
+    total += sum(row)
+
+print(total) # type(row) integer
