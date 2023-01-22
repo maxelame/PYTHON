@@ -106,3 +106,9 @@ for row in my_list:
         minimum = min(row)
 
 print(maximum + minimum) # 636
+
+
+n = int(input())
+for _ in range(n):
+    list1 = [i for i in range(1, n + 1)]
+    print(list1)
