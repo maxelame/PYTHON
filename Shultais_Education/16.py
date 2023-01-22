@@ -57,3 +57,14 @@ print(list2)
 list1 = [[1] * 3] * 3
 list1[0][1] = 5
 print(list1[1][1])
+
+
+
+n = 3
+list1 = []
+
+for _ in range(n):
+    row = input().split()
+    list1.extend(row)
+
+print(list1) # один саисок без вложенности
