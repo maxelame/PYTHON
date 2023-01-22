@@ -118,3 +118,6 @@ for _ in range(n):
 print(*(lambda n: [list(range(1,n+1)) for _ in range(n)] )(int(input())) , sep='\n')
 
 
+n = int(input())
+l = [list(range(1, n + 1)) for _ in range(n)]
+print(*l, sep='\n')
