@@ -112,3 +112,7 @@ n = int(input())
 for _ in range(n):
     list1 = [i for i in range(1, n + 1)]
     print(list1)
+
+
+
+print(*(lambda n: [list(range(1,n+1)) for _ in range(n)] )(int(input())) , sep='\n')
