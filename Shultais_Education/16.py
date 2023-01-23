@@ -126,3 +126,11 @@ print(*l, sep='\n')
 n = int(input())
 list1 = [list(range(1, n + 1)) for _ in range(n)]
 [print(row) for row in list1]
+
+
+
+n = int(input())
+list1 = []
+for i in range(1, n + 1):
+    list1.append(i)
+    print(list1)
