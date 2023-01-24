@@ -164,3 +164,14 @@ def pascal(n):
 
 # --------------------ВЫЗОВ--------------------
 print(pascal(int(input())))
+
+
+
+import math
+n = int(input())
+def paskal(n):
+    list1 = []
+    for m in range(0,n + 1):
+        list1.append(int(math.factorial(n)/(math.factorial(m) * math.factorial(n-m))))
+    return list1
+print(paskal(n))
