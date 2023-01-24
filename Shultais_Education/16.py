@@ -175,3 +175,6 @@ def paskal(n):
         list1.append(int(math.factorial(n)/(math.factorial(m) * math.factorial(n-m))))
     return list1
 print(paskal(n))
+
+
+print((lambda n: [__import__('math').comb(n, k) for k in range(n+1)])(int(input())))
