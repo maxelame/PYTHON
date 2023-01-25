@@ -178,3 +178,6 @@ print(paskal(n))
 
 
 print((lambda n: [__import__('math').comb(n, k) for k in range(n+1)])(int(input())))
+
+
+
