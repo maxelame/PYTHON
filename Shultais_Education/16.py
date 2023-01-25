@@ -190,3 +190,4 @@ def paskal(n):
     return list1
 for i in range(n):
     print(*paskal(i))
+
