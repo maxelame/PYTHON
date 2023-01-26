@@ -191,3 +191,14 @@ def paskal(n):
 for i in range(n):
     print(*paskal(i))
 
+
+
+
+s_list = input().split()
+list1 = []
+for i in s_list:
+    list1.append([i] * s_list.count(i))
+    for k in s_list:
+        if k == i:
+            s_list.remove(i)
+print(list1)
