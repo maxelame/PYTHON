@@ -202,3 +202,32 @@ for i in s_list:
         if k == i:
             s_list.remove(i)
 print(list1)
+
+
+
+s = input().split()
+res = [[s[0]]]
+for i in range(1, len(s)):
+    if s[i] == s[i-1]:
+        res[-1].append(s[i])
+    else:
+        res.append([s[i]])
+print(res)
+
+
+
+def package(s: str) -> list:
+    s = s.replace(' ', '')
+    answer = []
+    c = 1
+    for i in range(len(s)-1):
+        if s[i] == s[i+1]:
+            c += 1
+        else:
+            answer.append(list(s[i] * c))
+            c = 1
+    answer.append(list(s[-1] * c))
+    return answer
+
+
+print(package(input()))
