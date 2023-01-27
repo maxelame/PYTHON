@@ -231,3 +231,16 @@ def package(s: str) -> list:
 
 
 print(package(input()))
+
+
+
+def chunked(s, n):
+    list1 = []
+    for i in range(0, len(s), n):
+        list1.append(s[i:i + n])
+    return list1
+
+s = input().split()
+n = int(input())
+
+print(chunked(s, n))
