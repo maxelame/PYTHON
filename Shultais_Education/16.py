@@ -246,4 +246,12 @@ n = int(input())
 print(chunked(s, n))
 
 
-
+s= input().split()
+list0 = []
+list1 = [[]]
+for i in range(0, len(s)):
+    for k in range(0, len(s)):
+        list0 = s[k:i + k + 1]
+        if len(list0) == i + 1:
+            list1.append(list0)
+print(list1)
