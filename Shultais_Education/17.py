@@ -59,3 +59,16 @@ for i in range(n):
     if a[i][n - i - 1] < minimum:
         minimum = a[i][n - i - 1]
 print(minimum + maximum)
+==========================================создание и вывод матрицы ========================
+n, m = int(input()), int(input())
+matrix = []
+for _ in range(n):
+    temp = [input() for _ in range(m)]
+    matrix.append(temp)  # создали матрицу
+
+for i in range(len(matrix)):
+    for j in range(len(matrix[i])):
+        print(matrix[i][j], end=' ')  # используем необязательный параметр end
+    print()  # перенос на новую строку
+
+    ========================================================================================
