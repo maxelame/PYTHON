@@ -72,3 +72,22 @@ for i in range(len(matrix)):
     print()  # перенос на новую строку
 
     ========================================================================================
+
+    n, m = int(input()), int(input())
+    matrix = []
+    for _ in range(n):
+        temp = [input() for _ in range(m)]
+        matrix.append(temp)  # создали матрицу
+
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            print(matrix[i][j], end=' ')  # используем необязательный параметр end
+        print()  # перенос на новую строку
+
+    print()
+    matrix2 = list(zip(*matrix))
+
+    for i in range(len(matrix2)):
+        for j in range(len(matrix2[i])):
+            print(matrix2[i][j], end=' ')  # используем необязательный параметр end
+        print()
