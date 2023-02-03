@@ -91,3 +91,6 @@ for i in range(len(matrix)):
         for j in range(len(matrix2[i])):
             print(matrix2[i][j], end=' ')  # используем необязательный параметр end
         print()
+
+
+============ След матрицы ================
