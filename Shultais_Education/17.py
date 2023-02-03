@@ -94,3 +94,12 @@ for i in range(len(matrix)):
 
 
 ============ След матрицы ================
+
+matrix, total = [], 0  # создаем пустой список и счетчик элементов по диагонали
+
+for i in range(int(input())):
+    line = list(map(int, input().split()))  # считываем строку и преобразуем ее в список чисел int
+    matrix.append(line)  # формируем матрицу
+    total += matrix[i][i]  # подсчитываем главную диагональ с индексами  [i][i]
+
+print(total)
