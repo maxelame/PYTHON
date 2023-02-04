@@ -120,3 +120,17 @@ for i in range(n):
         if matrix[i][j] > sr_arif:
             counter += 1
     print(counter)
+
+
+
+# оцифровываем матрицу
+n = int(input())
+matrix = [list(map(int, input().split())) for _ in range(n)]
+
+for i in range(n):
+    sr_arif = sum(matrix[i])/n # среднее арифм.каждой строки
+    counter = 0 # счетчик, который обнуляется после подсчета строки
+    for j in range(n):
+        if matrix[i][j] > sr_arif:  # поэлементно сравниваем в строке со ср.арифм
+            counter += 1
+    print(counter)
