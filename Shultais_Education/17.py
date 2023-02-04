@@ -103,3 +103,20 @@ for i in range(int(input())):
     total += matrix[i][i]  # подсчитываем главную диагональ с индексами  [i][i]
 
 print(total)
+
+
+
+# оцифровываем матрицу
+n, summ = int(input()), 0
+matrix = [list(map(int, input().split())) for _ in range(n)]
+# находим среднее арифметическое
+for q in matrix:
+    summ += sum(q)
+sr_arif = summ/(n ** 2)
+# построчно сравниваем строки матрицы и выводим количество элементов больше ср.арифм
+for i in range(n):
+    counter = 0
+    for j in range(n):
+        if matrix[i][j] > sr_arif:
+            counter += 1
+    print(counter)
