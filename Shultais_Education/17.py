@@ -141,3 +141,6 @@ n = int(input())
 for i in range(n):
     row = [int(i) for i in input().split()]
     print(len([i for i in row if i > sum(row) // n]))
+
+
+============================================
