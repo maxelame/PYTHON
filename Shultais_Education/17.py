@@ -149,3 +149,6 @@ n = int(input())
 matr = [[int(i) for i in input().split()]for _ in range(n)]
 
 print(max([max([matr[i][j] for i in range(n) if j <= i])for j in range(n)]))
+
+
+============================================
