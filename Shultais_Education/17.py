@@ -182,3 +182,12 @@ for i in range(n):
 print(max_digit)
 
 ============================================
+
+
+maximum = []
+m = int(input())
+for i in range(m):
+    my_string = [int(i) for i in input().split()]
+    maximum.extend(my_string[:min(i + 1, m - i)])
+    maximum.extend(my_string[max(-i - 1, i - m):])
+print(max(maximum))
