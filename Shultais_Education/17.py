@@ -167,3 +167,16 @@ print(max_digit)
 
 ============================================
 
+# оцифровываем матрицу
+n = int(input())
+matrix = [list(map(int, input().split())) for _ in range(n)]
+# вводим переменную равную минус бесконечности
+max_digit = float('-inf')
+for i in range(n):
+    for j in range(n):
+        # подсчет только по заштрихованному треугольнику
+        if (i >= j and i <= n - 1 - j) or (i <= j and i >= n - 1 - j):
+            if matrix[i][j] > max_digit:
+                max_digit = matrix[i][j]
+
+print(max_digit)
