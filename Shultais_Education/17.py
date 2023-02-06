@@ -191,3 +191,5 @@ for i in range(m):
     maximum.extend(my_string[:min(i + 1, m - i)])
     maximum.extend(my_string[max(-i - 1, i - m):])
 print(max(maximum))
+
+
