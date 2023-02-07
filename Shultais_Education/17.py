@@ -195,3 +195,23 @@ print(max(maximum))
 
 ============================================
 
+# оцифровываем матрицу
+n = int(input())
+matrix = [list(map(int, input().split())) for _ in range(n)]
+# вводим переменную равную минус бесконечности
+s1, s2, s3, s4 =0, 0, 0, 0
+for i in range(n):
+    for j in range(n):
+        # подсчет по четвертям
+        if i < j and i < n - 1 - j:
+            s1 += matrix[i][j]
+        if i < j and i > n - 1 - j:
+            s2 += matrix[i][j]
+        if i > j and i > n - 1 - j:
+            s3 += matrix[i][j]
+        if i > j and i < n - 1 - j:
+            s4 += matrix[i][j]
+print(f"Верхняя четверть: {s1}")
+print(f"Правая четверть: {s2}")
+print(f"Нижняя четверть: {s3}")
+print(f"Левая четверть: {s4}")
