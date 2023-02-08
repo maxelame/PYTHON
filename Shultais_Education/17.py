@@ -226,3 +226,5 @@ print('Нижняя четверть:', sum([mtx[i][j] for i in range(n) for j i
 print('Левая четверть:', sum([mtx[i][j] for i in range(n) for j in range(n) if j < i < n-1-j]))
 
 =================================================
+
+
