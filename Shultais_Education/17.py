@@ -262,3 +262,8 @@ for i in range(n):
     if (break_out_flag):
         break
 =================================================
+
+rows, cols = int(input()), int(input())
+matrix = [int(i) for _ in range(rows) for i in input().split()]
+x = matrix.index(max(matrix))
+print(x // cols, x - cols * (x // cols), end=' ')
