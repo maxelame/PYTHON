@@ -249,3 +249,15 @@ for i in range(n):
 
 =================================================
 
+n, m = int(input()), int(input())
+matrix = [list(map(int, input().split())) for _ in range(n)] # создаем матрицу
+max_el = max(max(matrix, key = max)) # находим максимальный элемент не через циклы, а встроенными функциями
+break_out_flag = False # создаем флаг без которого не выйти из двойного цикла
+for i in range(n):
+    for j in range(m):
+        if matrix[i][j] == max_el:
+            print(i, j)
+            break_out_flag = True
+            break
+    if (break_out_flag):
+        break
