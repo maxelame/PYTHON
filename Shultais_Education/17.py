@@ -288,3 +288,11 @@ for row in matrix:
     print(*row)
 
 =================================================
+
+n, m = int(input()), int(input())
+matrix = [[*map(int, input().split())] for _ in range(n)] # создаем матрицу
+i, j = list(map(int, input().split()))
+for k in range(n):
+    matrix[k][i], matrix[k][j] = matrix[k][j], matrix[k][i] # меняем построчно элементы столбцов местами
+for row in matrix: # выводим новую матрицу
+    print(*row)
