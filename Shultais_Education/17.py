@@ -296,3 +296,4 @@ for k in range(n):
     matrix[k][i], matrix[k][j] = matrix[k][j], matrix[k][i] # меняем построчно элементы столбцов местами
 for row in matrix: # выводим новую матрицу
     print(*row)
+=================================================
