@@ -267,3 +267,14 @@ rows, cols = int(input()), int(input())
 matrix = [int(i) for _ in range(rows) for i in input().split()]
 x = matrix.index(max(matrix))
 print(x // cols, x - cols * (x // cols), end=' ')
+
+
+n, m = int(input()), int(input())
+matrix = [[*map(int, input().split())] for _ in range(n)] # создаем матрицу
+i, j = list(map(int, input().split()))
+for k in range(n):
+    matrix[k][i], matrix[k][j] = matrix[k][j], matrix[k][i]
+for r in range(n):
+    for c in range(m):
+        print(matrix[r][c], end=' ')
+    print()
