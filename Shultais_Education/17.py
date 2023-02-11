@@ -298,3 +298,14 @@ for row in matrix: # выводим новую матрицу
     print(*row)
 =================================================
 
+n = int(input())
+matrix = [[*map(int, input().split())] for _ in range(n)] # создаем матрицу
+flag = True
+for i in range(n):
+    for j in range(n):
+        if matrix[i][j] != matrix[j][i]:
+            flag = False
+if (flag):
+    print("YES")
+else:
+    print("NO")
