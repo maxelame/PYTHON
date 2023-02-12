@@ -320,3 +320,15 @@ for _ in matrix:
     print(*_)
 
 =================================================
+
+n = int(input())
+matrix = [input().split() for _ in range(n)] # в данном случае необязательно переводить из строки в число
+
+for i in range(n):
+    matrix[i][i], matrix[n - i - 1][i] = matrix[n - i - 1][i], matrix[i][i]
+
+for row in matrix:
+    print(*row)
+
+
+=================================================
