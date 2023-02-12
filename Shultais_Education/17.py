@@ -311,3 +311,10 @@ else:
     print("NO")
 
 =================================================
+
+n = int(input())
+matrix = [list(map(int, input().split())) for _ in range(n)] # создаем матрицу
+for i in range(n): # перебираем построчно
+    matrix[i][i], matrix[n-i-1][i] = matrix[n-i-1][i], matrix[i][i] # меняем местами элементы диагонали
+for _ in matrix:
+    print(*_)
