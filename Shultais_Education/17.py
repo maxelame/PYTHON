@@ -331,3 +331,11 @@ for row in matrix:
     print(*row)
 
 =================================================
+
+n = int(input())
+matrix = [list(map(int, input().split())) for _ in range(n)] # создаем матрицу
+for i in range(n // 2):
+    for j in range(n):
+        matrix[i][j], matrix[n-i-1][j] = matrix[n-i-1][j], matrix[i][j]
+for _ in matrix:
+    print(*_)
