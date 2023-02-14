@@ -359,3 +359,9 @@ for i in range(n):
         new_matrix[i][j] = matrix[n-i-1][j] # проводим перезаписывание элементов из одной матрицы в другую
 for row in new_matrix:
     print(*row) # выводти результат
+
+
+n = int(input())
+matrix = [input().split() for i in range(n)]
+for row in reversed(matrix):
+print(*row)
