@@ -351,3 +351,11 @@ for row in matrix:
     print(*row)
 
 =================================================
+n = int(input())
+matrix = [input().split() for i in range(n)] # создаем матрицу
+new_matrix = [[0]*n for i in range(n)] # создаем новую матрицу заполненную нулями
+for i in range(n):
+    for j in range(n):
+        new_matrix[i][j] = matrix[n-i-1][j] # проводим перезаписывание элементов из одной матрицы в другую
+for row in new_matrix:
+    print(*row) # выводти результат
