@@ -362,7 +362,17 @@ for row in new_matrix:
 
 =================================================
 
-
+char,position = list(input())
+y = ord(char)-97
+x = 8 - int(position)
+matrix = [["."]*8 for i in range(8)]
+matrix[x][y] = "N"
+for i in range(8):
+    for j in range(8):
+        if (x - i) ** 2 + (y - j) ** 2 == 5:
+            matrix[i][j]="*"
+for row in matrix:
+    print(*row)
 
 
 
