@@ -395,3 +395,31 @@ for row in matrix:
 
 
 =================================================
+
+n = int(input())
+matrix = [list(map(int, input().split())) for _ in range(n)]
+flag = True
+common_list = []
+sum_row1 = sum(matrix[0])
+for row in matrix:
+    common_list.extend(row)
+    if "0" in list(map(str, row)): # проверка на нули
+        flag = False
+    if sum(row) != sum_row1: # проверка на одинаковость суммы всех рядов
+        flag = False
+if len(set(common_list)) != n ** 2: # проверка на уникальность
+    flag = False
+summ_diag1 = 0  # сумма по диагонали 1
+summ_diag2 = 0  # сумма по диагонали 2
+for i in range(n):
+    for j in range(n):
+        summ_diag1 += matrix[i][i]
+        summ_diag2 += matrix[i][n -i - 1]
+if summ_diag1 != summ_diag2:
+    flag = False
+transpose = [[matrix[j][i] for j in range(len(matrix))] for i in range(len(matrix[0]))]   # транспонируем матрицу
+sum_row2 = sum(transpose[0])
+for row in transpose:
+    if sum(row) != sum_row2: # проверка на одинаковость суммы всех рядов
+        flag = False
+print("YES" if flag else "NO")
