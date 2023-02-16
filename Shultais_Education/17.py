@@ -423,3 +423,33 @@ for row in transpose:
     if sum(row) != sum_row2: # проверка на одинаковость суммы всех рядов
         flag = False
 print("YES" if flag else "NO")
+
+
+
+======================
+
+
+n = int(input())
+
+# Считываем матрицу с помощью генератора списков
+matrix = [list(map(int, input().split())) for _ in range(n)]
+
+# Проверяем на отсутствие нулей и на одинаковость сумм в строках
+flag = all(0 not in row and sum(row) == sum(matrix[0]) for row in matrix)
+
+# Проверяем на уникальность элементов
+flag = flag and len(set(matrix[i][j] for i in range(n) for j in range(n))) == n ** 2
+
+# Проверяем на равенство сумм по диагоналям
+diag1 = sum(matrix[i][i] for i in range(n))
+diag2 = sum(matrix[i][n-i-1] for i in range(n))
+flag = flag and diag1 == diag2
+
+# Транспонируем матрицу
+transpose = [[matrix[j][i] for j in range(n)] for i in range(n)]
+
+# Проверяем на одинаковость сумм в строках транспонированной матрицы
+flag = flag and all(sum(row) == sum(transpose[0]) for row in transpose)
+
+# Выводим ответ
+print("YES" if flag else "NO")
