@@ -453,3 +453,8 @@ flag = flag and all(sum(row) == sum(transpose[0]) for row in transpose)
 
 # Выводим ответ
 print("YES" if flag else "NO")
+
+
+
+
+=========================================
