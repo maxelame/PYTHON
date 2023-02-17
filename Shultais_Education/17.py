@@ -482,3 +482,15 @@ for i in range(n):
 
 
 =================================
+
+
+n = int(input())
+for i in range(n):
+    for j in range(n):
+        if (i + j + 1)  < n: # если сумма индексов меньше n
+            print("0", end = " ")
+        elif (i + j + 1)  == n: # если сумма индексов = n
+            print("1", end = " ")
+        else:
+            print("2", end = " ")
+    print() # перенос строки
