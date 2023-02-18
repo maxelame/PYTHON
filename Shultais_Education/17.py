@@ -509,3 +509,14 @@ for i in range(n):
 
 
 ===============================
+
+
+import numpy as np
+
+n, m = map(int, input().split())
+
+numbers = np.arange(1, n * m + 1)  # Создание списка из n*m элементов в диапазоне от 1 до n*m
+matrix = numbers.reshape(n, m)  # Преобразует одномерный массив в двумерный массив из n строк и m столбцов
+
+for item in matrix:
+    print(*item)
