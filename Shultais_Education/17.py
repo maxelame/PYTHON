@@ -497,3 +497,12 @@ for i in range(n):
 
 
 ===============================
+
+
+n, m = map(int, input().split())
+a = 1
+for i in range(n):
+    for j in range(m):
+        print(str(a).ljust(3), end = "")
+        a += 1
+    print()
