@@ -506,3 +506,6 @@ for i in range(n):
         print(str(a).ljust(3), end = "")
         a += 1
     print()
+
+
+===============================
