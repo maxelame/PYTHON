@@ -528,3 +528,12 @@ for i in range(1, n*m+1, m):
     row = [i + j for j in range(m)]
     print(*row)
 
+=================================
+
+n, m = map(int, input().split())
+for i in range(1, n + 1):
+    a = i
+    for j in range(1, m + 1):
+        print(str(a).ljust(3), end = "")
+        a += n
+    print()
