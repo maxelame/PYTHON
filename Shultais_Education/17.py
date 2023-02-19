@@ -527,3 +527,4 @@ n, m = [int(num) for num in input().split()]
 for i in range(1, n*m+1, m):
     row = [i + j for j in range(m)]
     print(*row)
+
