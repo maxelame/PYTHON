@@ -586,4 +586,8 @@ for i in range(1, n, 2): # каждую вторую строку инверти
 for row in matrix:
     print(*row)
 
-===============================
+=============================== ИСПОЛЬЗОВАНИЕ IF В СРЕЗАХ =========================
+
+
+nm = list(map(int, input().split()))
+[print(*[j for j in range(1 + nm[1] * (i - 1), nm[1] * i + 1)][::-1 if i % 2 == 0 else 1] ) for i in range(1, nm[0] + 1)]
