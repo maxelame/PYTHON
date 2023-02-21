@@ -591,3 +591,10 @@ for row in matrix:
 
 nm = list(map(int, input().split()))
 [print(*[j for j in range(1 + nm[1] * (i - 1), nm[1] * i + 1)][::-1 if i % 2 == 0 else 1] ) for i in range(1, nm[0] + 1)]
+
+======================================
+
+n, m = [int(i) for i in input().split()]
+matrix = [[str(j+i*m).ljust(3) for j in range(1,m+1)] for i in range(n)]
+for i in range(n):
+    print(*matrix[i][::(-1)**i]) # используем -1 в срезах совместно с индексом
