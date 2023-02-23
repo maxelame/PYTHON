@@ -616,3 +616,19 @@ for row in matrix:
     print(*row)
 
 ======================================
+
+n, m = map(int, input().split())
+matrix = [[0]*m for _ in range(n)] # заполняем матрицу нулями
+counter = 1 # создал счетчик нового значения
+diagonal = 0 # создал счетчик диагоналей с одинаковой суммой i + j
+for _ in range(n + m): # всего итераций по матрицам
+    for i in range(n):
+        for j in range(m):
+            if i + j == diagonal: # как только находит элементы подходяцие к данной диагонали
+                matrix[i][j] = counter # присваивает значение со счетчика
+                counter += 1
+    diagonal += 1 # переходим к следующей диагонали
+for row in matrix:
+    print(*row)
+
+======================================
