@@ -632,3 +632,13 @@ for row in matrix:
     print(*row)
 
 ======================================
+
+n, m = map(int, input().split())
+matrix = [list(map(int, input().split())) for i in range(n)] # считываем первую матрицу
+razelitel = input() # считываем, чтобы пропустить пустую строку
+matrix2 = [list(map(int, input().split())) for j in range(n)] # считываем вторую матрицу
+for i in range(n):
+    for j in range(m):
+        matrix[i][j] = matrix[i][j] + matrix2[i][j] # перезаписываем в первую матрицу элементы СУММА элементов 2х матриц
+for row in matrix: # выводим результирующую матрицу
+    print(*row)
