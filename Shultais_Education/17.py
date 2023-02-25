@@ -644,3 +644,16 @@ for row in matrix: # выводим результирующую матрицу
     print(*row)
 
 ======================================
+
+n, m = map(int, input().split())
+matrix = [list(map(int, input().split())) for _ in range(n)]
+input()
+n1, m1 = map(int, input().split())
+matrix1 = [list(map(int, input().split())) for _ in range(n1)]
+matrix2 = [[0] * m1 for _ in range(n)]
+for i in range(n):
+    for j in range(m1):
+        for p in range(n1):
+             matrix2[i][j] += (matrix[i][p] * matrix1[p][j])
+for row in matrix2:
+    print(*row)
