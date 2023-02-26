@@ -659,3 +659,34 @@ for row in matrix2:
     print(*row)
 
 ==========================================
+
+n = int(input())
+matrix = [list(map(int, input().split())) for _ in range(n)]
+stepen = int(input())
+
+def multiply(a, b):
+    n = len(a)
+    c = [[0] * n for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            for k in range(n):
+                c[i][j] += a[i][k] * b[k][j]
+    return c
+
+def power(a, k):
+    n = len(a)
+    res = [[0] * n for _ in range(n)]
+    for i in range(n):
+        res[i][i] = 1
+    while k > 0:
+        if k % 2 == 1:
+            res = multiply(res, a)
+        a = multiply(a, a)
+        k //= 2
+    return res
+
+matrix_power = power(matrix, stepen)
+for row in matrix_power:
+    print(*row)
+
+====================================
