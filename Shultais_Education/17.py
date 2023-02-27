@@ -690,3 +690,14 @@ for row in matrix_power:
     print(*row)
 
 ====================================
+
+def chunked(s, n):
+    list1 = []
+    for i in range(0, n):
+        list1.append(s[i::n])
+    return list1
+
+s = input().split()
+n = int(input())
+
+print(chunked(s, n))
