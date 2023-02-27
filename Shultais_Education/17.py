@@ -743,5 +743,32 @@ for row in matrix:
 
 ====================================
 
+n = int(input())
+matrix = [[*map(int, input().split())] for _ in range(n)] # создаем матрицу
+flag = True
+for i in range(n):
+    for j in range(n):
+        if matrix[i][j] != matrix[n - j - 1][n - i - 1]:
+            flag = False
+if (flag):
+    print("YES")
+else:
+    print("NO")
+
+
+========================================
+n = int(input())
+matrix = [[*(map(int, input().split()))] for _ in range(n)] # создаем матрицу
+matrix_t = [[matrix[j][i] for j in range(n)] for i in range(n)] # создаем транспонированную матрицу
+counter = 0
+for i in range(n):
+    for j in range(1,n + 1):
+        if j in matrix[i] and j in matrix_t[i]:
+            counter += 1
+if counter == n**2:
+    print("YES")
+else:
+    print("NO")
+
 
 
