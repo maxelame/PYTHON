@@ -718,3 +718,16 @@ for i in range(n):
 print(max_digit)
 
 ====================================
+
+
+# оцифровываем матрицу
+n = int(input())
+matrix = [list(map(int, input().split())) for _ in range(n)]
+matrix2 = [[0] * n for _ in range(n)]
+for i in range(n):
+    for j in range(n):
+        matrix2[i][j] = matrix[j][i]
+for row in matrix2:
+    print(*row)
+
+====================================
