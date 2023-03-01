@@ -7,3 +7,8 @@ print(colors)
 numbers = (1, [2, 3], 4)
 numbers[1][0] = 17
 print(numbers)
+
+
+countries = ('Russia', 'Argentina', 'Spain', 'Slovakia', 'Canada', 'Slovenia', 'Italy')
+last = countries[-1]
+print(last)
