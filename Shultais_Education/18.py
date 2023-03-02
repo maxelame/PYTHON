@@ -19,3 +19,7 @@ print(primes[:6])
 
 countries = ('Russia', 'Argentina', 'Slovakia', 'Canada', 'Slovenia', 'Italy', 'Spain', 'Ukraine', 'Chile', 'Cameroon')
 print(countries[2:])
+
+
+countries = ('Russia', 'Argentina', 'Slovakia', 'Canada', 'Slovenia', 'Italy', 'Spain', 'Ukraine', 'Chile', 'Cameroon')
+print(countries[:countries.index('Ukraine')])
