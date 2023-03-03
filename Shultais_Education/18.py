@@ -30,3 +30,8 @@ print(countries[3:-2])
 
 countries = ('Russia', 'Argentina', 'Slovakia', 'Canada', 'Slovenia', 'Italy', 'Spain', 'Ukraine', 'Chile', 'Cameroon')
 print(countries[3:-2])
+
+
+countries = ('Romania', 'Poland', 'Estonia', 'Bulgaria', 'Slovakia', 'Slovenia', 'Hungary')
+number = len(countries)
+print(number)
