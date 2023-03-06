@@ -71,3 +71,17 @@ tuples = [(10, 20, 40), (40, 50, 60), (70, 80, 90), (10, 90), (1, 2, 3, 4), (5, 
 new_tuples = [i[:-1] + (100,) for i in tuples]
 print(new_tuples)
 
+poets = [
+    ('Есенин', 13),
+    ('Тургенев', 14),
+    ('Маяковский', 28),
+    ('Лермонтов', 20),
+    ('Фет', 15)]
+
+for i in range(len(poets)):
+    for j in range(i+1, len(poets)):
+        if poets[i][1] > poets[j][1]:
+            poets[i], poets[j] = poets[j], poets[i]
+
+print(poets[0])
+print(poets[-1])
