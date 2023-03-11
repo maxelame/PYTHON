@@ -155,3 +155,11 @@ print(a, b, c)
 points = [('матан', 100), ('линал', 98), ('ангем', 90)]
 subject, value = points[1]
 print(subject, value)
+
+
+
+notes = ('Do', 'Re', 'Mi', 'Fa', 'Sol', 'La', 'Si')
+
+do, re, mi, *tail = notes
+
+print(tail)
