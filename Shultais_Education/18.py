@@ -162,4 +162,4 @@ notes = ('Do', 'Re', 'Mi', 'Fa', 'Sol', 'La', 'Si')
 
 do, re, mi, *tail = notes
 
-print(tail)
+print(tail) #  ['Fa', 'Sol', 'La', 'Si']
