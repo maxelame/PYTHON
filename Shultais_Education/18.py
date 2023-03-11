@@ -159,7 +159,5 @@ print(subject, value)
 
 
 notes = ('Do', 'Re', 'Mi', 'Fa', 'Sol', 'La', 'Si')
-
 do, re, mi, *tail = notes
-
 print(tail) #  ['Fa', 'Sol', 'La', 'Si']
