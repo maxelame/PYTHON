@@ -165,7 +165,6 @@ print(tail)
 
 
 notes = ('Do', 'Re', 'Mi', 'Fa', 'Sol', 'La', 'Si')
-
 do, re, *tail, si = notes
-
 print(tail)
+# ['Mi', 'Fa', 'Sol', 'La']
