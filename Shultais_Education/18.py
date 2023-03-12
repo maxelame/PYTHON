@@ -179,3 +179,7 @@ for i in range(n):
 
 tpl = (100)
 print(tpl * 2)
+
+
+tpl = (100,)
+print(tpl * 2)
