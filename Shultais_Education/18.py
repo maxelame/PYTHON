@@ -248,3 +248,8 @@ print(colors)
 numbers = (1, [2, 3], 4)
 numbers[1][0] = 17
 print(numbers)
+
+
+points = [('матан', 100), ('линал', 98), ('ангем', 90)]
+subject, value = points[1]
+print(subject, value)
