@@ -251,3 +251,8 @@ print(numbers)
 
 n, m, k, x, y, z = ((int(input()) for _ in range(6)))
 print((m-x-y) + (n-x) + (k-y) + x + y + z)
+
+n, m, k, x, y, z = int(input()), int(input()), int(input()), int(input()), int(input()), int(input())
+def command(n, m, k, x, y, z):
+    return n + m - x -y + k + z
+print(command(n, m, k, x, y, z)
