@@ -249,7 +249,5 @@ numbers = (1, [2, 3], 4)
 numbers[1][0] = 17
 print(numbers)
 
-
-points = [('матан', 100), ('линал', 98), ('ангем', 90)]
-subject, value = points[1]
-print(subject, value)
+n, m, k, x, y, z = ((int(input()) for _ in range(6)))
+print((m-x-y) + (n-x) + (k-y) + x + y + z)
