@@ -256,3 +256,12 @@ n, m, k, x, y, z = int(input()), int(input()), int(input()), int(input()), int(i
 def command(n, m, k, x, y, z):
     return n + m - x -y + k + z
 print(command(n, m, k, x, y, z)
+
+
+
+n, m, k, x, y, z, t, a = (int(input()) for _ in range(8))
+res1 = 2*(x+y+z) - 3*(n+m+k) + 3*t
+print(res1)
+res2 = 2*(n+m+k) - (x+y+z) - 3*t
+print(res2)
+print(a- (res1 + res2  +t))
