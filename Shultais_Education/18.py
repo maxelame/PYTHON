@@ -265,3 +265,12 @@ print(res1)
 res2 = 2*(n+m+k) - (x+y+z) - 3*t
 print(res2)
 print(a- (res1 + res2  +t))
+
+
+
+n, m, k, x, y, z, t, a = (int(input()) for _ in range(8))
+res1 = 2*(x+y+z) - 3*(n+m+k) + 3*t
+print(res1)
+res2 = 2*(n+m+k) - (x+y+z) - 3*t
+print(res2)
+print(a- (res1 + res2  +t))
