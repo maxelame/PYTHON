@@ -274,3 +274,6 @@ print(res1)
 res2 = 2*(n+m+k) - (x+y+z) - 3*t
 print(res2)
 print(a- (res1 + res2  +t))
+
+
+myset = set('ъъъ эээ ююю яяя')
