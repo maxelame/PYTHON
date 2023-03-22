@@ -277,3 +277,6 @@ print(a- (res1 + res2  +t))
 
 
 myset = set('ъъъ эээ ююю яяя')
+
+
+myset = set('aaabcccc    11222')
