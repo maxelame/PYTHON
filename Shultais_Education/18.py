@@ -280,3 +280,6 @@ myset = set('ъъъ эээ ююю яяя')
 
 
 myset = set('aaabcccc    11222')
+
+
+myset = set([1, 2, 3, '1', '2', '3'])
