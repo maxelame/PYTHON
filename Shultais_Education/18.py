@@ -283,3 +283,6 @@ myset = set('aaabcccc    11222')
 
 
 myset = set([1, 2, 3, '1', '2', '3'])
+
+myset = set([1, 2, 2, 3, 4, 4, 4])
+print(len(myset))
