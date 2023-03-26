@@ -298,3 +298,11 @@ myset1 = set([1, 2, 3, 4, 5])
 myset2 = set('12345')
 
 print(myset1 == myset2)
+
+
+
+numbers = {9089, -67, -32, 1, 78, 23, -65, 99, 9089, 34, -32, 0, -67, 1, 11, 111, 111, 1, 23}
+summ = 0
+for i in numbers:
+    summ += i ** 2
+print(summ)
