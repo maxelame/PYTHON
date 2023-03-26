@@ -292,3 +292,9 @@ numbers = {20, 6, 8, 18, 18, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 12, 8, 8, 10, 4
 average = sum(numbers)/len(list(numbers))
 
 print(average)
+
+
+myset1 = set([1, 2, 3, 4, 5])
+myset2 = set('12345')
+
+print(myset1 == myset2)
