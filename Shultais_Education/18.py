@@ -313,3 +313,11 @@ sorted_fruits = sorted(fruits, reverse = True)
 print(*sorted_fruits, sep = "\n")
 
 print(len(set(input())))
+
+
+
+s = input()
+if len(s) == len(set(s)):
+    print("YES")
+else:
+    print("NO")
