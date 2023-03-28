@@ -321,3 +321,7 @@ if len(s) == len(set(s)):
     print("YES")
 else:
     print("NO")
+
+
+a = input()
+print(('NO','YES')[len(a) == len(set(a))])
