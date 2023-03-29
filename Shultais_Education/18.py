@@ -333,3 +333,7 @@ print('YES' if len(set(s)) == len(s) else 'NO')
 
 
 print('YES' if len(a:= input())==len(set(a)) else 'NO')
+
+
+s1, s2 = input(), input()
+print("YES" if len(set(s1+s2)) == 10 else "NO")
