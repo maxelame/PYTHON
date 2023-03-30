@@ -341,3 +341,6 @@ print("YES" if len(set(s1+s2)) == 10 else "NO")
 
 s1, s2 = [input() for _ in "00"]
 print("YES" if set(s1) == set(s2) else "NO")
+
+
+print('YES' if set(input()) == set(input()) else 'NO')
