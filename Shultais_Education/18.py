@@ -344,3 +344,6 @@ print("YES" if set(s1) == set(s2) else "NO")
 
 
 print('YES' if set(input()) == set(input()) else 'NO')
+
+
+print(('NO', 'YES')[set(input()) == set(input())])
