@@ -358,8 +358,11 @@ myset.add(item)
 
 
 myset = set('python')
-
 item = myset.pop()
 print(item, len(myset))
 
 
+myset = set()
+
+item = myset.pop()
+print(item)
