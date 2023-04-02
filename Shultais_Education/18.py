@@ -384,3 +384,8 @@ list_1 = [input().lower() for _ in range(int(input()))]
 for i in list_1:
     print(len(set(i)))
 
+list_1 = [input().lower() for _ in range(int(input()))]
+s = ""
+for i in list_1:
+    s += i
+print(len(set(s)))
