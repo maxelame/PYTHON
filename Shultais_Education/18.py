@@ -376,3 +376,10 @@ myset = set()
 
 item = myset.pop()
 print(item)
+
+
+
+
+list_1 = [input().lower() for _ in range(int(input()))]
+for i in list_1:
+    print(len(set(i)))
