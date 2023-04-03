@@ -389,3 +389,12 @@ s = ""
 for i in list_1:
     s += i
 print(len(set(s)))
+
+
+s_list = input().lower().split()
+new_s_list = []
+for i in s_list:
+    word = ''.join(c for c in i if c not in ".,;:-?!") # удаление знаков препинания из слова
+    if word:
+        new_s_list.append(word)
+print(len(set(new_s_list)))
