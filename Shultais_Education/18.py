@@ -415,3 +415,9 @@ for i in numbers:
     else:
         print('NO')
         myset.add(i)
+
+
+nums = list(map(int, input().split()))
+
+for i in range(len(nums)):
+    print(("NO", "YES")[nums[i] in nums[:i]])
