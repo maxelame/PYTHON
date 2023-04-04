@@ -421,3 +421,7 @@ nums = list(map(int, input().split()))
 
 for i in range(len(nums)):
     print(("NO", "YES")[nums[i] in nums[:i]])
+
+
+s=set()
+[  (  (s.add(int(x)),print('NO'))  if int(x) not in s    else print('YES')  )    for x in input().split() ]
