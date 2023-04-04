@@ -398,3 +398,9 @@ for i in s_list:
     if word:
         new_s_list.append(word)
 print(len(set(new_s_list)))
+
+
+
+s_list = list(map(int, input().split()))
+for count, value in enumerate(s_list):
+    print("YES" if value in s_list[:count] else "NO")
