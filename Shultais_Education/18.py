@@ -533,3 +533,7 @@ set3 = set2.difference(set1)  # ищет то, чего нет в другом �
 set1 = set(['a', 'б', 'в', 'д'])
 set2 = set(['б', 'в', 'г'])
 set3 = set1.symmetric_difference(set2)
+
+
+myset = set([10, 9, 8, 3])
+myset.update([1, 2, 3])
