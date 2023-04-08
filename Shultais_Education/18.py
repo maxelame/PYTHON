@@ -537,3 +537,7 @@ set3 = set1.symmetric_difference(set2)
 
 myset = set([10, 9, 8, 3])
 myset.update([1, 2, 3])
+
+myset = set([10, 9, 8])
+myset.update('абв')
+print(myset)
