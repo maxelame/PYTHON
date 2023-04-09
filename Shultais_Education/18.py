@@ -541,3 +541,9 @@ myset.update([1, 2, 3])
 myset = set([10, 9, 8])
 myset.update('абв')
 print(myset)
+
+
+set1 = {'a', 'b', 'c', 'd', 'h'}
+set2 = {'b', 'd', 'f', 'h'}
+
+set3 = set1 - set2 & set1
