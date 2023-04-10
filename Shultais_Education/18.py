@@ -547,3 +547,9 @@ set1 = {'a', 'b', 'c', 'd', 'h'}
 set2 = {'b', 'd', 'f', 'h'}
 
 set3 = set1 - set2 & set1
+
+
+
+myset1, myset2 = set(map(int, input().split())), set(map(int, input().split()))
+myset3 = myset1.intersection(myset2)
+print(len(myset3))
