@@ -557,3 +557,7 @@ print(len(myset3))
 
 set1, set2 = [set(input().split()) for _ in range(2)]
 print(len(set1 & set2))
+
+
+myset1, myset2 = set(map(int, input().split())), set(map(int, input().split()))
+print(*sorted(list(myset1 & myset2)))
