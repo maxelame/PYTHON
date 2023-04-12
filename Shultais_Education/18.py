@@ -568,3 +568,5 @@ set2 = set(int(i) for i in input().split())
 print(*sorted(set1 & set2))
 
 
+myset1, myset2 = set(map(int, input().split())), set(map(int, input().split()))
+print(*sorted(list(myset1 - myset2)))
