@@ -570,3 +570,10 @@ print(*sorted(set1 & set2))
 
 myset1, myset2 = set(map(int, input().split())), set(map(int, input().split()))
 print(*sorted(list(myset1 - myset2)))
+
+
+n = int(input())
+A = set('1234567890')
+for _ in range(n):
+    A.intersection_update(set(input()))
+print(*sorted(A))
