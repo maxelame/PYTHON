@@ -1,3 +1,3 @@
-s = "1001"
-print(s.replace("1", "one"))
-
+myset = set([10, 9, 8])
+myset.update('абв')
+print(myset)
