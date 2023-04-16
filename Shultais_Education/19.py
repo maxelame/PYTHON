@@ -20,3 +20,7 @@ list1 = [1, 2, 3, 4, 5]
 print(set1.issuperset(list1))
 
 
+set1 = {'q', 'w', 'e', 'r', 't', 'y'}
+list1 = ['y', 'w', 'r']
+
+print(set1 >= list1)
