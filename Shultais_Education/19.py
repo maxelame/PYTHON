@@ -28,3 +28,6 @@ print(set1 >= list1)
 set1 = set(range(1, 10))
 set2 = set(range(10, 20))
 print(set1.isdisjoint(set2))
+
+
+print("NO" if set(input()).isdisjoint(set(input())) else "YES")
