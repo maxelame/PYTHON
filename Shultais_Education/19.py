@@ -33,3 +33,5 @@ print(set1.isdisjoint(set2))
 print("NO" if set(input()).isdisjoint(set(input())) else "YES")
 
 
+set1, set2 = set(input()), set(input())
+print("YES" if set2 <= set1 else "NO")
