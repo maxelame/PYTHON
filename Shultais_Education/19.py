@@ -36,4 +36,6 @@ print("NO" if set(input()).isdisjoint(set(input())) else "YES")
 set1, set2 = set(input()), set(input())
 print("YES" if set2 <= set1 else "NO")
 
-
+set1, set2, set3 = set(input().split()), set(input().split()), set(input().split())
+set12 = set1 & set2 - set3
+print(*(sorted(map(int, set12), reverse = True)))
