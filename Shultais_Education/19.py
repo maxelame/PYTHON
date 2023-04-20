@@ -42,7 +42,7 @@ print(*(sorted(map(int, set12), reverse = True)))
 
 
 set1, set2, set3 = set(input().split()), set(input().split()), set(input().split())
-set4 = set1 & set2 & set3
+set4 = set1 & set2 & set3 # Находим значения которые повторяются сразу у ТРЕХ детёнышей
 set_full = set1 | set2 | set3
 set_full.difference_update(set4)
 print(*(sorted(map(int, set_full))))
