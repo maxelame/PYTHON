@@ -39,3 +39,10 @@ print("YES" if set2 <= set1 else "NO")
 set1, set2, set3 = set(input().split()), set(input().split()), set(input().split())
 set12 = set1 & set2 - set3
 print(*(sorted(map(int, set12), reverse = True)))
+
+
+set1, set2, set3 = set(input().split()), set(input().split()), set(input().split())
+set4 = set1 & set2 & set3
+set_full = set1 | set2 | set3
+set_full.difference_update(set4)
+print(*(sorted(map(int, set_full))))
