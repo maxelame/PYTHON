@@ -54,3 +54,9 @@ print(*(sorted(map(int, (set1 | set2 | set3) - (set1 & set2 & set3)))))
 
 set1, set2, set3 = set(input().split()), set(input().split()), set(input().split())
 print(*(sorted(map(int, set3 -set2 - set1), reverse = True)))
+
+
+
+set1, set2, set3 = set(input().split()), set(input().split()), set(input().split())
+set_all = {'0','1','2','3','4','5','6','7','8','9','10'}
+print(*sorted(map(int, set_all - set1 - set2 - set3)))
