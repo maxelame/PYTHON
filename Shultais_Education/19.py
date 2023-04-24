@@ -63,3 +63,9 @@ print(*sorted(map(int, set_all - set1 - set2 - set3)))
 
 
 digits = {int(c) for c in input()}
+
+
+
+items = [10, '30', 30, 10, '56', 34, '12', 90, 89, 34, 45, '67', 12, 10, 90, 23, '45', 56, '56', 1, 5, '6', 5]
+set1 = {int(c) for c in items}
+print(*sorted(set1))
