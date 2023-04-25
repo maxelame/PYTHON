@@ -71,3 +71,6 @@ set1 = {int(c) for c in items}
 print(*sorted(set1))
 
 
+words = ['Plum', 'Grapefruit', 'apple', 'orange', 'pomegranate', 'Cranberry', 'lime', 'Lemon', 'grapes', 'persimmon', 'tangerine', 'Watermelon', 'currant', 'Almond']
+myset = {item.lower()[0] for item in words}
+print(*sorted(myset))
