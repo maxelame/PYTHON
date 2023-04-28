@@ -86,3 +86,8 @@ sentence = '''My very photogenic mother died in a freak accident (picnic, lightn
 
 myset = {word.lower().strip('.,():;') for word in sentence.split() if len(word.lower().strip('.,():;')) < 4}
 print(*sorted(myset))
+
+
+files = ['python.png', 'qwerty.py', 'stepik.png', 'beegeek.org', 'windows.pnp', 'pen.txt', 'phone.py', 'book.txT', 'board.pNg', 'keyBoard.jpg', 'Python.PNg', 'apple.jpeg', 'png.png', 'input.tXt', 'split.pop', 'solution.Py', 'stepik.org', 'kotlin.ko', 'github.git']
+myset = {word.lower() for word in files if word.lower()[-4:] == '.png'}
+print(*sorted(myset))
