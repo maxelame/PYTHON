@@ -99,4 +99,4 @@ set2 = frozenset('stepik')
 set3 = set1 & set2
 
 
-dict1 = {}
+dict1 = {'beegeek':2018}
