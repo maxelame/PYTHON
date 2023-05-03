@@ -100,3 +100,6 @@ set3 = set1 & set2
 
 
 dict1 = {'beegeek':2018}
+
+
+my_dict = dict()
