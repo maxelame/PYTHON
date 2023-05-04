@@ -105,3 +105,7 @@ dict1 = {'beegeek':2018}
 my_dict = dict()
 
 {'Canada': 'Ottawa', 'United States': 'Washington, D.C.', 'Mexico': 'Mexico City'}
+
+
+stuff = {1: 'ааа', 2: 'ббб', 3: 'ввв'}
+print(stuff[3])
