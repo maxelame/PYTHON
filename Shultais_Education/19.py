@@ -103,3 +103,5 @@ dict1 = {'beegeek':2018}
 
 
 my_dict = dict()
+
+{'Canada': 'Ottawa', 'United States': 'Washington, D.C.', 'Mexico': 'Mexico City'}
