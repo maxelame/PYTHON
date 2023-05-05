@@ -109,3 +109,7 @@ my_dict = dict()
 
 stuff = {1: 'ааа', 2: 'ббб', 3: 'ввв'}
 print(stuff[3])
+
+my_dict = dict([('first', 1), ('second', 2), ('third', 3)])
+
+print(my_dict)
