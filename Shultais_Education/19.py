@@ -122,3 +122,7 @@ print(my_dict['b'])
 
 my_dict = dict.fromkeys(['a', 'b', 'c'], -1)
 print(my_dict['d'])
+
+
+my_dict = {1: [0, 1], 2: [2, 3], 3: [4, 5]}
+print(my_dict[2][1])
