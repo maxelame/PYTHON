@@ -126,3 +126,9 @@ print(my_dict['d'])
 
 my_dict = {1: [0, 1], 2: [2, 3], 3: [4, 5]}
 print(my_dict[2][1])
+
+
+
+
+int_dict = {2: 'two', 5: 'five', 7: 'seven', 9: 'nine'}
+str_dict = {'three': 3, 'seven': 7, 'nine': 9}
