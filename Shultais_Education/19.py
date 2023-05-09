@@ -132,3 +132,22 @@ print(my_dict[2][1])
 
 int_dict = {2: 'two', 5: 'five', 7: 'seven', 9: 'nine'}
 str_dict = {'three': 3, 'seven': 7, 'nine': 9}
+
+
+
+Вы можете использовать методы строк strip() и replace() для удаления пробелов и замены двойных пробелов на одиночные.
+
+Вот обновленный код, который решает эту задачу:
+
+scss
+
+alphabet = list('абвгдеёжзийклмнопрстуфхцчшщъыьэюя')
+word = input().lower().strip() + ' запретил букву '
+
+for letter in alphabet:
+    if letter in word:
+        print(word + letter)
+        word = word.replace(letter, '').replace('  ', ' ')
+
+word = word.replace('  ', ' ')
+print(word)
