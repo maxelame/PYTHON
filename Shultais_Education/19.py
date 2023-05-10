@@ -182,3 +182,9 @@ print(set2.issuperset(set1))
 myset = {'Yellow', 'Orange', 'Black'}
 myset.discard('Blue')
 print(myset)
+
+
+set1 = {'p', 'a', 't', 'f'}
+set2 = {'a', 't', 'f'}
+
+print(set1 - set2)
