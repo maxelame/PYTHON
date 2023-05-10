@@ -187,3 +187,7 @@ print(myset)
 set1 = {'p', 'a', 't', 'f'}
 set2 = {'a', 't', 'f'}
 print(set1 - set2)
+
+
+n, m, k, p = int(input()), int(input()), int(input()), int(input())
+print(n-(m+k-p))
