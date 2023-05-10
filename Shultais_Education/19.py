@@ -151,3 +151,10 @@ for letter in alphabet:
 
 word = word.replace('  ', ' ')
 print(word)
+
+
+
+set1 = {'Yellow', 'Orange', 'Black'}
+set2 = {'Orange', 'Blue', 'Pink'}
+
+set3 = set2.difference(set1)
