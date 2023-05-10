@@ -157,3 +157,9 @@ print(word)
 set1 = {'Yellow', 'Orange', 'Black'}
 set2 = {'Orange', 'Blue', 'Pink'}
 set3 = set2.difference(set1)
+
+
+set1 = {'Yellow', 'Orange', 'Black'}
+set2 = {'Orange', 'Blue', 'Pink'}
+
+set1.difference_update(set2)
