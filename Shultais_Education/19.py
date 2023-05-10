@@ -195,3 +195,8 @@ print(n-(m+k-p))
 
 lst = [i for i in input().split()]
 print(len(lst) - len(set(lst)))
+
+
+n = int(input())
+lst = [input() for _ in range(n +1)]
+print("OK" if len(set(lst)) == n + 1 else "REPEAT")
