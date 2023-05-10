@@ -207,3 +207,10 @@ set1 = [input() for _ in range(m)]
 set2= [input() for _ in range(n)]
 for i in set2:
     print("YES" if i in set1 else "NO")
+
+
+set1, set2 = set(input().split()), set(input().split())
+if len(set2 & set1) != 0:
+    print(*sorted(set2 & set1, reverse = True, key = int))
+else:
+    print("BAD DAY")
