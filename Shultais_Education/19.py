@@ -246,3 +246,9 @@ if len(set3) != 0:
     print(len(set3))
 else:
     print("NO")
+
+
+
+set1, set2 = set(input().split()), set(input().split())
+set3 = set1 | set2
+print(*sorted(set3))
