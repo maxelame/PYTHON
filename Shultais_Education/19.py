@@ -165,6 +165,5 @@ set1.difference_update(set2)
 
 
 myset = {'Yellow', 'Orange', 'Black'}
-
 myset.update(['Blue', 'Green', 'Red', 'Orange'])
 print(myset)
