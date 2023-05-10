@@ -252,3 +252,14 @@ else:
 set1, set2 = set(input().split()), set(input().split())
 set3 = set1 | set2
 print(*sorted(set3))
+
+
+
+m = int(input())
+n = int(input())
+list1 = [input() for _ in range(m + n)]
+set1 = set(list1)
+if m + n - 2*(len(list1) - len(set1)) != 0:
+    print(m + n - 2*(len(list1) - len(set1)))
+else:
+    print("NO")
