@@ -200,3 +200,10 @@ print(len(lst) - len(set(lst)))
 n = int(input())
 lst = [input() for _ in range(n +1)]
 print("OK" if len(set(lst)) == n + 1 else "REPEAT")
+
+
+m, n = int(input()), int(input())
+set1 = [input() for _ in range(m)]
+set2= [input() for _ in range(n)]
+for i in set2:
+    print("YES" if i in set1 else "NO")
