@@ -220,3 +220,11 @@ if len(set2 & set1) == len(set1):
     print("YES")
 else:
     print("NO")
+
+
+
+set1, set2 = set(input().split()), set(input().split())
+if set2 == set1:
+    print("YES")
+else:
+    print("NO")
