@@ -214,3 +214,9 @@ if len(set2 & set1) != 0:
     print(*sorted(set2 & set1, reverse = True, key = int))
 else:
     print("BAD DAY")
+
+set1, set2 = set(input().split()), set(input().split())
+if len(set2 & set1) == len(set1):
+    print("YES")
+else:
+    print("NO")
