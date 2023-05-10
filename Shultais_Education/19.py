@@ -228,3 +228,10 @@ if set2 == set1:
     print("YES")
 else:
     print("NO")
+
+
+m = int(input())
+n = int(input())
+set1 = set([input() for _ in range(m)])
+set2 = set([input() for _ in range(n)])
+print(len(set1-set2))
