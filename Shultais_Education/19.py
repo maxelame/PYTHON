@@ -170,5 +170,17 @@ print(myset)
 
 
 myset = {'Yellow', 'Orange', 'Black'}
-
 print(myset[1])
+
+
+set1 = {10, 20, 30, 40, 50}
+set2 = {60, 70, 10, 30, 40, 80, 20, 50}
+
+print(set1.issubset(set2))
+print(set2.issuperset(set1))
+
+
+myset = {'Yellow', 'Orange', 'Black'}
+myset.discard('Blue')
+
+print(myset)
