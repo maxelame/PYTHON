@@ -235,3 +235,14 @@ n = int(input())
 set1 = set([input() for _ in range(m)])
 set2 = set([input() for _ in range(n)])
 print(len(set1-set2))
+
+
+m = int(input())
+n = int(input())
+set1 = set([input() for _ in range(m)])
+set2 = set([input() for _ in range(n)])
+set3 = set1.symmetric_difference(set2)
+if len(set3) != 0:
+    print(len(set3))
+else:
+    print("NO")
