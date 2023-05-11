@@ -296,3 +296,13 @@ else:
     # Выводим отсортированный список учеников, которые были на всех уроках
     for student in sorted(set1):
         print(student)
+
+
+m = int(input())
+n = int(input())
+list1 = [input() for _ in range(m + n)]
+set1 = set(list1)
+if m + n - 2*(len(list1) - len(set1)) != 0:
+    print(m + n - 2*(len(list1) - len(set1)))
+else:
+    print("NO")
