@@ -306,3 +306,10 @@ if m + n - 2*(len(list1) - len(set1)) != 0:
     print(m + n - 2*(len(list1) - len(set1)))
 else:
     print("NO")
+
+
+
+
+stuff = {1:'ааа', 2:'ббб', 3:'ввв', 4:'ггг'}
+
+print(len(stuff))
