@@ -319,3 +319,8 @@ dict1 = {'key1':1, 'key2':2}
 dict2 = {'key2':2, 'key1':1}
 
 print(dict1 == dict2)
+
+
+my_dict = {'foo': 100, 'bar': 200, 'baz': 300}
+
+print(my_dict['bar':'baz'])
