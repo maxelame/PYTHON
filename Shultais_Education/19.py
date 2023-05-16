@@ -331,3 +331,9 @@ print(my_dict['bar':'baz'])
 my_dict = {1: [0, 1], 2: [2, 3], 3: [4, 5]}
 for k in my_dict:
     print(k)
+
+
+my_dict = {1: [0, 1], 2: [2, 3], 3: [4, 5]}
+
+for k in my_dict.values():
+    print(k)
