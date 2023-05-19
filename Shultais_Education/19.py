@@ -408,3 +408,21 @@ for k in users:
     if not k.get('email'):
         list1.append(k['name'])
 print(*sorted(list1))
+
+
+
+d = {
+    0: "zero",
+    1: "one",
+    2: "two",
+    3: "three",
+    4: "four",
+    5: "five",
+    6: "six",
+    7: "seven",
+    8: "eight",
+    9: "nine"
+}
+number = list(input())
+for k in number:
+    print(d[int(k)], end= ' ')
