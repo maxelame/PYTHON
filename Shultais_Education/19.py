@@ -426,3 +426,6 @@ d = {
 number = list(input())
 for k in number:
     print(d[int(k)], end= ' ')
+
+
+
