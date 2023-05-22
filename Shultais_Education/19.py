@@ -467,3 +467,13 @@ phrase = list(input().upper())
 for i in phrase:
     if i in letters:
         print(morse[letters.index(i)], end = " ")
+
+
+letters = [c for c in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789']
+morse = ['.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....', '..', '.---', '-.-', '.-..', '--', '-.', '---', '.--.', '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-', '-.--', '--..', '-----', '.----', '..---', '...--', '....-', '.....', '-....', '--...', '---..', '----.']
+mydict = dict(zip(letters, morse))
+word = input().upper()
+
+for c in word:
+    if c in mydict:
+        print(mydict[c], end=' ')
