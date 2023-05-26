@@ -531,3 +531,8 @@ dct = {'понедельник': 1, 'вторник': 2, 'среда': 3}
 print(dct.get('пятница', 'Не найдено'))
 
 
+student = {'name': 'Rosaly',
+           'class': 10,
+           'marks': 75}
+
+studet.clear()
