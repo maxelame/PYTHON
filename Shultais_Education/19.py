@@ -536,3 +536,15 @@ student = {'name': 'Rosaly',
            'marks': 75}
 
 studet.clear()
+
+
+student = {'name': 'Rosaly',
+           'class': 10,
+           'marks': 75}
+
+student.clear()
+print(student)
+
+
+del student
+print(student)
