@@ -582,3 +582,14 @@ result = {k: dict1.get(k, 0) + dict2.get(k, 0) for k in set(dict1.keys()).union(
 text = 'footballcyberpunkextraterritorialityconversationalistblockophthalmoscopicinterdependencemamauserfff'
 
 result = {k: text.count(k) for k in set(text)}
+
+
+
+text = 'footballcyberpunkextraterritorialityconversationalistblockophthalmoscopicinterdependencemamauserfff'
+
+result = {}
+for i in text:
+    if i in result:
+        result[i] +=1
+    else:
+        result[i] = 1
