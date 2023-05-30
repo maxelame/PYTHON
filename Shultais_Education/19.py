@@ -593,3 +593,18 @@ for i in text:
         result[i] +=1
     else:
         result[i] = 1
+
+
+
+s = 'orange strawberry barley gooseberry apple apricot barley currant orange melon pomegranate banana banana orange barley apricot plum grapefruit banana quince strawberry barley grapefruit banana grapes melon strawberry apricot currant currant gooseberry raspberry apricot currant orange lime quince grapefruit barley banana melon pomegranate barley banana orange barley apricot plum banana quince lime grapefruit strawberry gooseberry apple barley apricot currant orange melon pomegranate banana banana orange apricot barley plum banana grapefruit banana quince currant orange melon pomegranate barley plum banana quince barley lime grapefruit pomegranate barley'
+result = {}
+for i in s.split():
+    if i in result:
+        result[i] += 1
+    else:
+        result[i] = 1
+list1 = []
+for a in result:
+  if result[a] == max({value: key for key, value in result.items()}):
+    list1.append(a)
+print(sorted(list1)[0])
