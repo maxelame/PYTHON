@@ -636,7 +636,8 @@ for i in pets:
 
 result = {}
 list1 = []
-for i in input().lower().replace(",.?", "").split():
+
+for i in [word.strip('.,!?:;-') for word in input().lower().split()]:
     if i in result:
         result[i] += 1
     else:
@@ -644,4 +645,8 @@ for i in input().lower().replace(",.?", "").split():
 for i in result:
     if result[i] == min(result.values()):
         list1.append(i)
-print(*sorted(list1))
+sorted_list1 = sorted(list1)
+print(sorted_list1[0])
+
+
+
