@@ -632,3 +632,16 @@ for i in pets:
     result[(i[1], i[2], i[3])] = [i[0]]
   else:
     result[(i[1], i[2], i[3])].append(i[0])
+
+
+result = {}
+list1 = []
+for i in input().lower().replace(",.?", "").split():
+    if i in result:
+        result[i] += 1
+    else:
+        result[i] = 1
+for i in result:
+    if result[i] == min(result.values()):
+        list1.append(i)
+print(*sorted(list1))
