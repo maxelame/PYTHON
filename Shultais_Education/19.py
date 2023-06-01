@@ -649,4 +649,8 @@ sorted_list1 = sorted(list1)
 print(sorted_list1[0])
 
 
+s = [i.strip('.,!?:;-') for i in input().lower().split()]
 
+rez = {cl: s.count(cl) for cl in set(s)}
+a = min(rez.values())
+print(min([k for k, v in rez.items() if v == a]))
