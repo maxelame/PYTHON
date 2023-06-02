@@ -671,3 +671,19 @@ for identifier in s_list:
 
 output_str = ' '.join(result)
 print(output_str)
+
+
+line, rd = input().split(), {}
+for c in line:
+    rd[c] = rd.get(c, 0) + 1
+    print(f"{c if rd[c] == 1 else c + '_' + str(rd[c] - 1)}", end=' ')
+
+
+a= input("").split()
+result = {}
+for num in a:
+    result[num] = result.get(num, 0) + 1
+    if result[num]>1:
+        print(num, "_", result[num]-1, sep="", end=" ")
+    else:
+        print(num, end=" ")
