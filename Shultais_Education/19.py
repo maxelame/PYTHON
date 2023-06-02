@@ -654,3 +654,20 @@ s = [i.strip('.,!?:;-') for i in input().lower().split()]
 rez = {cl: s.count(cl) for cl in set(s)}
 a = min(rez.values())
 print(min([k for k, v in rez.items() if v == a]))
+
+s_list = input().split()
+dict1 = {}
+result = []
+
+for identifier in s_list:
+    if identifier in dict1:
+        dict1[identifier] += 1
+        corrected_identifier = f"{identifier}_{dict1[identifier]}"
+    else:
+        dict1[identifier] = 0
+        corrected_identifier = identifier
+
+    result.append(corrected_identifier)
+
+output_str = ' '.join(result)
+print(output_str)
