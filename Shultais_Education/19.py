@@ -698,3 +698,20 @@ for _ in range(int(input())):
                dct[key.lower()] = value
 for _ in range(int(input())):
              print(dct.get(input().lower(), "Не найдено"))
+
+
+#Переменные
+num_dict = int(input()) #Количество значений для словаря
+num_res = 0 #Количество значений для вывода в консоль
+_dict = {} #Словарь со значениями
+temp_list = [] #Временный список для хранения значения для словаря
+
+#Заводим цикл в котором заполняем словарь
+for _ in range(num_dict):
+    temp_list = input().split(': ')
+    _dict[temp_list[0].lower()] = temp_list[1]
+
+num_res = int(input())
+#Заводим цикл в котором вывподим на печать нужные значения из словаря
+for _ in range(num_res):
+    print(_dict.get(input().lower(), 'Не найдено'))
