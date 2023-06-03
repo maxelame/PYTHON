@@ -687,3 +687,14 @@ for num in a:
         print(num, "_", result[num]-1, sep="", end=" ")
     else:
         print(num, end=" ")
+
+
+
+
+
+dct = {}
+for _ in range(int(input())):
+               key, value = input().split(": ")
+               dct[key.lower()] = value
+for _ in range(int(input())):
+             print(dct.get(input().lower(), "Не найдено"))
