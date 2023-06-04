@@ -715,3 +715,9 @@ num_res = int(input())
 #Заводим цикл в котором вывподим на печать нужные значения из словаря
 for _ in range(num_res):
     print(_dict.get(input().lower(), 'Не найдено'))
+
+
+
+word1, word2 = input(), input()
+dict1, dict2 = {cl: word1.count(cl) for cl in set(word1)}, {cl: word2.count(cl) for cl in set(word2)}
+print("YES" if dict1 == dict2 else "NO")
