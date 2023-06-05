@@ -739,3 +739,14 @@ for _ in range(int(input())):
     a, b = input().split()
     words[a], words[b] = b, a
 print(words[input()])
+
+dict1 = {}
+for _ in range(int(input())):
+    key, value = input().split()
+    dict1[key] = value
+result = input()
+for key in dict1:
+    if key == result:
+        print(dict1[key])
+    elif dict1[key] == result:
+        print(key)
