@@ -750,3 +750,7 @@ for key in dict1:
         print(dict1[key])
     elif dict1[key] == result:
         print(key)
+
+
+
+print({w[i]: w[not i] for _ in range(int(input())) for w in [input().split()] for i in (0, 1)}[input()])
