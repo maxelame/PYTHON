@@ -721,3 +721,13 @@ for _ in range(num_res):
 word1, word2 = input(), input()
 dict1, dict2 = {cl: word1.count(cl) for cl in set(word1)}, {cl: word2.count(cl) for cl in set(word2)}
 print("YES" if dict1 == dict2 else "NO")
+
+
+
+s1, s2 = input().lower(), input().lower()
+dict1, dict2 = {cl: s1.count(cl) for cl in set(s1)}, {cl: s2.count(cl) for cl in set(s2)} # формируем словарь из строк
+keys = ['.', ',', ';', ':', '-',' ', '!', '?']
+for key in keys:
+    dict1.pop(key, None)
+    dict2.pop(key, None)
+print("YES" if dict1 == dict2 else "NO")
