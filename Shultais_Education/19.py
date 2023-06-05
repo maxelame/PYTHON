@@ -731,3 +731,11 @@ for key in keys:
     dict1.pop(key, None)
     dict2.pop(key, None)
 print("YES" if dict1 == dict2 else "NO")
+
+
+
+words = {}
+for _ in range(int(input())):
+    a, b = input().split()
+    words[a], words[b] = b, a
+print(words[input()])
