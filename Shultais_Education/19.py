@@ -754,3 +754,15 @@ for key in dict1:
 
 
 print({w[i]: w[not i] for _ in range(int(input())) for w in [input().split()] for i in (0, 1)}[input()])
+
+
+
+dict1 = {} #создади пустой словарь, который запалним городами : странами
+n = int(input()) # число стран
+for _ in range(n):
+    list1 = input().split() # список получаем из каждой строки
+    for i in range(1, len(list1)):
+        dict1[list1[i]] = list1[0] # формируем словарь {город : страна}
+m = int(input()) # число городов
+for j in range(m):
+    print(dict1[input()])
