@@ -766,3 +766,25 @@ for _ in range(n):
 m = int(input()) # число городов
 for j in range(m):
     print(dict1[input()])
+
+
+
+d = {}
+for _ in range(int(input())):
+    country, *cities = input().split()
+    d.update(dict.fromkeys(cities, country)) # Возвращает новый словарь, сформированный из указанной последовательности, с указанным значением элементов.
+for _ in range(int(input())):
+    print(d[input()])
+
+# 🐍💛🐍💛🐍 словарь синонимиста
+
+n = int(input())
+city_dict = {}
+
+for _ in range(n):
+    land, *cities = input().split()
+    for city in cities:
+        city_dict[city] = land
+
+for _ in range(int(input())):
+    print(city_dict.get(input(), 'Не найдено'))
