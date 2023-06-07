@@ -788,3 +788,15 @@ for _ in range(n):
 
 for _ in range(int(input())):
     print(city_dict.get(input(), 'Не найдено'))
+
+
+
+
+n = int(input())
+dict1 = {}
+for _ in range(n):
+    mobile, name = input().lower().split()
+    dict1.setdefault(name, []).append(mobile)
+for _ in range(int(input())):
+               x = input().lower()
+               print(*dict1[x] if x in dict1 else ["абонент не найден"])
