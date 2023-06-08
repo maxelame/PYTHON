@@ -811,3 +811,13 @@ for _ in range(int(input())):
     dict2[int(key)] = value
 for i in s1:
     print(*dict2[dict1[i]], sep='', end='')
+
+
+
+cr = input()
+d = {int(i[1]): i[0] for i in (input().split(': ') for _ in range(int(input())))}
+for i in cr:
+    for k in d.keys():
+        if cr.count(i) == k:
+            cr = cr.replace(i, d[k])
+print(cr)
