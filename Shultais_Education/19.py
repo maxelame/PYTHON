@@ -800,3 +800,14 @@ for _ in range(n):
 for _ in range(int(input())):
                x = input().lower()
                print(*dict1[x] if x in dict1 else ["абонент не найден"])
+
+
+
+s1 = input()
+dict1 = {cl: s1.count(cl) for cl in set(s1)}
+dict2 = {}
+for _ in range(int(input())):
+    value, key = input().split(": ")
+    dict2[int(key)] = value
+for i in s1:
+    print(*dict2[dict1[i]], sep='', end='')
