@@ -821,3 +821,7 @@ for i in cr:
         if cr.count(i) == k:
             cr = cr.replace(i, d[k])
 print(cr)
+
+
+
+print(9**19 - int(float(9**19)))
