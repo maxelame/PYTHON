@@ -825,3 +825,9 @@ print(cr)
 
 
 print(9**19 - int(float(9**19)))
+
+
+
+minutes = int(input())
+print(minutes//60)
+print(minutes % 60)
