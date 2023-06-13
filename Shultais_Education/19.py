@@ -836,3 +836,6 @@ print(minutes % 60)
 
 {ключ: значение for переменная in последовательность}
 
+students = {1: {'name': 'Тимур', 'age': '28', 'sex': 'Male'},
+            2: {'name': 'Руслан', 'age': '22', 'sex': 'Male'},
+            3: {'name': 'Соня', 'age': '25', 'sex': 'Female'}}
