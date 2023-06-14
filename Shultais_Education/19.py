@@ -839,3 +839,8 @@ print(minutes % 60)
 students = {1: {'name': 'Тимур', 'age': '28', 'sex': 'Male'},
             2: {'name': 'Руслан', 'age': '22', 'sex': 'Male'},
             3: {'name': 'Соня', 'age': '25', 'sex': 'Female'}}
+
+
+states = {'California': {'population': 39512223, 'capital': 'Sacramento', 'landlocked': False},
+          'Oregon': {'population': 4217737, 'capital': 'Salem', 'landlocked': False},
+          'Nevada': {'population': 3080156, 'capital': 'Carson City', 'landlocked': True}}
