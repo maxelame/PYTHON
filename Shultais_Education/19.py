@@ -844,3 +844,16 @@ students = {1: {'name': 'Тимур', 'age': '28', 'sex': 'Male'},
 states = {'California': {'population': 39512223, 'capital': 'Sacramento', 'landlocked': False},
           'Oregon': {'population': 4217737, 'capital': 'Salem', 'landlocked': False},
           'Nevada': {'population': 3080156, 'capital': 'Carson City', 'landlocked': True}}
+
+
+marks = {
+   'class':{
+      'student':{
+         'name':'Rosaly',
+         'marks':{
+            'physics':70,
+            'history':80
+         }
+      }
+   }
+}
