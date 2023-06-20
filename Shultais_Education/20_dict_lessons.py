@@ -12,3 +12,12 @@ result = {int(i.split(":")[0]) : i.split(":")[1] for i in s.split()}
 
 
 ####
+numbers = [34, 10, 4, 6, 10, 23, 90, 100, 21, 35, 95, 1, 36, 38, 19, 1, 6, 87, 1000, 13456, 360]
+def divv(i):
+    list1 = []
+    for k in range(1, i+1):
+        if i % k == 0:
+            list1.append(k)
+    return list1
+result = {i : divv(i) for i in numbers}
+print(result)
