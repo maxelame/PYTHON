@@ -24,3 +24,7 @@ print(result)
 
 
 #####
+words = ['hello', 'bye', 'yes', 'no', 'python', 'apple', 'maybe', 'stepik', 'beegeek']
+result = {i: [ord(t) for t in i] for i in words}
+
+
