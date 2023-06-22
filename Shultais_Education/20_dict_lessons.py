@@ -58,3 +58,4 @@ student_grades = [86, 98, 89, 92, 45, 67, 89, 90, 100, 98, 10, 96, 93]
 result = [{student_ids[i]: {student_names[i] : student_grades[i]}} for i in range(len(student_ids))] # вариант без ZIP
 
 #####
+
