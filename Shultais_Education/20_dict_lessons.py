@@ -64,3 +64,12 @@ random.seed(17)   # явно устанавливаем начальное зн�
 
 for _ in range(10):
     print(random.randint(1, 100))
+
+
+import random
+
+num = random.randint(1, 118)
+
+#####
+import random
+num = random.random()
