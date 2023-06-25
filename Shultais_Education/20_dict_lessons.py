@@ -74,4 +74,6 @@ import random
 num = random.random()
 
 ####
-uniform()
+import random
+num = random.uniform()
+
