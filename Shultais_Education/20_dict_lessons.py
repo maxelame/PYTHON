@@ -72,3 +72,6 @@ num = random.randint(1, 118)
 #####
 import random
 num = random.random()
+
+####
+uniform()
