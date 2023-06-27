@@ -82,3 +82,5 @@ import random
 num = random.randrange(115)
 
 #####
+import random
+num = random.randrange(9, 81)
