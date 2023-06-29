@@ -90,3 +90,7 @@ import random
 num = random.randrange(15, 50, 5)
 
 #####
+import random
+n = int(input())    # количество попыток
+for _ in range(n):
+    print("Орел" if random.randint(0, 1) else "Решка")
