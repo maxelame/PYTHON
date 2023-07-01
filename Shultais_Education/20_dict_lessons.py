@@ -102,3 +102,7 @@ for _ in range(n):
     print(random.randint(1, 6))
 
 #####
+import random
+length = int(input())    # длина пароля
+for _ in range(length):
+    print((chr(random.choice([random.randint(65,90), random.randint(97,122)]))), end = '')
