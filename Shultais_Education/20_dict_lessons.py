@@ -113,3 +113,5 @@ set1 = set()
 while len(set1) < 7:
     set1.add(random.randint(1, 49))
 print(*sorted(set1))
+
+#####
