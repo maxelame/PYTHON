@@ -108,3 +108,8 @@ for _ in range(length):
     print((chr(random.choice([random.randint(65,90), random.randint(97,122)]))), end = '')
 
 #####
+import random
+set1 = set()
+while len(set1) < 7:
+    set1.add(random.randint(1, 49))
+print(*sorted(set1))
