@@ -116,7 +116,5 @@ print(*sorted(set1))
 
 #####
 import random
-
 numbers = [1, 2, 3, 5, 7]
-
 num = random.choice(numbers)
