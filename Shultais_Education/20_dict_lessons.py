@@ -120,3 +120,6 @@ numbers = [1, 2, 3, 5, 7]
 num = random.choice(numbers)
 
 #####
+import random
+numbers = list(range(2, 10, 2))
+num = random.choice(numbers)
