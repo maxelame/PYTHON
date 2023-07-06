@@ -136,3 +136,7 @@ def generate_ip():
 print(generate_ip())
 
 #####
+from random import randrange as rr
+def generate_ip():
+    return f'{rr(255)}.{rr(255)}.{rr(255)}.{rr(255)}'
+print(generate_ip())
