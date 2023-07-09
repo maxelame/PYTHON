@@ -153,4 +153,8 @@ random.shuffle(matrix)
 print(matrix)
 
 ######
-
+import random
+matrix = list("0123456789")
+for i in range(6):
+    random.shuffle(matrix)
+    print(*matrix, sep='')
