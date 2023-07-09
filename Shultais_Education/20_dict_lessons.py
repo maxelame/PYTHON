@@ -158,3 +158,13 @@ matrix = list("0123456789")
 for i in range(6):
     random.shuffle(matrix)
     print(*matrix, sep='')
+
+
+######
+import random
+lst = []
+while len(lst) < 100:
+    i = str(random.randrange(1, 10)) + str(''.join(random.sample(list("0123456789"), 6)))
+    if i not in lst:
+        lst += [i]
+print(*lst, sep = "\n")
