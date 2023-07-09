@@ -168,3 +168,9 @@ while len(lst) < 100:
     if i not in lst:
         lst += [i]
 print(*lst, sep = "\n")
+
+#####
+from random import sample as r
+print(*r(range(int(1e6), int(1e7)), 100), sep='\n')
+
+
