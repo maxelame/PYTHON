@@ -173,4 +173,8 @@ print(*lst, sep = "\n")
 from random import sample as r
 print(*r(range(int(1e6), int(1e7)), 100), sep='\n')
 
-
+#####
+import random
+word = list(input())
+random.shuffle(word)
+print("".join(word))
