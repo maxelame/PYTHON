@@ -181,3 +181,15 @@ print("".join(word))
 
 #####
 
+import random
+lst = [random.randint(1, 75) for i in range(75)]
+set1 = set(lst)
+k= 0
+for i in range(5):
+    for j in range(5):
+        if (i ==2 and j == 2):
+            print("0".ljust(3), end="")
+        else:
+            print(str(list(set1)[k]).ljust(3), end="")
+            k += 1
+    print()
