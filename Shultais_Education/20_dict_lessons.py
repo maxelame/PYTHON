@@ -202,3 +202,17 @@ lst = [input() for _ in range(n)]
 for i in range(n):
     print(f"{i} - {random.choice(lst[1:])}")
     lst = lst[1:] + [i]
+
+#####
+import random
+lst1 = [input() for _ in range(int(input()))]
+lst2 = lst1.copy()
+flag = 0
+while flag != 1:
+    random.shuffle(lst2)
+    flag = 1
+    for i in range(len(lst1)):
+        if lst1[i] == lst2[i]:
+            flag = 0
+for i in range(len(lst1)):
+    print(lst1[i], '-', lst2[i])
