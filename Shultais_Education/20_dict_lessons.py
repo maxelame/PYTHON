@@ -195,3 +195,10 @@ for i in range(5):
     print()
 
 #####
+
+import random
+n = int(input())
+lst = [input() for _ in range(n)]
+for i in range(n):
+    print(f"{i} - {random.choice(lst[1:])}")
+    lst = lst[1:] + [i]
