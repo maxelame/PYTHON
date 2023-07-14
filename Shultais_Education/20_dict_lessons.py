@@ -216,3 +216,23 @@ while flag != 1:
             flag = 0
 for i in range(len(lst1)):
     print(lst1[i], '-', lst2[i])
+
+
+######
+import string, random
+def generate_password(length):
+    symbols = "lI1oO0"
+    st = string.ascii_letters + string.digits
+    for i in symbols:
+        st = st.replace(i,"")
+    password = ""
+    for i in range(length):
+        password += random.choice(st)
+    return password
+
+def generate_passwords(count, length):
+    for i in range(count):
+        print(generate_password(length))
+
+n, m = int(input()), int(input())
+generate_passwords(n, m)
