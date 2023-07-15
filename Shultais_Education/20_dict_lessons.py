@@ -261,3 +261,15 @@ my_dict = {'C1': [10, 20, 30, 7, 6, 23, 90], 'C2': [20, 30, 40, 1, 2, 3, 90, 12]
 my_dict = {i : [j for j in my_dict[i] if j < 21] for i in my_dict}
 
 ######
+
+emails = {'nosu.edu': ['timyr', 'joseph', 'svetlana.gaeva', 'larisa.mamuk'],
+          'gmail.com': ['ruslan.chaika', 'rustam.mini', 'stepik-best'],
+          'msu.edu': ['apple.fruit', 'beegeek', 'beegeek.school'],
+          'yandex.ru': ['surface', 'google'],
+          'hse.edu': ['tomas-henders', 'cream.soda', 'zivert'],
+          'mail.ru': ['angel.down', 'joanne', 'the.fame.moster']}
+lst = []
+for i in emails:
+    for j in emails[i]:
+        lst += [str(j) + "@" + str(i)]
+print(*sorted(lst), sep = '\n')
