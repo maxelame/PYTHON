@@ -309,3 +309,5 @@ for i in lst:
         if i in d[q]:
             summ += q
 print(summ)
+
+#####
