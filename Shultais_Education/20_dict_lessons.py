@@ -291,3 +291,21 @@ for i in lst:
     else:
         dict1[i] = 1
     print(dict1[i], end=" ")
+
+#####
+lst = list(input())
+d = {
+    1: "AEILNORSTU",
+    2: "DG",
+    3: "BCMP",
+    4: "FHVWY",
+    5: "K",
+    8: "JX",
+    10: "QZ"
+}
+summ = 0
+for i in lst:
+    for q in d:
+        if i in d[q]:
+            summ += q
+print(summ)
