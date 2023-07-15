@@ -331,5 +331,28 @@ def restore_access():
 restore_access()
 
 ######
+def count_items():
+    n = int(input())
+    data = {}
+    buyers = set()
+    for _ in range(n):
+        buyer, item, quantity = input().split()
+        buyers.add(buyer)
+        if buyer not in data:
+            data[buyer] = {}
+        if item not in data[buyer]:
+            data[buyer][item] = 0
+        data[buyer][item] += int(quantity)
 
+    buyers = sorted(buyers)
+    for buyer in buyers:
+        print(f"{buyer}:")
+        items = sorted(data[buyer])
+        for item in items:
+            print(f"{item} {data[buyer][item]}")
+
+count_items()
+
+
+#####
 
