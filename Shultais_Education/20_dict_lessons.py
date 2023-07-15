@@ -273,3 +273,11 @@ for i in emails:
     for j in emails[i]:
         lst += [str(j) + "@" + str(i)]
 print(*sorted(lst), sep = '\n')
+
+#####
+dnk = input()
+dict1 = {'G' : 'C', 'C' : 'G', 'T' : 'A', 'A' : 'U'}
+rnk = ''
+for i in dnk:
+    rnk += dict1[i]
+print(rnk)
