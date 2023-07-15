@@ -281,3 +281,6 @@ rnk = ''
 for i in dnk:
     rnk += dict1[i]
 print(rnk)
+
+######
+
