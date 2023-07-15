@@ -236,3 +236,21 @@ def generate_passwords(count, length):
 
 n, m = int(input()), int(input())
 generate_passwords(n, m)
+
+######
+data = [
+    'a',
+    'b',
+    {
+        'foo': 1,
+        'bar':
+        {
+            'x' : 10,
+            'y' : 20,
+            'z' : 30
+        },
+        'baz': 3
+    },
+    'c',
+    'd'
+]
