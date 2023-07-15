@@ -311,3 +311,21 @@ for i in lst:
 print(summ)
 
 #####
+
+def restore_access():
+    s = {'write': 'W', 'read': 'R','execute': 'X'}
+    n = int(input())
+    files = {}
+    for _ in range(n):
+        file, permissions = input().split(' ', 1)
+        files[file] = set(permissions)
+
+    m = int(input())
+    for _ in range(m):
+        operation, file = input().split()
+        if s[operation] in files[file]:
+            print("OK")
+        else:
+            print("Access denied")
+
+restore_access()
