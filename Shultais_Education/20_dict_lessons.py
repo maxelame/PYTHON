@@ -402,3 +402,5 @@ def generate_passwords(count, length):
 
 n, m = int(input()), int(input())
 generate_passwords(n, m)
+
+#####
