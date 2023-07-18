@@ -379,3 +379,26 @@ n, m = int(input()), int(input())
 generate_passwords(n, m)
 
 ######
+
+
+import string, random
+def generate_password(length):
+    symbols = "lI1oO0"
+    st1 = string.ascii_uppercase
+    st2 = string.ascii_lowercase
+    st3 = string.digits
+    for i in symbols:
+        st1 = st1.replace(i,"")
+        st2 = st2.replace(i, "")
+        st3 = st3.replace(i, "")
+    password = random.choice(st1) + random.choice(st2) + random.choice(st3)
+    for i in range(length - 3):
+        password += random.choice(st1 + st2 + st3)
+    return password
+
+def generate_passwords(count, length):
+    for i in range(count):
+        print(generate_password(length))
+
+n, m = int(input()), int(input())
+generate_passwords(n, m)
