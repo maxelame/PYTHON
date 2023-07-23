@@ -467,3 +467,11 @@ print(log(num1 + num2))
 
 
 ######
+from decimal import *
+from math import *
+num1 = Decimal('1.44')
+num2 = Decimal('0.523')
+
+print(sqrt(num1))
+print(sin(num2))
+print(log(num1 + num2))
