@@ -475,3 +475,11 @@ num2 = Decimal('0.523')
 print(sqrt(num1))
 print(sin(num2))
 print(log(num1 + num2))
+
+######
+num = 0.1 + 0.1 + 0.1
+
+if num == 0.3:
+    print('YES')
+else:
+    print('NO')
