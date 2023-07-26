@@ -497,3 +497,9 @@ print(num_tuple.exponent)
 
 
 #####
+
+from decimal import *
+
+print(getcontext())
+
+######
