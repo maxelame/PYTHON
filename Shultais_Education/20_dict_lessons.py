@@ -503,3 +503,14 @@ from decimal import *
 print(getcontext())
 
 ######
+
+from decimal import *
+
+getcontext().prec = 3      # устанавливаем точность в 3 знака
+
+num = Decimal('3.1415')
+
+print(num)
+print(num * 1)
+print(num * 2)
+print(num / 2)
