@@ -514,3 +514,15 @@ print(num)
 print(num * 1)
 print(num * 2)
 print(num / 2)
+
+#####
+
+from decimal import *
+
+getcontext().prec = 4                    # устанавливаем точность числа
+
+num = Decimal('3.1415926535')
+
+print(num.quantize(Decimal('1.000')))    #  округление до 3 цифр в дробной части
+print(num.quantize(Decimal('1.00')))     #  округление до 2 цифр в дробной части
+print(num.quantize(Decimal('1.0')))      #  округление до 1 цифр в дробной части
