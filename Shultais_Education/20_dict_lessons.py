@@ -529,3 +529,11 @@ print(num.quantize(Decimal('1.0')))      #  округление до 1 цифр
 
 
 #####
+from decimal import *
+
+num = Decimal('-1.4568769017')
+num_tuple = num.as_tuple()
+
+print(num_tuple.sign)
+print(num_tuple.digits)
+print(num_tuple.exponent)
