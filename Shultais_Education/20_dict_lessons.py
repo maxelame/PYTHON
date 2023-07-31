@@ -577,5 +577,4 @@ sorted_sn = sorted(sn, reverse = True)
 print(sum(sorted_sn))
 print(*sorted_sn[:5])
 
-
 #####
