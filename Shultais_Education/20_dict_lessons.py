@@ -578,3 +578,10 @@ print(sum(sorted_sn))
 print(*sorted_sn[:5])
 
 #####
+from decimal import *
+#num = Decimal(input())
+num = sorted(input().replace(".","").replace("-","")) # работаем со строкой, сортируем, превращая ее в список
+print(int(num[0]) + int(num[-1])) # сумма первого и последнего элемента и есть ответfrom decimal import *
+#num = Decimal(input())
+num = sorted(input().replace(".","").replace("-","")) # работаем со строкой, сортируем, превращая ее в список
+print(int(num[0]) + int(num[-1])) # сумма первого и последнего элемента и есть ответ
