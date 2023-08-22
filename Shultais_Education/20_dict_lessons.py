@@ -582,5 +582,7 @@ from decimal import *
 #num = Decimal(input())
 num = sorted(input().replace(".","").replace("-","")) # работаем со строкой, сортируем, превращая ее в список
 
-
-
+####
+from decimal import *
+n = Decimal(input())
+print(n.exp() + n.ln() + n.log10() + n.sqrt())
