@@ -586,3 +586,12 @@ num = sorted(input().replace(".","").replace("-","")) # работаем со с
 from decimal import *
 n = Decimal(input())
 print(n.exp() + n.ln() + n.log10() + n.sqrt())
+
+######
+from fractions import Fraction
+
+num1 = Fraction(5, 10)
+num2 = Fraction('75/100')
+num3 = Fraction('0.25')
+
+print(num1, num2, num3, sep='\n')
