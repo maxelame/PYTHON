@@ -595,3 +595,9 @@ num2 = Fraction('75/100')
 num3 = Fraction('0.25')
 
 print(num1, num2, num3, sep='\n')
+
+#####
+from fractions import Fraction
+num1 = Fraction('3/8')
+num2 = Fraction('1/2')
+print(num1 ** num2)
