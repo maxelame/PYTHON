@@ -601,3 +601,18 @@ from fractions import Fraction
 num1 = Fraction('3/8')
 num2 = Fraction('1/2')
 print(num1 ** num2)
+
+
+#####
+from fractions import Fraction
+import math
+
+print('PI =', math.pi)
+
+num = Fraction(str(math.pi))
+
+print('No limit =', num)
+
+for d in [1, 5,  50, 90, 100, 500, 1000000]:
+    limited = num.limit_denominator(d)
+    print(limited)
