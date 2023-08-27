@@ -627,3 +627,6 @@ if num * 71 == 7:
     print('YES')
 else:
     print('NO')
+
+
+######
