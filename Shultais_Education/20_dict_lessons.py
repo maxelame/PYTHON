@@ -616,3 +616,14 @@ print('No limit =', num)
 for d in [1, 5,  50, 90, 100, 500, 1000000]:
     limited = num.limit_denominator(d)
     print(limited)
+
+
+######
+from fractions import *
+
+num = Fraction(7, 71)
+
+if num * 71 == 7:
+    print('YES')
+else:
+    print('NO')
