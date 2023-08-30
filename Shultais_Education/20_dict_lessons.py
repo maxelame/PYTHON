@@ -644,3 +644,8 @@ s = '0.78 4.3 9.6 3.88 7.08 5.88 0.23 4.65 2.79 0.90 4.23 2.15 3.24 8.57 0.10 8.
 
 s_list = list(map(Fraction, s.split(" ")))
 print(max(s_list) + min(s_list))
+
+
+#####
+from fractions import Fraction as F
+print(F(int(input()), int(input())))
