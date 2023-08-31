@@ -649,3 +649,12 @@ print(max(s_list) + min(s_list))
 #####
 from fractions import Fraction as F
 print(F(int(input()), int(input())))
+
+######
+from fractions import Fraction as F
+a = input()
+b = input()
+print(f"{a} + {b} = {F(a) + F(b)}")
+print(f"{a} - {b} = {F(a) - F(b)}")
+print(f"{a} * {b} = {F(a) * F(b)}")
+print(f"{a} / {b} = {F(a) / F(b)}")
