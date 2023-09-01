@@ -667,3 +667,12 @@ basel_series = [F(1, i * i) for i in range(1, basel_series_size + 1)]
 print(sum(basel_series))
 
 ######
+from fractions import Fraction as F
+n = int(input())
+s = 0
+for i in range(1,n+1):
+    s += F(1, i ** 2)
+print(s)
+
+
+######
