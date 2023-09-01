@@ -660,3 +660,8 @@ print(f"{a} * {b} = {F(a) * F(b)}")
 print(f"{a} / {b} = {F(a) / F(b)}")
 
 ######
+from fractions import Fraction as F
+basel_series_size = int(input())
+basel_series = [F(1, i * i) for i in range(1, basel_series_size + 1)]
+# последовательность Базеля это серия обратных квадратов: 1/1, 1/4, 1/9, 1/25.. 1/n*n
+print(sum(basel_series))
