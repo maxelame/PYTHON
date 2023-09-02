@@ -676,3 +676,8 @@ print(s)
 
 
 ######
+from math import factorial
+from fractions import Fraction as F
+print(sum([F(1, factorial(i)) for i in range(1, int(input()) + 1)]))
+
+######
