@@ -689,3 +689,6 @@ for i in range(1, n + 1):
     if gcd(i, n-i) == 1 and i < n-i:
         lst += [F(i, n-i)]
 print(lst[-1])
+
+
+#####
