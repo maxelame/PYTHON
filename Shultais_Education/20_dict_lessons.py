@@ -692,3 +692,12 @@ print(lst[-1])
 
 
 #####
+
+from math import gcd
+from fractions import Fraction as F
+n, lst = int(input()), []
+for i in range(1, n + 1):
+    for j in range(1, n + 1):
+        if gcd(i, j) == 1 and i != j and j > i:
+            lst += [(F(i, j))]
+print(*sorted(lst), sep = "\n")
