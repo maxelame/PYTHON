@@ -701,3 +701,5 @@ for i in range(1, n + 1):
         if gcd(i, j) == 1 and i != j and j > i:
             lst += [(F(i, j))]
 print(*sorted(lst), sep = "\n")
+
+#####
