@@ -703,3 +703,10 @@ for i in range(1, n + 1):
 print(*sorted(lst), sep = "\n")
 
 #####
+z1 = -3 + 2j              # создание на основе литерала
+z2 = complex(6, -8)       # z2 = 6 - 8j
+z3 = complex(0, 2.5)      # z3 = 2.5j
+z4 = complex(5, 0)        # z4 = 5 + 0j
+z5 = complex('3+4j')      # создание на основе строки
+
+print(z1, z2, z3, z4, z5, sep='\n')
