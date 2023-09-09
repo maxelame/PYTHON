@@ -733,3 +733,12 @@ print('z1 / z2 =', z1 / z2)
 print('z1^20 =', z1**20)
 
 #######
+
+z1 = 1 + 3j
+z2 = -3 + 2j
+
+print('z1 + z2 =', z1 + z2)
+print('z1 - z2 =', z1 - z2)
+print('z1 * z2 =', z1 * z2)
+print('z1 / z2 =', z1 / z2)
+print('z1^20 =', z1**20)
