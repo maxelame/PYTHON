@@ -742,3 +742,10 @@ print('z1 - z2 =', z1 - z2)
 print('z1 * z2 =', z1 * z2)
 print('z1 / z2 =', z1 / z2)
 print('z1^20 =', z1**20)
+
+#####
+import cmath
+
+z = 2+3j
+print(cmath.phase(z)) # полярный угол
+print(cmath.polar(z)) # полярные координаты
