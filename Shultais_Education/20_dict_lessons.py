@@ -749,3 +749,9 @@ import cmath
 z = 2+3j
 print(cmath.phase(z)) # полярный угол
 print(cmath.polar(z)) # полярные координаты
+
+
+#####
+z = 3+4j
+
+print('Модуль числа =', abs(z))
