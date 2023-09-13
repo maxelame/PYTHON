@@ -754,3 +754,9 @@ print(cmath.polar(z)) # полярные координаты
 #####
 z = 3+4j
 print('Модуль числа =', abs(z))
+
+######
+z1, z2 = input(), input()
+print(f"{complex(z1)} + {complex(z2)} = {complex(z1) + complex(z2)}")
+print(f"{complex(z1)} - {complex(z2)} = {complex(z1) - complex(z2)}")
+print(f"{complex(z1)} * {complex(z2)} = {complex(z1) * complex(z2)}")
