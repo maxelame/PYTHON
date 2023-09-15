@@ -777,3 +777,16 @@ n, z1, z2 = [complex(input()) for _ in "123"]
 print(z1 ** n + z2 ** n + z1.conjugate() ** n + z2.conjugate() ** (n +1))
 
 ######
+import turtle
+
+def rectangle(width, height):
+  turtle.forward(width)
+  turtle.setheading(90)
+
+  turtle.forward(height)
+  turtle.setheading(180)
+
+  turtle.forward(width)
+  turtle.setheading(270)
+
+  turtle.forward(height)
