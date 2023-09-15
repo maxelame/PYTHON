@@ -768,3 +768,12 @@ print(dict1[max(dict1)])
 print(max(dict1))
 
 #####
+n, z1, z2 = [complex(input()) for _ in "123"]
+print(z1 ** n + z2 ** n + z1.conjugate() ** n + z2.conjugate() ** (n +1))
+
+########
+
+n, z1, z2 = [complex(input()) for _ in "123"]
+print(z1 ** n + z2 ** n + z1.conjugate() ** n + z2.conjugate() ** (n +1))
+
+######
