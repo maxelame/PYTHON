@@ -790,3 +790,6 @@ def rectangle(width, height):
   turtle.setheading(270)
 
   turtle.forward(height)
+
+
+#Аргументы функции, которые передаются без указания имен, называются ПОЗИЦИОННЫМИ
