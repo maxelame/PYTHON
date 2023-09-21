@@ -802,3 +802,6 @@ def rectangle(width, height):
 
 def my_func(x, y):
     my_func(x=10, y=20)
+
+#####
+greet(name='Timur', msg='Good morning!')
