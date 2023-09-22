@@ -805,3 +805,10 @@ def my_func(x, y):
 
 #####
 greet(name='Timur', msg='Good morning!')
+
+######
+def fancy(length, char1, char2):
+    return (char1 + char2) * length + char1
+
+
+print(fancy(5, '-', '*'))
