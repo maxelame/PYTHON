@@ -828,5 +828,5 @@ def fancy(length, char1='-', char2='*'):
 
 print(fancy(char2='$', length=3))
 
-
+######
 
