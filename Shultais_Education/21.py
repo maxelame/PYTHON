@@ -15,3 +15,8 @@ def matrix(n =1,m = 0, a = 0):
     return [[a]*m for _ in range(n)]
 
 ######
+def f(n=3):
+    return n + 7
+
+
+print(f(f(f())))
