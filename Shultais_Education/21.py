@@ -26,3 +26,12 @@ def func(x, y, *args):
 
 
 #####
+
+def func(x, y, *args):
+    return len(args)
+
+
+print(func(10, 20, 30, 40, 50, 60))
+
+
+#####
