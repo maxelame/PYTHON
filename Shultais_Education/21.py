@@ -49,5 +49,15 @@ func(2, 7)
 
 ######
 
+def count_args(*args):
+  return len(args)
 
+print(count_args([], (''), 'a', False))
+
+######
+
+def sq_sum(*args):
+    return sum([m ** 2 for m in args])
+
+######
 
