@@ -61,3 +61,5 @@ def sq_sum(*args):
 
 ######
 
+def sq_sum(*a):
+    return sum(map(lambda i: i*i, list(a)))
