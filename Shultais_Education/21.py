@@ -63,3 +63,15 @@ def sq_sum(*args):
 
 def sq_sum(*a):
     return sum(map(lambda i: i*i, list(a)))
+
+#####
+
+def sq_sum(*args) -> int | float:
+    return sum(map(lambda i: i*i, args))
+
+
+#####
+
+def mean(*args):
+    s = [i for i in args if type(i) in [int, float]]
+    return (float(0) if len(s) == 0 else float(sum(s)/len(s)))
