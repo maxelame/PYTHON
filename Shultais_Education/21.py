@@ -75,3 +75,11 @@ def sq_sum(*args) -> int | float:
 def mean(*args):
     s = [i for i in args if type(i) in [int, float]]
     return (float(0) if len(s) == 0 else float(sum(s)/len(s)))
+
+######
+
+def greet(x, *args):
+    str1 = "Hello, " + x
+    for i in args:
+        str1 += " and " + i
+    return str1
