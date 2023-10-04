@@ -83,3 +83,12 @@ def greet(x, *args):
     for i in args:
         str1 += " and " + i
     return str1
+
+
+######
+
+
+
+def greet(name, *args):
+    return f'Hello, {" and ".join((name,) + args)}!'
+
