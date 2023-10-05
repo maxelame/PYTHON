@@ -92,3 +92,15 @@ def greet(x, *args):
 def greet(name, *args):
     return f'Hello, {" and ".join((name,) + args)}!'
 
+#####
+
+def print_products(*args):
+    list1 = []
+    for i in args:
+        if type(i) in [str] and len(i) != 0:
+            list1.append(i)
+    if len(list1) == 0:
+        print("Нет продуктов")
+    else:
+        for i in range(1, len(list1) + 1):
+            print(f"{i}) {list1[i-1]}")
