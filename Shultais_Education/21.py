@@ -104,3 +104,12 @@ def print_products(*args):
     else:
         for i in range(1, len(list1) + 1):
             print(f"{i}) {list1[i-1]}")
+
+
+#####
+def info_kwargs(*kwargs):
+    for key, value in sorted(kwargs.items()):
+        print(f"{key}: {value}")
+
+
+info_kwargs(first_name='Timur', last_name='Guev', age=28, job='teacher')
