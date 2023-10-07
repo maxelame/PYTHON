@@ -113,3 +113,7 @@ def info_kwargs(*kwargs):
 
 
 info_kwargs(first_name='Timur', last_name='Guev', age=28, job='teacher')
+
+
+#####
+#Парадигма программирования это совокупность идей и понятий, определяющих стиль написания компьютерных программ
