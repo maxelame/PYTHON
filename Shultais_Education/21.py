@@ -136,3 +136,11 @@ info_kwargs(first_name='Timur', last_name='Guev', age=28, job='teacher')
 
 
 #Основные принципы функционального программирования это: неизменяемые переменные, рекурсии, функции высшегопордка, чистые функции, лямбда-выражения
+
+
+s1 = 'python'
+s2 = 'stepicon'
+s3 = 'beegeek'
+
+print(min(s1, s2, s3))
+print(max(s1, s2, s3))
