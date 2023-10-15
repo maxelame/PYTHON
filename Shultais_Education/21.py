@@ -151,3 +151,10 @@ s3 = 'beegeek'
 
 print(min(s1, s2, s3, key=len))
 print(max(s1, s2, s3, key=len))
+
+
+
+def f(x):
+    return x**2
+g = f
+print(f(3), g(5))
