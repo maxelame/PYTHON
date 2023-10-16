@@ -158,3 +158,12 @@ def f(x):
     return x**2
 g = f
 print(f(3), g(5))
+
+
+
+def f(x):
+    return x**2
+def g(x):
+    return x**3
+funcs = [f, g]
+print(funcs[0](5), funcs[1](5))
