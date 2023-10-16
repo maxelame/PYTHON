@@ -167,3 +167,12 @@ def g(x):
     return x**3
 funcs = [f, g]
 print(funcs[0](5), funcs[1](5))
+
+
+
+
+def comparator(pair):
+    return pair[1]
+pairs = [(5, 4), (3, 2), (1, 7), (8, 2)]
+pairs.sort(key=comparator)
+print(pairs)
