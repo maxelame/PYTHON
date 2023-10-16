@@ -185,3 +185,9 @@ def comparator(pair):
 pairs = [(5, 4), (3, 2), (1, 7), (8, 2)]
 pairs.sort(key=comparator, reverse=True)
 print(pairs)
+
+
+
+words = ['this', 'is', 'a', 'test', 'of', 'sorting']
+words.sort(key=len)
+print(words)
