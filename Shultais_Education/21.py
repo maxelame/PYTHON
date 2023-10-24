@@ -243,3 +243,8 @@ n = int(input())
 athletes.sort(key = lambda x: x[n-1])
 for i in athletes:
     print(*i)
+
+
+######
+s_list = input().split()
+print(*sorted(s_list, key = lambda x: sum(int(j) for j in x)))
