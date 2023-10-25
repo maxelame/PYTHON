@@ -248,3 +248,15 @@ for i in athletes:
 ######
 s_list = input().split()
 print(*sorted(s_list, key = lambda x: sum(int(j) for j in x)))
+
+
+#####
+
+func_dict = {'квадрат': lambda x : x ** 2,
+             'куб': lambda x : x ** 3,
+             'корень': lambda x: x ** 0.5,
+             'модуль': abs,
+             'синус': math.sin}
+
+
+
