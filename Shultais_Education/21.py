@@ -272,3 +272,22 @@ num1 = high_order_function(square)
 num2 = high_order_function(minus_one)
 
 print(num1*num2)
+
+#####
+
+
+words = ['abba', 'qwerty', 'python', 'a', 'deed', 'nun', 'level', 'deified', 'bbbbb', 'mother', 'surface', 'sister']
+
+words_len = map(len, words)
+print(max(words_len))
+
+Функция map():
+
+def map(function, items):
+    result = []
+    for item in items:
+        result.append(function(item))
+    return result
+
+
+####s
