@@ -384,3 +384,9 @@ print(reduce(lambda x,y: x + y ** 2, numbers, 0))
 numbers = list(filter(lambda x: x % 7 == 0 and (13<x<99 or -99<x<-13), numbers))
 
 print(sum(map(lambda x: x ** 2, numbers)))
+
+
+#####
+
+def func_apply(fun, lst):
+    return list(map(fun, lst))
