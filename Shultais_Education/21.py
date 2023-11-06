@@ -390,3 +390,14 @@ print(sum(map(lambda x: x ** 2, numbers)))
 
 def func_apply(fun, lst):
     return list(map(fun, lst))
+
+
+def increase(num):
+    return num + 7
+
+
+numbers = [1, 2, 3, 4, 5, 6]
+new_numbers = map(increase, numbers)
+
+for num in new_numbers:    #  итерируем циклом for
+    print(num)
