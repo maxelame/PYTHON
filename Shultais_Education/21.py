@@ -401,3 +401,14 @@ new_numbers = map(increase, numbers)
 
 for num in new_numbers:    #  итерируем циклом for
     print(num)
+######
+
+def func(elem):
+    return elem >= 0
+
+
+numbers = [-1, 2, -3, 4, 0, -20, 10]
+positive_numbers = list(filter(func, numbers))  #  преобразуем итератор в список
+
+print(positive_numbers)
+
