@@ -438,3 +438,16 @@ list1 = list(map(len, ['this', 'is', 'a', 'test']))
 list2 = [len(word) for word in ['this', 'is', 'a', 'test']]
 
 print(list1 == list2)
+
+
+#####
+
+def filter_vowels(letter):
+    return letter in 'aeiou'
+
+
+letters = ['a', 'b', 'd', 'e', 'i', 'j', 'o']
+
+filtered_vowels = filter(filter_vowels, letters)
+
+print(*filtered_vowels)
