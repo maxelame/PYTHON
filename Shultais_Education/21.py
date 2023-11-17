@@ -476,3 +476,10 @@ from functools import reduce
 
 result = reduce(mul, range(1, 6))
 print(result)
+
+
+#####
+from operator import add
+
+result = list(map(add, 'abc', '1234'))
+print(result)
