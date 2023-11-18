@@ -483,3 +483,10 @@ from operator import add
 
 result = list(map(add, 'abc', '1234'))
 print(result)
+
+#####
+
+from operator import mul
+
+result = list(map(mul, ['a', 'b', 'c'], [1, 2, 3]))
+print(result)
