@@ -517,5 +517,11 @@ print(sorted(points, key=lambda point: point[0] + point[1]))      # сортир
 ######
 f = lambda x: 2*x + 1
 
+#####
+
+func = lambda x, y: x ** y
+print(func(5, 3))
+
+
 
 
