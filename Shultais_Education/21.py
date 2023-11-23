@@ -512,3 +512,10 @@ print(result)
 
 print(sorted(points, key=lambda point: point[1]))                 # сортируем по второму значению кортежа
 print(sorted(points, key=lambda point: point[0] + point[1]))      # сортируем по сумме элементов кортежа
+
+
+######
+f = lambda x: 2*x + 1
+
+
+
