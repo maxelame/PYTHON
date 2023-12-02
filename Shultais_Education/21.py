@@ -522,6 +522,10 @@ f = lambda x: 2*x + 1
 func = lambda x, y: x ** y
 print(func(5, 3))
 
+#####
 
+numbers = [1, 2, 5, 3, 4]
+numbers.sort(key=lambda x: -x)
+print(numbers)
 
 
