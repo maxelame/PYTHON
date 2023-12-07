@@ -530,3 +530,6 @@ print(numbers)
 
 #####
 func = lambda x: x[0] in ["a","A"] and x[-1] in ["a","A"]
+
+
+#####
