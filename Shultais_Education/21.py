@@ -528,4 +528,5 @@ numbers = [1, 2, 5, 3, 4]
 numbers.sort(key=lambda x: -x)
 print(numbers)
 
-
+#####
+func = lambda x: x[0] in ["a","A"] and x[-1] in ["a","A"]
