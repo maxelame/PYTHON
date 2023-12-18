@@ -80,3 +80,26 @@ print(*sorted(mixed_list, key = lambda x: (type(x) == str, x)))
 print(*list(map(lambda x: 255 - x, list(map(int, input().split())))))
 
 ######
+
+from functools import reduce
+
+def evaluate(coefficients, x):
+    # Функция для вычисления значения многочлена
+    polynomial = lambda acc, coef: acc * x + coef
+    result = reduce(polynomial, coefficients)
+    return result
+
+# Считываем коэффициенты многочлена
+coefficients = list(map(int, input().split()))
+
+# Считываем значение аргумента
+x = int(input())
+
+# Выводим результат
+print(evaluate(coefficients, x))
+
+
+######
+
+print(all([True, True, True]))     #  возвращает True, так как все значения списка равны True
+print(all([True, True, False]))    #  возвращает False, так как не все значения списка равны True
