@@ -147,3 +147,10 @@ for x, y in zip(list1, list2):
 print(result)
 
 #####
+
+
+rint(sum(map(lambda x,y: x*y , list1,list2)))
+print(sum(x*y for x,y in zip(list1,list2)))
+print(sum([x*y for x,y in zip(list1,list2)]))
+
+######
