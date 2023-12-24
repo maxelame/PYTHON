@@ -158,3 +158,10 @@ print(sum([x*y for x,y in zip(list1,list2)]))
 def ignore_command(command):
     ignore = ['alias', 'configuration', 'ip', 'sql', 'select', 'update', 'exec', 'del', 'truncate']
     return any(map(lambda x: x in command, ignore))
+
+
+#####
+
+def ignore_command(command):
+    ignore = ['alias', 'configuration', 'ip', 'sql', 'select', 'update', 'exec', 'del', 'truncate']
+    return any(i in command for i in ignore)
