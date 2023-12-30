@@ -173,3 +173,18 @@ capitals = ['Moscow', 'Washington', 'London', 'Berlin', 'Paris', 'Delhi']
 population = [145_934_462, 331_002_651, 80_345_321, 67_886_011, 65_273_511, 1_380_004_385]
 for country, capital, population in zip(countries, capitals, population):
     print(f"{capital} is the capital of {country}, population equal {population} people.")
+
+######
+
+
+User avatar
+Максим Кункевич
+2 секунды назад
+
+.
+Верное решение #1107857615
+Python 3.10
+
+xxxx_list = list(map(lambda x: True if x.isdigit() and 0<=int(x) <=255 else False, input().split(".")))
+print(all(xxxx_list))
+
