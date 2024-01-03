@@ -198,3 +198,11 @@ def check(num):
 
 result = [str(i) for i in range(a, b+1) if check(i) and '0' not in str(i)]
 print(' '.join(result))
+
+#####
+
+def check(num):
+    return all(map(lambda x: int(x) and num % int(x) == 0, str(num)))
+print(*list(filter(lambda x: check(x), range(int(input()), int(input())+ 1))))
+
+#####
