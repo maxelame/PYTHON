@@ -188,3 +188,13 @@ Python 3.10
 xxxx_list = list(map(lambda x: True if x.isdigit() and 0<=int(x) <=255 else False, input().split(".")))
 print(all(xxxx_list))
 
+######
+a = int(input())
+b = int(input())
+
+def check(num):
+    digits = set(str(num))
+    return all(int(digit) != 0 and num % int(digit) == 0 for digit in digits)
+
+result = [str(i) for i in range(a, b+1) if check(i) and '0' not in str(i)]
+print(' '.join(result))
