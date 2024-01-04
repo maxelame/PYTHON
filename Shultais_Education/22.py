@@ -216,3 +216,7 @@ for i in range(a, b + 1):
     # проверяем, что число не содержит 0 и делится на все свои цифры
     if 0 not in digits and all(map(lambda cur_digit: i % cur_digit == 0, digits)):
         print(i, end=" ")
+######
+
+s = input()
+print("NO" if any([len(s) < 7, s.isupper(), s.islower(), s.isdigit(), s.isalpha()]) else "YES")
