@@ -220,3 +220,16 @@ for i in range(a, b + 1):
 
 s = input()
 print("NO" if any([len(s) < 7, s.isupper(), s.islower(), s.isdigit(), s.isalpha()]) else "YES")
+
+#####
+
+
+n = int(input())
+result = []
+
+for _ in range(n):
+    k = int(input())
+    grades = [int(input().split()[1]) for _ in range(k)]
+    result.append(any(grade == 5 for grade in grades))
+
+print('YES' if all(result) else 'NO')
